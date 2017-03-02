@@ -10,4 +10,7 @@ public class AboutUs extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_about_us);
     }
+
+    //اذا شفتها قلي محمد خالد
+    //if you see it told me 
 }
