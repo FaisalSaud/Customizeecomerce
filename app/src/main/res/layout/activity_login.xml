@@ -11,40 +11,40 @@
     tools:context="com.example.abu.customizeecomerce.Login">
 
     <EditText
-        android:inputType="text"
-        android:ems="10"
-        android:layout_marginTop="126dp"
         android:id="@+id/editText"
         style="@style/Widget.AppCompat.AutoCompleteTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
         android:background="@android:drawable/editbox_background"
-        android:singleLine="false"
-        android:selectAllOnFocus="false"
-        android:password="false"
         android:capitalize="none"
-        android:layout_width="400px"
-        android:layout_height="70px"
-        android:layout_marginRight="62dp"
-        android:layout_marginEnd="62dp"
-        android:layout_alignParentTop="true"
+        android:ems="10"
+        android:inputType="text"
+        android:password="false"
+        android:selectAllOnFocus="false"
+        android:singleLine="false"
+        android:layout_below="@+id/textView9"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp" />
 
     <EditText
-        android:ems="10"
-        android:layout_marginTop="34dp"
         android:id="@+id/editText2"
         style="@style/Widget.AppCompat.AutoCompleteTextView"
-        android:background="@android:drawable/editbox_background"
-        android:singleLine="false"
-        android:selectAllOnFocus="false"
-        android:password="false"
-        android:capitalize="none"
-        android:layout_width="400px"
-        android:layout_height="70px"
-        android:layout_below="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/editText"
         android:layout_alignStart="@+id/editText"
-        android:inputType="textPassword" />
+        android:layout_below="@+id/editText"
+        android:layout_marginTop="34dp"
+        android:background="@android:drawable/editbox_background"
+        android:capitalize="none"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:password="false"
+        android:selectAllOnFocus="false"
+        android:singleLine="false" />
 
     <TextView
         android:text="Username"
