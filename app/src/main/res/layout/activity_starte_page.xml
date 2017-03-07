@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_starte_page"
     android:layout_width="match_parent"
@@ -46,5 +47,17 @@
         android:layout_below="@+id/CreateAccount"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:id="@+id/PurchaseBasket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Login"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="74dp"
+        android:layout_marginLeft="282dp"
+        android:layout_marginStart="282dp"
+        app:srcCompat="@android:drawable/ic_input_get" />
 
 </RelativeLayout>
