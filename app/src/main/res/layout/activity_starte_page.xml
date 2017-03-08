@@ -20,7 +20,8 @@
         style="@android:style/Widget.Button"
         android:layout_below="@+id/Login"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="34dp" />
+        android:layout_marginTop="34dp"
+        tools:ignore="HardcodedText,PxUsage,UnusedAttribute" />
 
     <Button
         android:text="Create Account"
@@ -32,7 +33,8 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:fontFamily="sans-serif-smallcaps" />
+        android:fontFamily="sans-serif-smallcaps"
+        tools:ignore="HardcodedText,PxUsage,UnusedAttribute" />
 
     <Button
         android:text="Log in"
@@ -46,7 +48,8 @@
         android:layout_marginTop="25dp"
         android:layout_below="@+id/CreateAccount"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        tools:ignore="HardcodedText,PxUsage,UnusedAttribute" />
 
     <ImageButton
         android:id="@+id/PurchaseBasket"
@@ -58,6 +61,7 @@
         android:layout_marginBottom="74dp"
         android:layout_marginLeft="282dp"
         android:layout_marginStart="282dp"
-        app:srcCompat="@android:drawable/ic_input_get" />
+        app:srcCompat="@android:drawable/ic_input_get"
+        tools:ignore="ContentDescription" />
 
 </RelativeLayout>

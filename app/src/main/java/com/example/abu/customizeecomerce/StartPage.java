@@ -38,13 +38,13 @@ public class StartPage extends AppCompatActivity {
                 startActivity(i);
             }
         });
-        purchaseBasket.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(StartPage.this, PurchaseBasket.class);
-                startActivity(i);
-            }
-        });
+//        purchaseBasket.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent i = new Intent(StartPage.this, PurchaseBasket.class);
+//                startActivity(i);
+//            }
+//        });
     }
 }
 
