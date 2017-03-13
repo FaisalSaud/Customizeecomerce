@@ -10,4 +10,34 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.abu.customizeecomerce.MainActivity">
 
+    <Button
+        android:id="@+id/createApp"
+        android:layout_width="400px"
+        android:layout_height="125px"
+        android:layout_alignLeft="@+id/myApp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/myApp"
+        android:layout_marginTop="68dp"
+        android:text="Create New Store"
+        tools:ignore="HardcodedText,PxUsage" />
+
+    <Button
+        android:id="@+id/myApp"
+        android:layout_width="400px"
+        android:layout_height="125px"
+        android:layout_below="@+id/createApp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="68dp"
+        android:text="My Stores"
+        tools:ignore="HardcodedText,PxUsage" />
+
+    <Button
+        android:id="@+id/howToStart"
+        android:layout_width="400px"
+        android:layout_height="125px"
+        android:layout_below="@+id/myApp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="68dp"
+        android:text="How To Start"
+        tools:ignore="HardcodedText,PxUsage" />
 </RelativeLayout>
