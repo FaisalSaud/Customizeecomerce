@@ -87,6 +87,9 @@
         style="@style/Widget.AppCompat.AutoCompleteTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/usernameText"
+        android:layout_alignStart="@+id/usernameText"
+        android:layout_below="@+id/usernameText"
         android:layout_marginTop="16dp"
         android:background="@android:drawable/editbox_background"
         android:capitalize="none"
@@ -94,10 +97,7 @@
         android:inputType="textPassword"
         android:password="false"
         android:selectAllOnFocus="false"
-        android:singleLine="false"
-        android:layout_below="@+id/usernameText"
-        android:layout_alignLeft="@+id/usernameText"
-        android:layout_alignStart="@+id/usernameText" />
+        android:singleLine="false" />
 
     <EditText
         android:id="@+id/rePasswordText"

@@ -21,7 +21,10 @@
             android:name=".AboutUs"
             android:label="@string/app_name" />
         <activity android:name=".MainActivity" />
-        <activity android:name=".PurchaseBasket"></activity>
+        <activity android:name=".PurchaseBasket" />
+        <activity android:name=".CreateAppStep1" />
+        <activity android:name=".CreateAppStep2" />
+        <activity android:name=".CreateAppStep3"></activity>
     </application>
 
 </manifest>

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.abu.customizeecomerce.CreateAppStep1">
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="80px"
+        android:layout_height="40px"
+        android:background="@android:color/holo_red_light"
+        android:text="  7"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:background="@android:color/holo_red_light"
+        tools:layout_editor_absoluteX="292dp"
+        tools:layout_editor_absoluteY="398dp" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="80px"
+        android:layout_height="40px"
+        android:background="@android:color/holo_red_light"
+        android:text="  6"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:background="@android:color/holo_red_light"
+        tools:layout_editor_absoluteX="258dp"
+        tools:layout_editor_absoluteY="398dp" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="80px"
+        android:layout_height="40px"
+        android:background="@android:color/holo_red_light"
+        android:text="  5"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:background="@android:color/holo_red_light"
+        tools:layout_editor_absoluteX="225dp"
+        tools:layout_editor_absoluteY="398dp" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="80px"
+        android:layout_height="40px"
+        android:background="@android:color/holo_red_light"
+        android:text="  4"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:background="@android:color/holo_red_light"
+        tools:layout_editor_absoluteX="185dp"
+        tools:layout_editor_absoluteY="398dp" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="80px"
+        android:layout_height="40px"
+        android:background="@android:color/holo_red_light"
+        android:text="  2"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:background="@android:color/holo_red_light"
+        tools:layout_editor_absoluteX="114dp"
+        tools:layout_editor_absoluteY="398dp" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="80px"
+        android:layout_height="40px"
+        android:background="@android:color/holo_red_light"
+        android:text="3"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:background="@android:color/holo_red_light"
+        tools:layout_editor_absoluteX="149dp"
+        tools:layout_editor_absoluteY="398dp" />
+
+    <EditText
+        android:id="@+id/editText6"
+        style="@style/Widget.AppCompat.AutoCompleteTextView"
+        android:layout_width="255px"
+        android:layout_height="255px"
+        android:layout_alignLeft="@+id/usernameText"
+        android:layout_alignStart="@+id/usernameText"
+        android:layout_below="@+id/usernameText"
+        android:background="@android:drawable/editbox_background"
+        android:capitalize="none"
+        android:editable="false"
+        android:ems="10"
+        android:inputType="text"
+        android:password="false"
+        android:selectAllOnFocus="false"
+        android:singleLine="false"
+        android:text="---255x255---"
+        android:textColor="?attr/colorControlNormal"
+        android:textSize="@dimen/activity_horizontal_margin"
+        tools:ignore="Deprecated,MissingConstraints,UnknownIdInLayout"
+        tools:layout_editor_absoluteX="114dp"
+        tools:layout_editor_absoluteY="176dp" />
+
+    <EditText
+        android:id="@+id/editText5"
+        style="@style/Widget.AppCompat.AutoCompleteTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/usernameText"
+        android:layout_alignStart="@+id/usernameText"
+        android:layout_below="@+id/usernameText"
+        android:background="@android:drawable/editbox_background"
+        android:capitalize="none"
+        android:ems="10"
+        android:inputType="text"
+        android:password="false"
+        android:selectAllOnFocus="false"
+        android:singleLine="false"
+        tools:layout_editor_absoluteX="114dp"
+        tools:layout_editor_absoluteY="95dp"
+        tools:ignore="Deprecated,MissingConstraints,UnknownIdInLayout" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Store Name"
+        android:textColor="@android:color/black"
+        tools:ignore="HardcodedText,MissingConstraints"
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="103dp" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Store Icon"
+        android:textColor="@android:color/black"
+        tools:ignore="HardcodedText,MissingConstraints"
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="184dp" />
+
+    <Button
+        android:id="@+id/uploadIconbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upload Icon"
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="317dp" />
+
+    <Button
+        android:id="@+id/chooseIconButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="choose Icon"
+        tools:layout_editor_absoluteX="225dp"
+        tools:layout_editor_absoluteY="317dp" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Step 1"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="42dp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/black_overlay"
+        android:text="next >"
+        tools:layout_editor_absoluteX="239dp"
+        tools:layout_editor_absoluteY="445dp" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="80px"
+        android:layout_height="40px"
+        android:text="  1"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="78dp"
+        tools:layout_editor_absoluteY="398dp" />
+
+</android.support.constraint.ConstraintLayout>
