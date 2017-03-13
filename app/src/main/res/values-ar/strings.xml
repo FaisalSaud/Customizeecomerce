@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Customize e comerce</string>
+    <string name="title_activity_create_account">إنشاء جساب جديد</string>
+    <string name="title_activity_main_page">الصفحة الرئيسية</string>
+</resources>
