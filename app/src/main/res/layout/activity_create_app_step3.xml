@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.abu.customizeecomerce.CreateAppStep3">
+
+    <EditText
+        android:id="@+id/bar4"
+        style="@style/Widget.AppCompat.AutoCompleteTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/usernameText"
+        android:layout_alignStart="@+id/usernameText"
+        android:layout_below="@+id/usernameText"
+        android:background="@android:drawable/editbox_background"
+        android:capitalize="none"
+        android:ems="10"
+        android:inputType="text"
+        android:password="false"
+        android:selectAllOnFocus="false"
+        android:singleLine="false"
+        tools:ignore="Deprecated,MissingConstraints,UnknownIdInLayout"
+        tools:layout_editor_absoluteX="85dp"
+        android:visibility="gone"
+        tools:layout_editor_absoluteY="324dp" />
+
+    <EditText
+        android:id="@+id/bar3"
+        style="@style/Widget.AppCompat.AutoCompleteTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/usernameText"
+        android:layout_alignStart="@+id/usernameText"
+        android:layout_below="@+id/usernameText"
+        android:background="@android:drawable/editbox_background"
+        android:capitalize="none"
+        android:ems="10"
+        android:inputType="text"
+        android:password="false"
+        android:selectAllOnFocus="false"
+        android:singleLine="false"
+        android:visibility="gone"
+        tools:ignore="Deprecated,MissingConstraints,UnknownIdInLayout"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="274dp" />
+
+    <EditText
+        android:id="@+id/bar2"
+        style="@style/Widget.AppCompat.AutoCompleteTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/usernameText"
+        android:layout_alignStart="@+id/usernameText"
+        android:layout_below="@+id/usernameText"
+        android:background="@android:drawable/editbox_background"
+        android:capitalize="none"
+        android:ems="10"
+        android:inputType="text"
+        android:visibility="gone"
+        android:password="false"
+        android:selectAllOnFocus="false"
+        android:singleLine="false"
+        tools:ignore="Deprecated,MissingConstraints,UnknownIdInLayout"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="227dp" />
+
+    <EditText
+        android:id="@+id/bar1"
+        style="@style/Widget.AppCompat.AutoCompleteTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/usernameText"
+        android:layout_alignStart="@+id/usernameText"
+        android:layout_below="@+id/usernameText"
+        android:background="@android:drawable/editbox_background"
+        android:capitalize="none"
+        android:ems="10"
+        android:inputType="text"
+        android:password="false"
+        android:selectAllOnFocus="false"
+        android:singleLine="false"
+        tools:ignore="Deprecated,MissingConstraints,UnknownIdInLayout"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="176dp" />
+
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/black_overlay"
+        android:text="next >"
+        tools:ignore="HardcodedText"
+        tools:layout_editor_absoluteX="239dp"
+        tools:layout_editor_absoluteY="445dp" />
+
+    <TextView
+        android:id="@+id/textView32"
+        android:layout_width="80px"
+        android:layout_height="40px"
+        android:background="@android:color/holo_green_dark"
+        android:text="  1"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="65dp"
+        tools:layout_editor_absoluteY="398dp"
+        tools:ignore="HardcodedText,PxUsage" />
+
+    <TextView
+        android:id="@+id/textView33"
+        android:layout_width="80px"
+        android:layout_height="40px"
+        android:background="@android:color/holo_green_dark"
+        android:text="  2"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="105dp"
+        tools:layout_editor_absoluteY="398dp"
+        tools:ignore="HardcodedText,PxUsage" />
+
+    <TextView
+        android:id="@+id/textView34"
+        android:layout_width="80px"
+        android:layout_height="40px"
+        android:background="@color/cardview_light_background"
+        android:text="3"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="145dp"
+        tools:layout_editor_absoluteY="398dp"
+        tools:ignore="HardcodedText,PxUsage" />
+
+    <TextView
+        android:id="@+id/textView35"
+        android:layout_width="80px"
+        android:layout_height="40px"
+        android:background="@android:color/holo_red_light"
+        android:text="  4"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:background="@android:color/holo_red_light"
+        tools:layout_editor_absoluteX="185dp"
+        tools:layout_editor_absoluteY="398dp"
+        tools:ignore="HardcodedText,PxUsage" />
+
+    <TextView
+        android:id="@+id/textView36"
+        android:layout_width="80px"
+        android:layout_height="40px"
+        android:background="@android:color/holo_red_light"
+        android:text="  5"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:background="@android:color/holo_red_light"
+        tools:layout_editor_absoluteX="225dp"
+        tools:layout_editor_absoluteY="398dp"
+        tools:ignore="HardcodedText,PxUsage" />
+
+    <TextView
+        android:id="@+id/textView37"
+        android:layout_width="80px"
+        android:layout_height="40px"
+        android:background="@android:color/holo_red_light"
+        android:text="  6"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:background="@android:color/holo_red_light"
+        tools:layout_editor_absoluteX="265dp"
+        tools:layout_editor_absoluteY="398dp"
+        tools:ignore="HardcodedText,PxUsage" />
+
+    <TextView
+        android:id="@+id/textView38"
+        android:layout_width="80px"
+        android:layout_height="40px"
+        android:background="@android:color/holo_red_light"
+        android:text="  7"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:background="@android:color/holo_red_light"
+        tools:layout_editor_absoluteX="305dp"
+        tools:layout_editor_absoluteY="398dp"
+        tools:ignore="HardcodedText,PxUsage" />
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Step 3"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="42dp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Bar"
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="116dp"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/removeBarButton"
+        android:layout_width="41dp"
+        android:layout_height="39dp"
+        android:background="@color/black_overlay"
+        android:text="-"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="327dp"
+        android:visibility="gone"
+        tools:layout_editor_absoluteY="104dp"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/addBarButton"
+        android:layout_width="41dp"
+        android:layout_height="39dp"
+        android:background="@color/black_overlay"
+        android:onClick="addBar"
+        android:text="+"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="265dp"
+        tools:layout_editor_absoluteY="104dp"
+        tools:ignore="HardcodedText" />
+
+</android.support.constraint.ConstraintLayout>
