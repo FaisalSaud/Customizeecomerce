@@ -1,5 +1,6 @@
 package com.example.abu.customizeecomerce;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -12,12 +13,13 @@ public class Login extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        Button LogIn = (Button) findViewById(R.id.Login);
-        LogIn.setOnClickListener(new View.OnClickListener(){
+        final Button LogIn = (Button) findViewById(R.id.Login);
+
+        LogIn.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                Toast.makeText(getApplicationContext() , "Work in progress ...",
-                        Toast.LENGTH_SHORT).show();
+            public void onClick(View v) {
+                Intent i = new Intent(Login.this, MainActivity.class);
+                startActivity(i);
             }
         });
     }

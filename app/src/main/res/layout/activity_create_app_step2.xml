@@ -23,7 +23,7 @@
         tools:layout_editor_absoluteY="370dp" />
 
     <Button
-        android:id="@+id/button8"
+        android:id="@+id/nextButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@color/black_overlay"

@@ -16,7 +16,7 @@ public class StartPage extends AppCompatActivity {
         Button Create = (Button) findViewById(R.id.CreateAccount);
         Button Login = (Button) findViewById(R.id.Login);
         Button AboutUs = (Button) findViewById(R.id.AboutUs);
-        ImageButton purchaseBasket = (ImageButton) findViewById(R.id.PurchaseBasket);
+        //ImageButton purchaseBasket = (ImageButton) findViewById(R.id.PurchaseBasket);
         Create.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
