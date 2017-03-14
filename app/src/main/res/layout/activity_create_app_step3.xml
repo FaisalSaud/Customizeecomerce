@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -71,9 +71,6 @@
         style="@style/Widget.AppCompat.AutoCompleteTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/usernameText"
-        android:layout_alignStart="@+id/usernameText"
-        android:layout_below="@+id/usernameText"
         android:background="@android:drawable/editbox_background"
         android:capitalize="none"
         android:ems="10"
@@ -83,14 +80,20 @@
         android:singleLine="false"
         tools:ignore="Deprecated,MissingConstraints,UnknownIdInLayout"
         tools:layout_editor_absoluteX="85dp"
-        tools:layout_editor_absoluteY="176dp" />
+        tools:layout_editor_absoluteY="176dp"
+        android:layout_alignTop="@+id/addBarButton"
+        android:layout_centerHorizontal="true" />
 
     <Button
         android:id="@+id/nextButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView29"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/textView29"
+        android:layout_marginBottom="16dp"
         android:background="@color/black_overlay"
-        android:text="next >"
+        android:text="@string/next"
         tools:ignore="HardcodedText"
         tools:layout_editor_absoluteX="239dp"
         tools:layout_editor_absoluteY="445dp" />
@@ -106,7 +109,13 @@
         android:textStyle="bold"
         tools:layout_editor_absoluteX="65dp"
         tools:layout_editor_absoluteY="398dp"
-        tools:ignore="HardcodedText,PxUsage" />
+        tools:ignore="HardcodedText,PxUsage"
+        android:layout_alignBaseline="@+id/textView33"
+        android:layout_alignBottom="@+id/textView33"
+        android:layout_toRightOf="@+id/bar4"
+        android:layout_toEndOf="@+id/bar4"
+        android:layout_marginLeft="90dp"
+        android:layout_marginStart="90dp" />
 
     <TextView
         android:id="@+id/textView33"
@@ -119,7 +128,13 @@
         android:textStyle="bold"
         tools:layout_editor_absoluteX="105dp"
         tools:layout_editor_absoluteY="398dp"
-        tools:ignore="HardcodedText,PxUsage" />
+        tools:ignore="HardcodedText,PxUsage"
+        android:layout_alignBaseline="@+id/textView34"
+        android:layout_alignBottom="@+id/textView34"
+        android:layout_toLeftOf="@+id/textView34"
+        android:layout_toStartOf="@+id/textView34"
+        android:layout_marginRight="8dp"
+        android:layout_marginEnd="8dp" />
 
     <TextView
         android:id="@+id/textView34"
@@ -132,7 +147,13 @@
         android:textStyle="bold"
         tools:layout_editor_absoluteX="145dp"
         tools:layout_editor_absoluteY="398dp"
-        tools:ignore="HardcodedText,PxUsage" />
+        tools:ignore="HardcodedText,PxUsage"
+        android:layout_alignBaseline="@+id/textView35"
+        android:layout_alignBottom="@+id/textView35"
+        android:layout_toLeftOf="@+id/textView35"
+        android:layout_toStartOf="@+id/textView35"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp" />
 
     <TextView
         android:id="@+id/textView35"
@@ -146,7 +167,11 @@
         tools:background="@android:color/holo_red_light"
         tools:layout_editor_absoluteX="185dp"
         tools:layout_editor_absoluteY="398dp"
-        tools:ignore="HardcodedText,PxUsage" />
+        tools:ignore="HardcodedText,PxUsage"
+        android:layout_alignBaseline="@+id/textView36"
+        android:layout_alignBottom="@+id/textView36"
+        android:layout_alignRight="@+id/nextButton"
+        android:layout_alignEnd="@+id/nextButton" />
 
     <TextView
         android:id="@+id/textView36"
@@ -160,7 +185,11 @@
         tools:background="@android:color/holo_red_light"
         tools:layout_editor_absoluteX="225dp"
         tools:layout_editor_absoluteY="398dp"
-        tools:ignore="HardcodedText,PxUsage" />
+        tools:ignore="HardcodedText,PxUsage"
+        android:layout_alignBaseline="@+id/textView37"
+        android:layout_alignBottom="@+id/textView37"
+        android:layout_toLeftOf="@+id/textView37"
+        android:layout_toStartOf="@+id/textView37" />
 
     <TextView
         android:id="@+id/textView37"
@@ -174,7 +203,13 @@
         tools:background="@android:color/holo_red_light"
         tools:layout_editor_absoluteX="265dp"
         tools:layout_editor_absoluteY="398dp"
-        tools:ignore="HardcodedText,PxUsage" />
+        tools:ignore="HardcodedText,PxUsage"
+        android:layout_above="@+id/nextButton"
+        android:layout_toLeftOf="@+id/addBarButton"
+        android:layout_toStartOf="@+id/addBarButton"
+        android:layout_marginRight="13dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="46dp" />
 
     <TextView
         android:id="@+id/textView38"
@@ -188,18 +223,28 @@
         tools:background="@android:color/holo_red_light"
         tools:layout_editor_absoluteX="305dp"
         tools:layout_editor_absoluteY="398dp"
-        tools:ignore="HardcodedText,PxUsage" />
+        tools:ignore="HardcodedText,PxUsage"
+        android:layout_alignBaseline="@+id/textView37"
+        android:layout_alignBottom="@+id/textView37"
+        android:layout_toRightOf="@+id/bar1"
+        android:layout_toEndOf="@+id/bar1" />
 
     <TextView
         android:id="@+id/textView29"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Step 3"
+        android:layout_below="@+id/bar4"
+        android:layout_marginLeft="19dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="34dp"
+        android:layout_toEndOf="@+id/textView32"
+        android:layout_toRightOf="@+id/textView32"
+        android:text="@string/Step3"
         android:textColor="@android:color/black"
         android:textSize="24sp"
+        tools:ignore="HardcodedText"
         tools:layout_editor_absoluteX="40dp"
-        tools:layout_editor_absoluteY="42dp"
-        tools:ignore="HardcodedText" />
+        tools:layout_editor_absoluteY="42dp" />
 
     <TextView
         android:id="@+id/textView16"
@@ -208,7 +253,11 @@
         android:text="Add Bar"
         tools:layout_editor_absoluteX="40dp"
         tools:layout_editor_absoluteY="116dp"
-        tools:ignore="HardcodedText" />
+        tools:ignore="HardcodedText"
+        android:layout_below="@+id/textView29"
+        android:layout_alignRight="@+id/textView32"
+        android:layout_alignEnd="@+id/textView32"
+        android:layout_marginTop="63dp" />
 
     <Button
         android:id="@+id/removeBarButton"
@@ -232,6 +281,12 @@
         android:textSize="24sp"
         tools:layout_editor_absoluteX="265dp"
         tools:layout_editor_absoluteY="104dp"
-        tools:ignore="HardcodedText" />
+        tools:ignore="HardcodedText"
+        android:layout_below="@+id/textView29"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="22dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginTop="144dp" />
 
-</android.support.constraint.ConstraintLayout>
+</RelativeLayout>

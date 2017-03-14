@@ -1,23 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.abu.customizeecomerce.CreateAppStep1">
-
-    <TextView
-        android:id="@+id/textView24"
-        android:layout_width="80px"
-        android:layout_height="40px"
-        android:background="@android:color/holo_red_light"
-        android:text="  7"
-        android:textAlignment="center"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        tools:background="@android:color/holo_red_light"
-        tools:layout_editor_absoluteX="292dp"
-        tools:layout_editor_absoluteY="398dp" />
 
     <TextView
         android:id="@+id/textView22"
@@ -30,7 +17,11 @@
         android:textStyle="bold"
         tools:background="@android:color/holo_red_light"
         tools:layout_editor_absoluteX="258dp"
-        tools:layout_editor_absoluteY="398dp" />
+        tools:layout_editor_absoluteY="398dp"
+        android:layout_alignBaseline="@+id/textView21"
+        android:layout_alignBottom="@+id/textView21"
+        android:layout_toLeftOf="@+id/textView21"
+        android:layout_toEndOf="@+id/textView21" />
 
     <TextView
         android:id="@+id/textView21"
@@ -43,7 +34,11 @@
         android:textStyle="bold"
         tools:background="@android:color/holo_red_light"
         tools:layout_editor_absoluteX="225dp"
-        tools:layout_editor_absoluteY="398dp" />
+        tools:layout_editor_absoluteY="398dp"
+        android:layout_alignBaseline="@+id/textView20"
+        android:layout_alignBottom="@+id/textView20"
+        android:layout_toLeftOf="@+id/textView20"
+        android:layout_toEndOf="@+id/textView20" />
 
     <TextView
         android:id="@+id/textView20"
@@ -56,7 +51,11 @@
         android:textStyle="bold"
         tools:background="@android:color/holo_red_light"
         tools:layout_editor_absoluteX="185dp"
-        tools:layout_editor_absoluteY="398dp" />
+        tools:layout_editor_absoluteY="398dp"
+        android:layout_alignBaseline="@+id/textView19"
+        android:layout_alignBottom="@+id/textView19"
+        android:layout_toLeftOf="@+id/textView19"
+        android:layout_toEndOf="@+id/textView19" />
 
     <TextView
         android:id="@+id/textView18"
@@ -69,7 +68,11 @@
         android:textStyle="bold"
         tools:background="@android:color/holo_red_light"
         tools:layout_editor_absoluteX="114dp"
-        tools:layout_editor_absoluteY="398dp" />
+        tools:layout_editor_absoluteY="398dp"
+        android:layout_alignBaseline="@+id/textView15"
+        android:layout_alignBottom="@+id/textView15"
+        android:layout_toLeftOf="@+id/textView15"
+        android:layout_toEndOf="@+id/textView15" />
 
     <TextView
         android:id="@+id/textView19"
@@ -82,16 +85,17 @@
         android:textStyle="bold"
         tools:background="@android:color/holo_red_light"
         tools:layout_editor_absoluteX="149dp"
-        tools:layout_editor_absoluteY="398dp" />
+        tools:layout_editor_absoluteY="398dp"
+        android:layout_alignBaseline="@+id/textView15"
+        android:layout_alignBottom="@+id/textView15"
+        android:layout_alignLeft="@+id/chooseIconButton"
+        android:layout_alignEnd="@+id/chooseIconButton" />
 
     <EditText
         android:id="@+id/editText6"
         style="@style/Widget.AppCompat.AutoCompleteTextView"
         android:layout_width="255px"
         android:layout_height="255px"
-        android:layout_alignLeft="@+id/usernameText"
-        android:layout_alignStart="@+id/usernameText"
-        android:layout_below="@+id/usernameText"
         android:background="@android:drawable/editbox_background"
         android:capitalize="none"
         android:editable="false"
@@ -105,26 +109,11 @@
         android:textSize="@dimen/activity_horizontal_margin"
         tools:ignore="Deprecated,MissingConstraints,UnknownIdInLayout"
         tools:layout_editor_absoluteX="114dp"
-        tools:layout_editor_absoluteY="176dp" />
-
-    <EditText
-        android:id="@+id/editText5"
-        style="@style/Widget.AppCompat.AutoCompleteTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/usernameText"
-        android:layout_alignStart="@+id/usernameText"
-        android:layout_below="@+id/usernameText"
-        android:background="@android:drawable/editbox_background"
-        android:capitalize="none"
-        android:ems="10"
-        android:inputType="text"
-        android:password="false"
-        android:selectAllOnFocus="false"
-        android:singleLine="false"
-        tools:layout_editor_absoluteX="114dp"
-        tools:layout_editor_absoluteY="95dp"
-        tools:ignore="Deprecated,MissingConstraints,UnknownIdInLayout" />
+        tools:layout_editor_absoluteY="176dp"
+        android:layout_marginBottom="106dp"
+        android:layout_above="@+id/uploadIconbutton"
+        android:layout_alignLeft="@+id/textView19"
+        android:layout_alignStart="@+id/textView19" />
 
     <TextView
         android:id="@+id/textView11"
@@ -134,7 +123,11 @@
         android:textColor="@android:color/black"
         tools:ignore="HardcodedText,MissingConstraints"
         tools:layout_editor_absoluteX="40dp"
-        tools:layout_editor_absoluteY="103dp" />
+        tools:layout_editor_absoluteY="103dp"
+        android:layout_marginBottom="32dp"
+        android:layout_above="@+id/editText6"
+        android:layout_alignRight="@+id/textView12"
+        android:layout_alignStart="@+id/textView12" />
 
     <TextView
         android:id="@+id/textView12"
@@ -144,7 +137,13 @@
         android:textColor="@android:color/black"
         tools:ignore="HardcodedText,MissingConstraints"
         tools:layout_editor_absoluteX="40dp"
-        tools:layout_editor_absoluteY="184dp" />
+        tools:layout_editor_absoluteY="184dp"
+        android:layout_alignBaseline="@+id/editText6"
+        android:layout_alignBottom="@+id/editText6"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="21dp"
+        android:layout_marginStart="21dp" />
 
     <Button
         android:id="@+id/uploadIconbutton"
@@ -152,7 +151,13 @@
         android:layout_height="wrap_content"
         android:text="@string/UploadIcon"
         tools:layout_editor_absoluteX="40dp"
-        tools:layout_editor_absoluteY="317dp" />
+        tools:layout_editor_absoluteY="317dp"
+        android:layout_alignBaseline="@+id/chooseIconButton"
+        android:layout_alignBottom="@+id/chooseIconButton"
+        android:layout_toLeftOf="@+id/chooseIconButton"
+        android:layout_toEndOf="@+id/chooseIconButton"
+        android:layout_marginRight="49dp"
+        android:layout_marginStart="49dp" />
 
     <Button
         android:id="@+id/chooseIconButton"
@@ -160,17 +165,27 @@
         android:layout_height="wrap_content"
         android:text="@string/ChooseIcon"
         tools:layout_editor_absoluteX="225dp"
-        tools:layout_editor_absoluteY="317dp" />
+        tools:layout_editor_absoluteY="317dp"
+        android:layout_marginRight="27dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginBottom="51dp"
+        android:layout_above="@+id/nextButton"
+        android:layout_alignRight="@+id/textView12"
+        android:layout_alignStart="@+id/textView12" />
 
     <TextView
         android:id="@+id/textView14"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:text="@string/Step1"
         android:textColor="@android:color/black"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="40dp"
-        tools:layout_editor_absoluteY="42dp" />
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="26dp"
+        android:layout_below="@+id/editText5"
+        android:layout_alignRight="@+id/textView18"
+        android:layout_alignEnd="@+id/textView18"
+        android:layout_marginTop="32dp" />
 
     <Button
         android:id="@+id/nextButton"
@@ -179,7 +194,13 @@
         android:background="@color/black_overlay"
         android:text="@string/next"
         tools:layout_editor_absoluteX="239dp"
-        tools:layout_editor_absoluteY="445dp" />
+        tools:layout_editor_absoluteY="445dp"
+        android:layout_marginBottom="15dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginEnd="15dp" />
 
     <TextView
         android:id="@+id/textView15"
@@ -190,6 +211,29 @@
         android:textSize="16sp"
         android:textStyle="bold"
         tools:layout_editor_absoluteX="78dp"
-        tools:layout_editor_absoluteY="398dp" />
+        tools:layout_editor_absoluteY="398dp"
+        android:layout_above="@+id/nextButton"
+        android:layout_alignLeft="@+id/textView12"
+        android:layout_alignEnd="@+id/textView12" />
 
-</android.support.constraint.ConstraintLayout>
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Step1"
+        android:layout_alignTop="@+id/textView14"
+        android:layout_alignLeft="@+id/editText6"
+        android:layout_alignStart="@+id/editText6" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editText6"
+        android:layout_marginBottom="15dp"
+        android:layout_toEndOf="@+id/textView14"
+        android:layout_toRightOf="@+id/textView14"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+</RelativeLayout>

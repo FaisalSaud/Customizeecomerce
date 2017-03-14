@@ -14,14 +14,14 @@
         android:id="@+id/Submit_Create"
         android:layout_width="200px"
         android:layout_height="100px"
-        android:background="@android:drawable/progress_horizontal"
-        android:text="submite"
-        android:textColor="@android:color/background_light"
+        android:layout_alignEnd="@+id/phoneText"
         android:layout_alignParentBottom="true"
         android:layout_alignRight="@+id/phoneText"
-        android:layout_alignEnd="@+id/phoneText"
         android:layout_marginBottom="51dp"
-        android:onClick="showMessage"/>
+        android:background="@android:drawable/progress_horizontal"
+        android:onClick="showMessage"
+        android:text="@string/Submit"
+        android:textColor="@android:color/background_light" />
 
     <TextView
         android:id="@+id/textView5"

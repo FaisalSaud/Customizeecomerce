@@ -115,4 +115,16 @@
     <string name="ChooseIcon">Choose Icon</string>
     <string name="next"><![CDATA[next >]]></string>
     <string name="Step2">Step 2</string>
+    <string name="Step3">Step 3</string>
+    <string name="Step4">Step 4</string>
+    <string name="PromotionSlide">Promotion Slide</string>
+    <string name="CustomerTrackOrder">Customer track order</string>
+    <string name="ProvideCoupons">Provide coupons</string>
+    <string name="PaymentMethod">Payment method:</string>
+    <string name="Mada">Mada</string>
+    <string name="Cash">Cash</string>
+    <string name="DeliveryMethod">Delivery method:</string>
+    <string name="InStore">In store</string>
+    <string name="ByHand">By hand</string>
+    <string name="Submit">Submit</string>
 </resources>

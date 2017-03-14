@@ -22,4 +22,16 @@
     <string name="StoreName">اسم المتجر</string>
     <string name="UploadIcon">ارفع شعار</string>
     <string name="next">التالي</string>
+    <string name="ByHand">يدا بيد</string>
+    <string name="Cash">نقدا</string>
+    <string name="CustomerTrackOrder">المستخدم يتتبع طلبيته</string>
+    <string name="DeliveryMethod">طرق التوصيل</string>
+    <string name="InStore">في المتجر</string>
+    <string name="Mada">مدى</string>
+    <string name="PaymentMethod">طرق الدفع</string>
+    <string name="PromotionSlide">عرض ترويجي</string>
+    <string name="ProvideCoupons">تقديم كوبونات</string>
+    <string name="Step3">الخطوة 3</string>
+    <string name="Step4">الخطوة 4</string>
+    <string name="Submit">سجل</string>
 </resources>
