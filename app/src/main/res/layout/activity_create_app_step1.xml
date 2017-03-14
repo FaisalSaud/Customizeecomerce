@@ -130,7 +130,7 @@
         android:id="@+id/textView11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Store Name"
+        android:text="@string/StoreName"
         android:textColor="@android:color/black"
         tools:ignore="HardcodedText,MissingConstraints"
         tools:layout_editor_absoluteX="40dp"
@@ -140,7 +140,7 @@
         android:id="@+id/textView12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Store Icon"
+        android:text="@string/StoreIcon"
         android:textColor="@android:color/black"
         tools:ignore="HardcodedText,MissingConstraints"
         tools:layout_editor_absoluteX="40dp"
@@ -150,7 +150,7 @@
         android:id="@+id/uploadIconbutton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Upload Icon"
+        android:text="@string/UploadIcon"
         tools:layout_editor_absoluteX="40dp"
         tools:layout_editor_absoluteY="317dp" />
 
@@ -158,7 +158,7 @@
         android:id="@+id/chooseIconButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="choose Icon"
+        android:text="@string/ChooseIcon"
         tools:layout_editor_absoluteX="225dp"
         tools:layout_editor_absoluteY="317dp" />
 
@@ -166,7 +166,7 @@
         android:id="@+id/textView14"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Step 1"
+        android:text="@string/Step1"
         android:textColor="@android:color/black"
         android:textSize="24sp"
         tools:layout_editor_absoluteX="40dp"
@@ -177,7 +177,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@color/black_overlay"
-        android:text="next >"
+        android:text="@string/next"
         tools:layout_editor_absoluteX="239dp"
         tools:layout_editor_absoluteY="445dp" />
 

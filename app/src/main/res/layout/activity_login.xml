@@ -49,25 +49,25 @@
         tools:ignore="Deprecated" />
 
     <TextView
-        android:text="Username"
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/textView"
-        android:textSize="18sp"
         android:layout_above="@+id/editText2"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
+        android:text="@string/username"
+        android:textSize="18sp"
         tools:ignore="HardcodedText" />
 
     <TextView
-        android:text="Password"
+        android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/textView6"
-        android:textSize="18sp"
         android:layout_alignBottom="@+id/editText2"
-        android:layout_alignRight="@+id/textView"
         android:layout_alignEnd="@+id/textView"
+        android:layout_alignRight="@+id/textView"
+        android:text="@string/Password"
+        android:textSize="18sp"
         tools:ignore="HardcodedText" />
 
     <Button
@@ -84,17 +84,17 @@
         tools:ignore="HardcodedText" />
 
     <TextView
-        android:text="Log in"
-        android:layout_marginTop="37dp"
         android:id="@+id/textView9"
-        android:layout_height="70px"
-        android:textSize="18sp"
         android:layout_width="300px"
-        android:layout_marginRight="41dp"
-        android:layout_marginEnd="41dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
+        android:layout_height="70px"
         android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="41dp"
+        android:layout_marginRight="41dp"
+        android:layout_marginTop="37dp"
+        android:text="@string/Login"
+        android:textSize="18sp"
         tools:ignore="HardcodedText,PxUsage" />
 
     <TextView

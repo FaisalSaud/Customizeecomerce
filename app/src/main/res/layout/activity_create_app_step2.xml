@@ -27,7 +27,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@color/black_overlay"
-        android:text="next >"
+        android:text="@string/next"
         tools:layout_editor_absoluteX="244dp"
         tools:layout_editor_absoluteY="503dp" />
 
@@ -124,7 +124,7 @@
         android:id="@+id/textView30"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Step 2"
+        android:text="@string/Step2"
         android:textColor="@android:color/black"
         android:textSize="24sp"
         tools:layout_editor_absoluteX="37dp"

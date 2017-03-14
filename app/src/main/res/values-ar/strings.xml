@@ -1,6 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Customize e comerce</string>
+    <string name="app_name">متجري</string>
     <string name="title_activity_create_account">إنشاء جساب جديد</string>
     <string name="title_activity_main_page">الصفحة الرئيسية</string>
+    <string name="username">إسم المستخدم</string>
+    <string name="title_activity_purchase_basket" translatable="false">سلة التسوق</string>
+    <string name="AboutUs">من نحن</string>
+    <string name="ChooseIcon">إختيار شعار</string>
+    <string name="CreateAccount">إنشاء حساب</string>
+    <string name="CreateNewStore">إنشاء متجر جديد</string>
+    <string name="EMail">البريد الإلكتروني</string>
+    <string name="HowToStart">كيف تبدأ</string>
+    <string name="Login">تسجيل الدخول</string>
+    <string name="MyStores">متاجري</string>
+    <string name="Password">كلمة المرور</string>
+    <string name="PhoneNumber">رقم الجوال</string>
+    <string name="RePassword">إعادة كلمة المرور</string>
+    <string name="Step1">الخطوة 1</string>
+    <string name="Step2">الخطوة 2</string>
+    <string name="StoreIcon">شعار المتجر</string>
+    <string name="StoreName">اسم المتجر</string>
+    <string name="UploadIcon">ارفع شعار</string>
+    <string name="next">التالي</string>
 </resources>

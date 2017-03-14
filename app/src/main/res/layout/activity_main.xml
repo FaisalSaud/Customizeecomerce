@@ -18,7 +18,7 @@
         android:layout_alignParentTop="true"
         android:layout_alignStart="@+id/myApp"
         android:layout_marginTop="68dp"
-        android:text="Create New Store"
+        android:text="@string/CreateNewStore"
         tools:ignore="HardcodedText,PxUsage" />
 
     <Button
@@ -28,7 +28,7 @@
         android:layout_below="@+id/createApp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="68dp"
-        android:text="My Stores"
+        android:text="@string/MyStores"
         tools:ignore="HardcodedText,PxUsage" />
 
     <Button
@@ -38,6 +38,6 @@
         android:layout_below="@+id/myApp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="68dp"
-        android:text="How To Start"
+        android:text="@string/HowToStart"
         tools:ignore="HardcodedText,PxUsage" />
 </RelativeLayout>
