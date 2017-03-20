@@ -256,52 +256,41 @@
         tools:layout_editor_absoluteY="227dp" />
 
     <TextView
-        android:id="@+id/textView53"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="-76dp"
-        tools:layout_editor_absoluteY="130dp"
-        android:layout_below="@+id/checkBox"
-        android:layout_toLeftOf="@+id/textView56"
-        android:layout_toStartOf="@+id/textView56" />
-
-    <TextView
         android:id="@+id/textView23"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView53"
-        android:layout_marginTop="23dp"
-        android:layout_toLeftOf="@+id/checkBox8"
-        android:layout_toStartOf="@+id/checkBox8"
+        android:layout_marginTop="22dp"
         android:text="@string/PaymentMethod"
         android:textColor="@android:color/background_dark"
         tools:layout_editor_absoluteX="40dp"
-        tools:layout_editor_absoluteY="270dp" />
+        tools:layout_editor_absoluteY="270dp"
+        android:layout_below="@+id/checkBox3"
+        android:layout_alignRight="@+id/checkBox3"
+        android:layout_alignEnd="@+id/checkBox3" />
 
     <TextView
         android:id="@+id/textView56"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView49"
-        android:layout_alignStart="@+id/textView49"
-        android:layout_below="@+id/checkBox7"
         android:text="@string/DeliveryMethod"
         android:textColor="@android:color/background_dark"
         tools:layout_editor_absoluteX="41dp"
-        tools:layout_editor_absoluteY="203dp" />
+        tools:layout_editor_absoluteY="203dp"
+        android:layout_below="@+id/checkBox7"
+        android:layout_alignLeft="@+id/textView23"
+        android:layout_alignStart="@+id/textView23" />
 
     <CheckBox
         android:id="@+id/checkBox5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/checkBox7"
         android:layout_alignBottom="@+id/checkBox7"
         android:layout_alignLeft="@+id/checkBox2"
         android:layout_alignStart="@+id/checkBox2"
         android:text="@string/Cash"
         tools:layout_editor_absoluteX="65dp"
-        tools:layout_editor_absoluteY="290dp" />
+        tools:layout_editor_absoluteY="290dp"
+        android:layout_alignTop="@+id/checkBox7" />
 
     <CheckBox
         android:id="@+id/checkBox6"
