@@ -29,18 +29,24 @@ public class Login extends AppCompatActivity {
 
     }
     public void login(View view){
-        EditText email = (EditText)findViewById(R.id.email);
-        EditText pass = (EditText)findViewById(R.id.password);
-        con.signInWithEmailAndPassword(email.getText().toString(),pass.getText().toString()).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
-            @Override
-            public void onComplete(@NonNull Task<AuthResult> task) {
-                if(task.isSuccessful()){
-                    Intent i = new Intent(Login.this, MainActivity.class);
-                    startActivity(i);
+        try {
+            EditText email = (EditText) findViewById(R.id.email);
+            EditText pass = (EditText) findViewById(R.id.password);
+            con.signInWithEmailAndPassword(email.getText().toString(), pass.getText().toString()).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                @Override
+                public void onComplete(@NonNull Task<AuthResult> task) {
+                    if (task.isSuccessful()) {
+                        Intent i = new Intent(Login.this, MainActivity.class);
+                        startActivity(i);
+                    } else
+                        Toast.makeText(Login.this, "Wrong email/password", Toast.LENGTH_LONG).show();
                 }
-                else
-                    Toast.makeText(Login.this, "Wrong email/password", Toast.LENGTH_LONG).show();
-            }
-        });
+            });
+        }
+
+       catch (Exception e){
+        Toast.makeText(this," missing field(s) ",Toast.LENGTH_LONG).show();
+        }
+
     }
 }

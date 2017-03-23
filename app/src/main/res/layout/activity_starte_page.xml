@@ -15,42 +15,51 @@
         android:id="@+id/AboutUs"
         style="@android:style/Widget.Button"
         android:layout_width="match_parent"
-        android:layout_height="150px"
-        android:layout_below="@+id/Login"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="34dp"
+        android:layout_height="180px"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="173dp"
+        android:layout_weight="1"
         android:fontFamily="sans-serif-smallcaps"
         android:text="@string/AboutUs"
-        tools:ignore="HardcodedText,PxUsage,UnusedAttribute" />
+        tools:ignore="HardcodedText,PxUsage,UnusedAttribute"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="243dp" />
 
     <Button
         android:id="@+id/CreateAccount"
         style="@android:style/Widget.Button"
         android:layout_width="match_parent"
-        android:layout_height="150px"
+        android:layout_height="180px"
+        android:layout_above="@+id/Login"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="66dp"
+        android:layout_marginBottom="43dp"
+        android:layout_weight="1"
         android:fontFamily="sans-serif-smallcaps"
         android:text="@string/CreateAccount"
-        tools:ignore="HardcodedText,PxUsage,UnusedAttribute" />
+        tools:ignore="HardcodedText,PxUsage,UnusedAttribute"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="162dp" />
 
     <Button
         android:id="@+id/Login"
         style="@android:style/Widget.Button"
         android:layout_width="match_parent"
-        android:layout_height="150px"
+        android:layout_height="180px"
+        android:layout_above="@+id/AboutUs"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/CreateAccount"
-        android:layout_marginTop="25dp"
+        android:layout_marginBottom="34dp"
+        android:layout_weight="1"
         android:fontFamily="sans-serif-smallcaps"
         android:scrollHorizontally="false"
         android:text="@string/Login"
         android:textSize="14sp"
-        tools:ignore="HardcodedText,PxUsage,UnusedAttribute" />
-
+        tools:ignore="HardcodedText,PxUsage,UnusedAttribute"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="81dp" />
 
 
 </RelativeLayout>

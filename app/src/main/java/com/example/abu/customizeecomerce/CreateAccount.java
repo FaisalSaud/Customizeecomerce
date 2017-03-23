@@ -1,5 +1,6 @@
 package com.example.abu.customizeecomerce;
 
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -67,16 +68,18 @@ public class CreateAccount extends AppCompatActivity {
                 @Override
                 public void onComplete(@NonNull Task<AuthResult> task) {
                     if (task.isSuccessful()){
+                        Intent i = new Intent(CreateAccount.this, StartPage.class);
+                        startActivity(i);
                         Toast.makeText(CreateAccount.this, " success",Toast.LENGTH_LONG).show();
                     }
                     else
-                        Toast.makeText(CreateAccount.this," error occured ",Toast.LENGTH_LONG).show();
+                        Toast.makeText(CreateAccount.this," no connection",Toast.LENGTH_LONG).show();
 
                 }
             });
         }
         }catch (Exception e){
-            Toast.makeText(this," error in ",Toast.LENGTH_LONG).show();
+            Toast.makeText(this," missing field(s) ",Toast.LENGTH_LONG).show();
         }
 
     }
