@@ -6,6 +6,126 @@
     android:layout_height="match_parent"
     tools:context="com.example.abu.customizeecomerce.CreateAppStep2">
 
+    <TextView
+        android:id="@+id/textView33"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:background="@android:color/holo_green_dark"
+        android:text="  1"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView26"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:layout_constraintBaseline_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_alignBaseline="@+id/textView34"
+        android:layout_alignBottom="@+id/textView34"
+        android:layout_toLeftOf="@+id/textView34"
+        android:layout_toStartOf="@+id/textView34" />
+
+    <TextView
+        android:id="@+id/textView34"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:layout_alignBaseline="@+id/textView35"
+        android:layout_alignBottom="@+id/textView35"
+        android:layout_toLeftOf="@+id/textView35"
+        android:layout_toStartOf="@+id/textView35"
+        android:background="@android:color/white"
+        android:text="  2"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@+id/textView25"
+        app:layout_constraintRight_toRightOf="@+id/textView27"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1" />
+
+    <TextView
+        android:id="@+id/textView35"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:background="@android:color/holo_green_dark"
+        android:text="3"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView26"
+        app:layout_constraintLeft_toRightOf="@+id/textView25"
+        app:layout_constraintRight_toRightOf="@+id/textView28"
+        tools:layout_constraintBaseline_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        android:layout_alignBaseline="@+id/textView36"
+        android:layout_alignBottom="@+id/textView36"
+        android:layout_toLeftOf="@+id/textView36"
+        android:layout_toStartOf="@+id/textView36" />
+
+    <TextView
+        android:id="@+id/textView36"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:layout_alignBaseline="@+id/textView37"
+        android:layout_alignBottom="@+id/textView37"
+        android:layout_toLeftOf="@+id/textView37"
+        android:layout_toStartOf="@+id/textView37"
+        android:background="@android:color/holo_green_dark"
+        android:text="  4"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView27"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintBaseline_creator="1"
+        tools:layout_constraintRight_creator="1" />
+
+    <TextView
+        android:id="@+id/textView37"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:background="@android:color/holo_red_light"
+        android:text="  5"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView47"
+        app:layout_constraintLeft_toLeftOf="@+id/textView28"
+        app:layout_constraintRight_toRightOf="@+id/textView47"
+        tools:background="@android:color/holo_red_light"
+        tools:layout_constraintBaseline_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        android:layout_alignBaseline="@+id/textView38"
+        android:layout_alignBottom="@+id/textView38"
+        android:layout_toLeftOf="@+id/textView38"
+        android:layout_toStartOf="@+id/textView38" />
+
+    <TextView
+        android:id="@+id/textView38"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:background="@android:color/holo_red_light"
+        android:text="6"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView47"
+        app:layout_constraintLeft_toLeftOf="@+id/textView47"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:background="@android:color/holo_red_light"
+        tools:layout_constraintBaseline_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        android:layout_below="@+id/button6"
+        android:layout_alignRight="@+id/textView31"
+        android:layout_alignEnd="@+id/textView31"
+        android:layout_marginRight="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="23dp" />
+
     <Button
         android:id="@+id/button6"
         android:layout_width="wrap_content"
@@ -27,10 +147,10 @@
         android:text="choose Icon"
         tools:layout_editor_absoluteX="225dp"
         tools:layout_editor_absoluteY="370dp"
-        android:layout_marginBottom="74dp"
+        android:layout_marginBottom="68dp"
         android:layout_above="@+id/nextButton"
-        android:layout_toLeftOf="@+id/textView43"
-        android:layout_toStartOf="@+id/textView43" />
+        android:layout_alignLeft="@+id/textView31"
+        android:layout_alignStart="@+id/textView31" />
 
     <Button
         android:id="@+id/nextButton"
@@ -48,129 +168,6 @@
         android:layout_marginBottom="10dp" />
 
     <TextView
-        android:id="@+id/textView39"
-        android:layout_width="80px"
-        android:layout_height="40px"
-        android:background="@android:color/holo_green_dark"
-        android:text="  1"
-        android:textAlignment="center"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        tools:layout_editor_absoluteX="57dp"
-        tools:layout_editor_absoluteY="453dp"
-        android:layout_alignBaseline="@+id/textView40"
-        android:layout_alignBottom="@+id/textView40"
-        android:layout_toLeftOf="@+id/textView40"
-        android:layout_toStartOf="@+id/textView40"
-        android:layout_marginRight="7dp"
-        android:layout_marginEnd="7dp" />
-
-    <TextView
-        android:id="@+id/textView40"
-        android:layout_width="80px"
-        android:layout_height="40px"
-        android:background="@android:color/background_light"
-        android:text="  2"
-        android:textAlignment="center"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        tools:layout_editor_absoluteX="97dp"
-        tools:layout_editor_absoluteY="453dp"
-        android:layout_alignBaseline="@+id/textView41"
-        android:layout_alignBottom="@+id/textView41"
-        android:layout_toLeftOf="@+id/textView41"
-        android:layout_toStartOf="@+id/textView41" />
-
-    <TextView
-        android:id="@+id/textView41"
-        android:layout_width="80px"
-        android:layout_height="40px"
-        android:background="@android:color/holo_red_light"
-        android:text="3"
-        android:textAlignment="center"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        tools:background="@android:color/holo_red_light"
-        tools:layout_editor_absoluteX="137dp"
-        tools:layout_editor_absoluteY="453dp"
-        android:layout_alignBaseline="@+id/textView42"
-        android:layout_alignBottom="@+id/textView42"
-        android:layout_toLeftOf="@+id/textView42"
-        android:layout_toStartOf="@+id/textView42" />
-
-    <TextView
-        android:id="@+id/textView42"
-        android:layout_width="80px"
-        android:layout_height="40px"
-        android:background="@android:color/holo_red_light"
-        android:text="  4"
-        android:textAlignment="center"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        tools:background="@android:color/holo_red_light"
-        tools:layout_editor_absoluteX="172dp"
-        tools:layout_editor_absoluteY="453dp"
-        android:layout_alignBaseline="@+id/textView43"
-        android:layout_alignBottom="@+id/textView43"
-        android:layout_toLeftOf="@+id/textView43"
-        android:layout_toStartOf="@+id/textView43"
-        android:layout_marginRight="7dp"
-        android:layout_marginEnd="7dp" />
-
-    <TextView
-        android:id="@+id/textView43"
-        android:layout_width="80px"
-        android:layout_height="40px"
-        android:background="@android:color/holo_red_light"
-        android:text="  5"
-        android:textAlignment="center"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        tools:background="@android:color/holo_red_light"
-        tools:layout_editor_absoluteX="212dp"
-        tools:layout_editor_absoluteY="453dp"
-        android:layout_alignBaseline="@+id/textView44"
-        android:layout_alignBottom="@+id/textView44"
-        android:layout_alignRight="@+id/textView30"
-        android:layout_alignEnd="@+id/textView30" />
-
-    <TextView
-        android:id="@+id/textView44"
-        android:layout_width="80px"
-        android:layout_height="40px"
-        android:background="@android:color/holo_red_light"
-        android:text="  6"
-        android:textAlignment="center"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        tools:background="@android:color/holo_red_light"
-        tools:layout_editor_absoluteX="252dp"
-        tools:layout_editor_absoluteY="453dp"
-        android:layout_alignBaseline="@+id/textView45"
-        android:layout_alignBottom="@+id/textView45"
-        android:layout_toLeftOf="@+id/textView45"
-        android:layout_toStartOf="@+id/textView45"
-        android:layout_marginRight="7dp"
-        android:layout_marginEnd="7dp" />
-
-    <TextView
-        android:id="@+id/textView45"
-        android:layout_width="80px"
-        android:layout_height="40px"
-        android:background="@android:color/holo_red_light"
-        android:text="  7"
-        android:textAlignment="center"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        tools:background="@android:color/holo_red_light"
-        tools:layout_editor_absoluteX="292dp"
-        tools:layout_editor_absoluteY="453dp"
-        android:layout_marginTop="7dp"
-        android:layout_below="@+id/button6"
-        android:layout_alignLeft="@+id/nextButton"
-        android:layout_alignStart="@+id/nextButton" />
-
-    <TextView
         android:id="@+id/textView30"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -179,10 +176,12 @@
         android:textSize="24sp"
         tools:layout_editor_absoluteX="37dp"
         tools:layout_editor_absoluteY="30dp"
+        android:layout_marginTop="25dp"
         android:layout_alignParentTop="true"
-        android:layout_toLeftOf="@+id/textView44"
-        android:layout_toStartOf="@+id/textView44"
-        android:layout_marginTop="21dp" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="23dp"
+        android:layout_marginStart="23dp" />
 
     <TextView
         android:id="@+id/textView31"
@@ -191,10 +190,7 @@
         android:text="__________________500X400px___________________"
         tools:layout_editor_absoluteX="3dp"
         tools:layout_editor_absoluteY="99dp"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="74dp"
         android:layout_below="@+id/textView30"
-        android:layout_alignRight="@+id/button6"
-        android:layout_alignEnd="@+id/button6"
-        android:layout_marginRight="30dp"
-        android:layout_marginEnd="30dp" />
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>

@@ -13,10 +13,12 @@
     <Button
         android:id="@+id/createApp"
         android:layout_width="400px"
-        android:layout_height="125px"
-        android:layout_alignLeft="@+id/myApp"
+        android:layout_height="150px"
+        android:layout_alignEnd="@+id/myApp"
         android:layout_alignParentTop="true"
-        android:layout_alignStart="@+id/myApp"
+        android:layout_alignRight="@+id/myApp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
         android:layout_marginTop="68dp"
         android:text="@string/CreateNewStore"
         tools:ignore="HardcodedText,PxUsage" />

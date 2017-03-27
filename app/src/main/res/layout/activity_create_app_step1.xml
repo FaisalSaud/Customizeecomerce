@@ -7,89 +7,122 @@
     tools:context="com.example.abu.customizeecomerce.CreateAppStep1">
 
     <TextView
-        android:id="@+id/textView22"
-        android:layout_width="80px"
-        android:layout_height="40px"
-        android:background="@android:color/holo_red_light"
-        android:text="  6"
+        android:id="@+id/textView15"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:layout_alignBaseline="@+id/textView19"
+        android:layout_alignBottom="@+id/textView19"
+        android:layout_alignEnd="@+id/textView11"
+        android:layout_alignRight="@+id/textView11"
+        android:background="@android:color/white"
+        android:text="  1"
         android:textAlignment="center"
         android:textSize="16sp"
         android:textStyle="bold"
-        tools:background="@android:color/holo_red_light"
-        tools:layout_editor_absoluteX="258dp"
-        tools:layout_editor_absoluteY="398dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView26"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:layout_constraintBaseline_creator="1"
+        tools:layout_constraintLeft_creator="1" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:background="@android:color/holo_green_dark"
+        android:text="  2"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@+id/textView25"
+        app:layout_constraintRight_toRightOf="@+id/textView27"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        android:layout_alignBaseline="@+id/textView20"
+        android:layout_alignBottom="@+id/textView20"
+        android:layout_toLeftOf="@+id/textView20"
+        android:layout_toStartOf="@+id/textView20" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:background="@android:color/holo_green_dark"
+        android:text="3"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView26"
+        app:layout_constraintLeft_toRightOf="@+id/textView25"
+        app:layout_constraintRight_toRightOf="@+id/textView28"
+        tools:layout_constraintBaseline_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
         android:layout_alignBaseline="@+id/textView21"
         android:layout_alignBottom="@+id/textView21"
         android:layout_toLeftOf="@+id/textView21"
-        android:layout_toEndOf="@+id/textView21" />
+        android:layout_toStartOf="@+id/textView21" />
 
     <TextView
         android:id="@+id/textView21"
-        android:layout_width="80px"
-        android:layout_height="40px"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:layout_alignBaseline="@+id/textView22"
+        android:layout_alignBottom="@+id/textView22"
+        android:layout_toLeftOf="@+id/textView22"
+        android:layout_toStartOf="@+id/textView22"
+        android:background="@android:color/holo_green_dark"
+        android:text="  4"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView27"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintBaseline_creator="1"
+        tools:layout_constraintRight_creator="1" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
         android:background="@android:color/holo_red_light"
         android:text="  5"
         android:textAlignment="center"
         android:textSize="16sp"
         android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView47"
+        app:layout_constraintLeft_toLeftOf="@+id/textView28"
+        app:layout_constraintRight_toRightOf="@+id/textView47"
         tools:background="@android:color/holo_red_light"
-        tools:layout_editor_absoluteX="225dp"
-        tools:layout_editor_absoluteY="398dp"
-        android:layout_alignBaseline="@+id/textView20"
-        android:layout_alignBottom="@+id/textView20"
-        android:layout_toLeftOf="@+id/textView20"
-        android:layout_toEndOf="@+id/textView20" />
+        tools:layout_constraintBaseline_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        android:layout_alignBaseline="@+id/textView39"
+        android:layout_alignBottom="@+id/textView39"
+        android:layout_toLeftOf="@+id/textView39"
+        android:layout_toStartOf="@+id/textView39" />
 
     <TextView
-        android:id="@+id/textView20"
-        android:layout_width="80px"
-        android:layout_height="40px"
+        android:id="@+id/textView39"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
         android:background="@android:color/holo_red_light"
-        android:text="  4"
+        android:text="6"
         android:textAlignment="center"
         android:textSize="16sp"
         android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView47"
+        app:layout_constraintLeft_toLeftOf="@+id/textView47"
+        app:layout_constraintRight_toRightOf="parent"
         tools:background="@android:color/holo_red_light"
-        tools:layout_editor_absoluteX="185dp"
-        tools:layout_editor_absoluteY="398dp"
-        android:layout_alignBaseline="@+id/textView19"
-        android:layout_alignBottom="@+id/textView19"
-        android:layout_toLeftOf="@+id/textView19"
-        android:layout_toEndOf="@+id/textView19" />
-
-    <TextView
-        android:id="@+id/textView18"
-        android:layout_width="80px"
-        android:layout_height="40px"
-        android:background="@android:color/holo_red_light"
-        android:text="  2"
-        android:textAlignment="center"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        tools:background="@android:color/holo_red_light"
-        tools:layout_editor_absoluteX="114dp"
-        tools:layout_editor_absoluteY="398dp"
-        android:layout_alignBaseline="@+id/textView15"
-        android:layout_alignBottom="@+id/textView15"
-        android:layout_toLeftOf="@+id/textView15"
-        android:layout_toEndOf="@+id/textView15" />
-
-    <TextView
-        android:id="@+id/textView19"
-        android:layout_width="80px"
-        android:layout_height="40px"
-        android:background="@android:color/holo_red_light"
-        android:text="3"
-        android:textAlignment="center"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        tools:background="@android:color/holo_red_light"
-        tools:layout_editor_absoluteX="149dp"
-        tools:layout_editor_absoluteY="398dp"
-        android:layout_alignBaseline="@+id/textView15"
-        android:layout_alignBottom="@+id/textView15"
-        android:layout_alignLeft="@+id/chooseIconButton"
-        android:layout_alignEnd="@+id/chooseIconButton" />
+        tools:layout_constraintBaseline_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        android:layout_above="@+id/nextButton"
+        android:layout_alignLeft="@+id/nextButton"
+        android:layout_alignStart="@+id/nextButton"
+        android:layout_marginBottom="9dp" />
 
     <EditText
         android:id="@+id/storeIcon"
@@ -110,10 +143,12 @@
         tools:ignore="Deprecated,MissingConstraints,UnknownIdInLayout"
         tools:layout_editor_absoluteX="114dp"
         tools:layout_editor_absoluteY="176dp"
-        android:layout_above="@+id/uploadIconbutton"
-        android:layout_toLeftOf="@+id/nextButton"
-        android:layout_toStartOf="@+id/nextButton"
-        android:layout_marginBottom="40dp" />
+        android:layout_below="@+id/storeName"
+        android:layout_alignRight="@+id/storeName"
+        android:layout_alignEnd="@+id/storeName"
+        android:layout_marginRight="17dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginTop="27dp" />
 
     <TextView
         android:id="@+id/textView11"
@@ -166,12 +201,12 @@
         android:text="@string/ChooseIcon"
         tools:layout_editor_absoluteX="225dp"
         tools:layout_editor_absoluteY="317dp"
-        android:layout_marginRight="27dp"
-        android:layout_marginStart="27dp"
-        android:layout_marginBottom="51dp"
-        android:layout_above="@+id/nextButton"
-        android:layout_alignRight="@+id/textView12"
-        android:layout_alignStart="@+id/textView12" />
+        android:layout_marginStart="18dp"
+        android:layout_below="@+id/storeIcon"
+        android:layout_alignLeft="@+id/textView12"
+        android:layout_alignStart="@+id/textView12"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="42dp" />
 
     <Button
         android:id="@+id/nextButton"
@@ -189,28 +224,15 @@
         android:layout_marginEnd="15dp" />
 
     <TextView
-        android:id="@+id/textView15"
-        android:layout_width="80px"
-        android:layout_height="40px"
-        android:text="  1"
-        android:textAlignment="center"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        tools:layout_editor_absoluteX="78dp"
-        tools:layout_editor_absoluteY="398dp"
-        android:layout_above="@+id/nextButton"
-        android:layout_alignLeft="@+id/textView12"
-        android:layout_alignEnd="@+id/textView12" />
-
-    <TextView
         android:id="@+id/textView16"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/Step1"
-        android:layout_alignParentTop="true"
         android:layout_alignLeft="@+id/textView11"
+        android:layout_alignParentTop="true"
         android:layout_alignStart="@+id/textView11"
-        android:layout_marginTop="35dp" />
+        android:layout_marginTop="35dp"
+        android:text="@string/Step1"
+        android:textSize="24sp" />
 
     <EditText
         android:id="@+id/storeName"
@@ -218,9 +240,11 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
-        android:layout_above="@+id/storeIcon"
-        android:layout_toRightOf="@+id/textView18"
-        android:layout_toEndOf="@+id/textView18"
-        android:layout_marginBottom="36dp" />
+        android:layout_marginTop="38dp"
+        android:layout_below="@+id/textView16"
+        android:layout_alignRight="@+id/nextButton"
+        android:layout_alignEnd="@+id/nextButton"
+        android:layout_marginRight="9dp"
+        android:layout_marginEnd="9dp" />
 
 </RelativeLayout>
