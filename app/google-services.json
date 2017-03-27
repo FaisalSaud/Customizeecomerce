@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "460391516085",
+    "firebase_url": "https://customizeecomerce.firebaseio.com",
+    "project_id": "customizeecomerce",
+    "storage_bucket": "customizeecomerce.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:460391516085:android:3fc528e41011db5c",
+        "android_client_info": {
+          "package_name": "com.example.abu.customizeecomerce"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "460391516085-1f877n8uvvtccqrpkk02hvdnsk1ug40r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.abu.customizeecomerce",
+            "certificate_hash": "8b95c6b08be6675a603297a68330d542edd2a8da"
+          }
+        },
+        {
+          "client_id": "460391516085-gn6n33fbuth2u0uh46mpqbldc06ikbq6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBeqZYMJ1mwe86lvIe8BYQgfgIuLkr9aS8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "460391516085-gn6n33fbuth2u0uh46mpqbldc06ikbq6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
