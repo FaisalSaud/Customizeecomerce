@@ -26,7 +26,13 @@
         <activity android:name=".CreateAppStep3" />
         <activity android:name=".CreateAppStep4" />
         <activity android:name=".CreateAppStep5" />
-        <activity android:name=".CreateAppStepFinal"></activity>
+        <activity android:name=".CreateAppStepFinal" />
+        <activity android:name=".UserMainPage" />
+        <activity android:name=".Bar1" />
+        <activity android:name=".Bar2" />
+        <activity android:name=".Bar3" />
+        <activity android:name=".Bar4" />
+        <activity android:name=".PurchaseBasket"></activity>
     </application>
 
 </manifest>
