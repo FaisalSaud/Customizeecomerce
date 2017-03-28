@@ -235,6 +235,7 @@
         tools:layout_editor_absoluteX="40dp"
         tools:layout_editor_absoluteY="42dp"
         android:layout_below="@+id/bar4"
+
         android:layout_alignRight="@+id/textView16"
         android:layout_alignEnd="@+id/textView16" />
 
