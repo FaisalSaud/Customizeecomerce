@@ -38,17 +38,22 @@ public class CreateAppStep3 extends AppCompatActivity {
             EditText a = (EditText) findViewById(R.id.bar2);
             a.setVisibility(View.VISIBLE);
 
+            Button removeBarButton = (Button) findViewById(R.id.removeBarButton);
+            removeBarButton.setVisibility(View.VISIBLE);
+
         }
         else if (cont==2) {
             EditText a = (EditText) findViewById(R.id.bar3);
             a.setVisibility(View.VISIBLE);
+
         }
         else if (cont==3) {
-            EditText a = (EditText) findViewById(R.id.bar4);
+            EditText a = (EditText) findViewById(R.id.bar44);
             a.setVisibility(View.VISIBLE);
             Toast.makeText(this, "you have reached the bar limit", Toast.LENGTH_LONG).show();
             Button addBarButton = (Button) findViewById(R.id.addBarButton);
             addBarButton.setVisibility(View.GONE);
+
         }
         cont++;
 
@@ -66,7 +71,7 @@ public class CreateAppStep3 extends AppCompatActivity {
             a.setVisibility(View.GONE);
         }
         else if (cont==4) {
-            EditText a = (EditText) findViewById(R.id.bar4);
+            EditText a = (EditText) findViewById(R.id.bar44);
             a.setVisibility(View.GONE);
             Button addBarButton = (Button) findViewById(R.id.addBarButton);
             addBarButton.setVisibility(View.VISIBLE);

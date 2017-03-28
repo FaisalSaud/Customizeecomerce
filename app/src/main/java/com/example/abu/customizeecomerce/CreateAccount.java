@@ -52,19 +52,45 @@ public class CreateAccount extends AppCompatActivity {
             String eMailS = eMail.getText().toString();
 
 
-        if(((!passwordS.equals(rePasswordS)) || ( passwordS.length() > 16)||(passwordS.length() < 5))){
-            if(!(passwordS.equals(rePasswordS))) {
-                Toast.makeText(this, " the passwords NOT match ", Toast.LENGTH_LONG).show();    //to show error message
-            }else if ( passwordS.length() > 16){
-                Toast.makeText(this, " the password is too long ", Toast.LENGTH_LONG).show();   //to show error message
-            }else{
-                Toast.makeText(this, " the password is too short ", Toast.LENGTH_LONG).show();  //to show error message
+            //check if user name empty
+            if (usernameS.isEmpty()){
+                Toast.makeText(this,"user name is empty please fill it",Toast.LENGTH_LONG).show();
+                return;
             }
-            return;
-        }else{
+
+            //check if password empty
+            if (passwordS.isEmpty()){
+                Toast.makeText(this,"password is empty please fill it",Toast.LENGTH_LONG).show();
+                return;
+            }
+
+            //skip the check for rePassword because it will check if it is == wit password
+
+            //check if phone NO empty
+            if (phoneNoS.isEmpty()){
+                Toast.makeText(this,"phone number is empty please fill it",Toast.LENGTH_LONG).show();
+                return;
+            }
+
+            //check if email empty
+            if (eMailS.isEmpty()){
+                Toast.makeText(this,"e-mail is empty please fill it",Toast.LENGTH_LONG).show();
+                return;
+            }
+
+            if(((!passwordS.equals(rePasswordS)) || ( passwordS.length() > 16)||(passwordS.length() < 5))){
+                if(!(passwordS.equals(rePasswordS))) {
+                    Toast.makeText(this, " the passwords NOT match ", Toast.LENGTH_LONG).show();    //to show error message
+                }else if ( passwordS.length() > 16){
+                    Toast.makeText(this, " the password is too long ", Toast.LENGTH_LONG).show();   //to show error message
+                }else{
+                    Toast.makeText(this, " the password is too short ", Toast.LENGTH_LONG).show();  //to show error message
+                }
+                return;
+            }else{
 
 
-            mAuth.createUserWithEmailAndPassword(eMailS,passwordS).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                mAuth.createUserWithEmailAndPassword(eMailS,passwordS).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                 @Override
                 public void onComplete(@NonNull Task<AuthResult> task) {
                     if (task.isSuccessful()){
@@ -75,9 +101,9 @@ public class CreateAccount extends AppCompatActivity {
                     else
                         Toast.makeText(CreateAccount.this," no connection",Toast.LENGTH_LONG).show();
 
-                }
-            });
-        }
+                    }
+                });
+            }
         }catch (Exception e){
             Toast.makeText(this," missing field(s) ",Toast.LENGTH_LONG).show();
         }
