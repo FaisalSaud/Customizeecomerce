@@ -15,7 +15,8 @@ public class MainActivity extends AppCompatActivity {
         Button createNewApp = (Button) findViewById(R.id.createApp);
         Button myApp = (Button) findViewById(R.id.myApp);
         Button howToStart = (Button) findViewById(R.id.howToStart);
-
+        // ST is a test button
+        Button ST = (Button) findViewById(R.id.button8);
         createNewApp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -23,6 +24,14 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(i);
             }
         });
+        ST.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(MainActivity.this, UserMainPage.class);
+                startActivity(i);
+            }
+        });
+
 //        myApp.setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View v) {

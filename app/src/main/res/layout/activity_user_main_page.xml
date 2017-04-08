@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -12,7 +12,7 @@
         android:layout_height="62dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Background"
+        android:text="@string/Background"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="2dp" />
 
@@ -20,17 +20,29 @@
         android:id="@+id/textView41"
         android:layout_width="132dp"
         android:layout_height="66dp"
-        android:text="Slide Show"
+        android:text="item 1"
         tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="250dp" />
+        tools:layout_editor_absoluteY="250dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="108dp" />
 
     <TextView
         android:id="@+id/textView44"
         android:layout_width="132dp"
         android:layout_height="67dp"
-        android:text="Slide Show"
+        android:text="item 2"
         tools:layout_editor_absoluteX="158dp"
-        tools:layout_editor_absoluteY="250dp" />
+        tools:layout_editor_absoluteY="250dp"
+        android:layout_alignBaseline="@+id/textView41"
+        android:layout_alignBottom="@+id/textView41"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="18dp"
+        android:layout_marginEnd="18dp" />
 
     <TextView
         android:id="@+id/textView42"
@@ -38,38 +50,56 @@
         android:layout_height="108dp"
         android:text="Slide Show"
         tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="112dp" />
+        tools:layout_editor_absoluteY="112dp"
+        android:layout_above="@+id/textView44"
+        android:layout_alignLeft="@+id/textView41"
+        android:layout_alignStart="@+id/textView41"
+        android:layout_marginBottom="70dp" />
 
     <Button
-        android:id="@+id/button9"
+        android:id="@+id/Bar2"
         android:layout_width="87dp"
         android:layout_height="39dp"
-        android:text="Bar2"
+        android:layout_below="@+id/editText3"
+        android:layout_marginEnd="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_toLeftOf="@+id/textView44"
+        android:layout_toStartOf="@+id/textView44"
+        android:text="@string/Bar2"
         tools:layout_editor_absoluteX="84dp"
         tools:layout_editor_absoluteY="57dp" />
 
     <Button
-        android:id="@+id/button11"
+        android:id="@+id/Bar3"
         android:layout_width="86dp"
         android:layout_height="38dp"
-        android:text="Bar3"
+        android:layout_alignBottom="@+id/Bar4"
+        android:layout_toLeftOf="@+id/Bar4"
+        android:layout_toStartOf="@+id/Bar4"
+        android:text="@string/Bar3"
         tools:layout_editor_absoluteX="173dp"
         tools:layout_editor_absoluteY="57dp" />
 
     <Button
-        android:id="@+id/button12"
+        android:id="@+id/Bar4"
         android:layout_width="85dp"
         android:layout_height="40dp"
-        android:text="Bar4"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/editText3"
+        android:text="@string/Bar4"
         tools:layout_editor_absoluteX="259dp"
         tools:layout_editor_absoluteY="57dp" />
 
     <Button
-        android:id="@+id/button10"
+        android:id="@+id/Bar1"
         android:layout_width="81dp"
         android:layout_height="38dp"
-        android:text="Bar1"
+        android:layout_alignBottom="@+id/Bar2"
+        android:layout_toLeftOf="@+id/Bar2"
+        android:layout_toStartOf="@+id/Bar2"
+        android:text="@string/Bar1"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="57dp" />
 
-</android.support.constraint.ConstraintLayout>
+</RelativeLayout>
