@@ -127,4 +127,18 @@
     <string name="InStore">In store</string>
     <string name="ByHand">By hand</string>
     <string name="Submit">Submit</string>
+    <string name="Build">Build</string>
+    <string name="ShoppingCart">Shopping cart</string>
+    <string name="Step5">Step5</string>
+    <string name="ItemName">Item Name</string>
+    <string name="UploadImage">Upload image</string>
+    <string name="SaveItem">Save Item</string>
+    <string name="ChooseBackground">Choose Background</string>
+    <string name="UploadBackground">Upload Background</string>
+    <string name="AddBar">Add Bar</string>
+    <string name="Background">Background</string>
+    <string name="Bar1" >Bar1</string>
+    <string name="Bar2">Bar2</string>
+    <string name="Bar3">Bar3</string>
+    <string name="Bar4">Bar4</string>
 </resources>

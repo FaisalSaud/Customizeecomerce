@@ -144,69 +144,6 @@
         android:layout_toStartOf="@+id/nextButton"
         android:layout_marginTop="24dp" />
 
-    <EditText
-        android:id="@+id/bar44"
-        style="@style/Widget.AppCompat.AutoCompleteTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/bar3"
-        android:layout_alignStart="@+id/bar3"
-        android:layout_below="@+id/bar3"
-        android:layout_marginTop="20dp"
-        android:background="@android:drawable/editbox_background"
-        android:capitalize="none"
-        android:ems="10"
-        android:inputType="text"
-        android:password="false"
-        android:selectAllOnFocus="false"
-        android:singleLine="false"
-        android:visibility="gone"
-        tools:ignore="Deprecated,MissingConstraints,UnknownIdInLayout"
-        tools:layout_editor_absoluteX="85dp"
-        tools:layout_editor_absoluteY="176dp" />
-
-    <EditText
-        android:id="@+id/bar3"
-        style="@style/Widget.AppCompat.AutoCompleteTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/bar2"
-        android:layout_alignStart="@+id/bar2"
-        android:layout_below="@+id/bar2"
-        android:layout_marginTop="23dp"
-        android:background="@android:drawable/editbox_background"
-        android:capitalize="none"
-        android:ems="10"
-        android:inputType="text"
-        android:password="false"
-        android:selectAllOnFocus="false"
-        android:singleLine="false"
-        android:visibility="gone"
-        tools:ignore="Deprecated,MissingConstraints,UnknownIdInLayout"
-        tools:layout_editor_absoluteX="85dp"
-        tools:layout_editor_absoluteY="176dp" />
-
-    <EditText
-        android:id="@+id/bar2"
-        style="@style/Widget.AppCompat.AutoCompleteTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/bar1"
-        android:layout_alignStart="@+id/bar1"
-        android:layout_below="@+id/bar1"
-        android:layout_marginTop="21dp"
-        android:background="@android:drawable/editbox_background"
-        android:capitalize="none"
-        android:ems="10"
-        android:inputType="text"
-        android:password="false"
-        android:selectAllOnFocus="false"
-        android:singleLine="false"
-        android:visibility="gone"
-        tools:ignore="Deprecated,MissingConstraints,UnknownIdInLayout"
-        tools:layout_editor_absoluteX="85dp"
-        tools:layout_editor_absoluteY="176dp" />
-
     <Button
         android:id="@+id/nextButton"
         android:layout_width="wrap_content"
@@ -234,8 +171,6 @@
         tools:ignore="HardcodedText"
         tools:layout_editor_absoluteX="40dp"
         tools:layout_editor_absoluteY="42dp"
-        android:layout_below="@+id/bar4"
-
         android:layout_alignRight="@+id/textView16"
         android:layout_alignEnd="@+id/textView16" />
 
@@ -243,16 +178,14 @@
         android:id="@+id/textView16"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Add Bar"
-        tools:layout_editor_absoluteX="40dp"
-        tools:layout_editor_absoluteY="116dp"
-        tools:ignore="HardcodedText"
-        android:layout_marginTop="58dp"
         android:layout_below="@+id/textView29"
-        android:layout_toRightOf="@+id/bar44"
-        android:layout_toEndOf="@+id/bar4"
         android:layout_marginLeft="63dp"
-        android:layout_marginStart="63dp" />
+        android:layout_marginStart="63dp"
+        android:layout_marginTop="58dp"
+        android:text="@string/AddBar"
+        tools:ignore="HardcodedText"
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="116dp" />
 
     <Button
         android:id="@+id/removeBarButton"
@@ -261,11 +194,12 @@
         android:background="@color/black_overlay"
         android:text="-"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="327dp"
+        tools:layout_editor_absoluteX="700dp"
         android:visibility="gone"
-        android:onClick="remorveBar"
-        tools:layout_editor_absoluteY="104dp"
-        tools:ignore="HardcodedText" />
+        tools:layout_editor_absoluteY="520dp"
+        tools:ignore="HardcodedText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <Button
         android:id="@+id/addBarButton"

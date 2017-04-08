@@ -34,4 +34,18 @@
     <string name="Step3">الخطوة 3</string>
     <string name="Step4">الخطوة 4</string>
     <string name="Submit">سجل</string>
+    <string name="Build">بناء</string>
+    <string name="AddBar">اضف عنوان فرعي</string>
+    <string name="Background">الخلفية</string>
+    <string name="Bar1">ع.ف 1</string>
+    <string name="Bar2">ع.ف2</string>
+    <string name="Bar3">ع.ف3</string>
+    <string name="Bar4">ع.ف4</string>
+    <string name="ChooseBackground">اختر خلفية</string>
+    <string name="ItemName">اسم المنتج</string>
+    <string name="SaveItem">حفظ المنتج</string>
+    <string name="ShoppingCart">عربة التسوق</string>
+    <string name="Step5">الخطوة 5</string>
+    <string name="UploadBackground">ارفع خلفية</string>
+    <string name="UploadImage">ارفع صورة</string>
 </resources>

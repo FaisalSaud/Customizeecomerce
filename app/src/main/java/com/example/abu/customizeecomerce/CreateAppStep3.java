@@ -31,7 +31,7 @@ public class CreateAppStep3 extends AppCompatActivity {
 
 
     }
-
+/*
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     public void addBar(View view){
         if (cont==1) {
@@ -80,5 +80,5 @@ public class CreateAppStep3 extends AppCompatActivity {
 
 
 
-    }
+    } */
 }

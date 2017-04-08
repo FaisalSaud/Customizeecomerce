@@ -130,27 +130,26 @@
         android:id="@+id/button6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Upload Icon"
+        android:text="@string/UploadBackground"
         tools:layout_editor_absoluteX="37dp"
         tools:layout_editor_absoluteY="370dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_alignBaseline="@+id/button7"
-        android:layout_alignBottom="@+id/button7"
-        android:layout_alignRight="@+id/nextButton"
-        android:layout_alignEnd="@+id/nextButton" />
+        android:layout_alignTop="@+id/button7"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
     <Button
         android:id="@+id/button7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="choose Icon"
+        android:layout_marginBottom="66dp"
+        android:text="@string/ChooseBackground"
         tools:layout_editor_absoluteX="225dp"
         tools:layout_editor_absoluteY="370dp"
-        android:layout_marginBottom="68dp"
         android:layout_above="@+id/nextButton"
-        android:layout_alignLeft="@+id/textView31"
-        android:layout_alignStart="@+id/textView31" />
+        android:layout_toLeftOf="@+id/textView36"
+        android:layout_toStartOf="@+id/textView36"
+        android:layout_marginRight="17dp"
+        android:layout_marginEnd="17dp" />
 
     <Button
         android:id="@+id/nextButton"

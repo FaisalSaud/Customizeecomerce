@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -10,10 +10,13 @@
         android:id="@+id/button4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/nextButton"
-        android:layout_toLeftOf="@+id/textView43"
-        android:layout_toStartOf="@+id/textView43"
-        android:text="Save Item"
+        android:layout_alignBaseline="@+id/button2"
+        android:layout_alignBottom="@+id/button2"
+        android:layout_alignEnd="@+id/editText2"
+        android:layout_alignRight="@+id/editText2"
+        android:layout_marginEnd="17dp"
+        android:layout_marginRight="17dp"
+        android:text="@string/SaveItem"
         tools:layout_editor_absoluteX="40dp"
         tools:layout_editor_absoluteY="288dp" />
 
@@ -28,7 +31,7 @@
         android:layout_marginEnd="15dp"
         android:layout_marginRight="44dp"
         android:background="@color/black_overlay"
-        android:text="@string/next"
+        android:text="@string/Build"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="@+id/textView28"
         app:layout_constraintRight_toRightOf="parent"
@@ -40,12 +43,13 @@
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/button7"
-        android:layout_alignBottom="@+id/button7"
-        android:layout_alignEnd="@+id/nextButton"
-        android:layout_alignRight="@+id/nextButton"
-        android:layout_marginEnd="16dp"
-        android:text="Upload image"
+        android:layout_above="@+id/button3"
+        android:layout_alignEnd="@+id/textView14"
+        android:layout_alignRight="@+id/textView14"
+        android:layout_marginBottom="45dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:text="@string/UploadImage"
         tools:layout_editor_absoluteX="192dp"
         tools:layout_editor_absoluteY="288dp" />
 
@@ -53,10 +57,13 @@
         android:id="@+id/textView14"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="40dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="16dp"
-        android:text="Step5"
+        android:layout_alignLeft="@+id/editText2"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/editText2"
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="21dp"
+        android:text="@string/Step5"
         android:textColor="@android:color/black"
         android:textSize="24sp"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -72,7 +79,11 @@
         android:ems="10"
         android:inputType="textPersonName"
         tools:layout_editor_absoluteX="172dp"
-        tools:layout_editor_absoluteY="142dp" />
+        tools:layout_editor_absoluteY="142dp"
+        android:layout_below="@+id/editText2"
+        android:layout_toLeftOf="@+id/button3"
+        android:layout_toStartOf="@+id/button3"
+        android:layout_marginTop="63dp" />
 
     <EditText
         android:id="@+id/editText2"
@@ -81,14 +92,21 @@
         android:ems="10"
         android:inputType="textPersonName"
         tools:layout_editor_absoluteX="127dp"
-        tools:layout_editor_absoluteY="58dp" />
+        tools:layout_editor_absoluteY="58dp"
+        android:layout_alignTop="@+id/textView17"
+        android:layout_toRightOf="@+id/textView17"
+        android:layout_toEndOf="@+id/textView17" />
 
     <TextView
         android:id="@+id/textView17"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Item Name"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView14"
+        android:layout_marginTop="36dp"
+        android:text="@string/ItemName"
         android:textSize="24sp"
         tools:layout_editor_absoluteX="9dp"
         tools:layout_editor_absoluteY="73dp" />
-</android.support.constraint.ConstraintLayout>
+</RelativeLayout>
