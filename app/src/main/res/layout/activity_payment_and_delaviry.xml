@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.abu.customizeecomerce.PaymentAndDelaviry">
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="96dp"
+        android:text="@string/PaymentMethod"
+        android:textColor="@android:color/background_dark"
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="270dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <CheckBox
+        android:id="@+id/checkBox7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:text="@string/Mada"
+        tools:layout_editor_absoluteX="145dp"
+        tools:layout_editor_absoluteY="290dp"
+        android:layout_below="@+id/textView23"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp" />
+    <CheckBox
+        android:id="@+id/checkBox5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Cash"
+        tools:layout_editor_absoluteX="65dp"
+        tools:layout_editor_absoluteY="290dp"
+        android:layout_marginLeft="59dp"
+        android:layout_marginStart="59dp"
+        android:layout_alignBaseline="@+id/checkBox7"
+        android:layout_alignBottom="@+id/checkBox7"
+        android:layout_toRightOf="@+id/textView23"
+        android:layout_toEndOf="@+id/textView23" />
+    <TextView
+        android:id="@+id/textView56"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/DeliveryMethod"
+        android:textColor="@android:color/background_dark"
+        android:layout_below="@+id/checkBox7"
+        android:layout_alignLeft="@+id/checkBox7"
+        android:layout_alignStart="@+id/checkBox7"
+        android:layout_marginTop="134dp" />
+    <CheckBox
+        android:id="@+id/checkBox6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/checkBox7"
+        android:layout_alignStart="@+id/checkBox7"
+        android:layout_below="@+id/textView56"
+        android:layout_marginTop="17dp"
+        android:text="@string/InStore"
+        tools:layout_editor_absoluteX="153dp"
+        tools:layout_editor_absoluteY="227dp" />
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ByHand"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_editor_absoluteX="64dp"
+        tools:layout_editor_absoluteY="227dp"
+        android:layout_alignBaseline="@+id/checkBox6"
+        android:layout_alignBottom="@+id/checkBox6"
+        android:layout_alignLeft="@+id/checkBox5"
+        android:layout_alignStart="@+id/checkBox5" />
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="58dp"
+        android:text="OK" />
+
+</RelativeLayout>

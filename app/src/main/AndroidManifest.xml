@@ -32,7 +32,8 @@
         <activity android:name=".Bar2" />
         <activity android:name=".Bar3" />
         <activity android:name=".Bar4" />
-        <activity android:name=".PurchaseBasket"></activity>
+        <activity android:name=".PurchaseBasket" />
+        <activity android:name=".PaymentAndDelaviry"></activity>
     </application>
 
 </manifest>
