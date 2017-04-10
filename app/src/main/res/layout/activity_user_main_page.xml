@@ -54,7 +54,8 @@
         android:layout_above="@+id/textView44"
         android:layout_alignLeft="@+id/textView41"
         android:layout_alignStart="@+id/textView41"
-        android:layout_marginBottom="70dp" />
+        android:layout_marginBottom="70dp"
+        android:visibility="gone" />
 
     <Button
         android:id="@+id/Bar2"

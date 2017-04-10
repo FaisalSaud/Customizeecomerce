@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 public class UserMainPage extends AppCompatActivity {
 
@@ -16,6 +17,7 @@ public class UserMainPage extends AppCompatActivity {
         Button Bar2 = (Button) findViewById(R.id.Bar2);
         Button Bar3 = (Button) findViewById(R.id.Bar3);
         Button Bar4 = (Button) findViewById(R.id.Bar4);
+        TextView PromoSlides = (TextView) findViewById(R.id.textView42);
         Bar1.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
