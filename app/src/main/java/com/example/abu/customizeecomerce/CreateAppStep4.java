@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.Toast;
 
 public class CreateAppStep4 extends AppCompatActivity {
 
@@ -25,12 +26,15 @@ public class CreateAppStep4 extends AppCompatActivity {
                 Intent i = new Intent(CreateAppStep4.this, CreateAppStep5.class);
                 startActivity(i);
             }
-        });
+        }); try{
         PromoSlides.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
                 userMainPage.findViewById(R.id.textView42).setVisibility(View.VISIBLE);
             }
-        });
+        });}
+        catch(Exception e){
+            Toast.makeText(CreateAppStep4.this,"Error",Toast.LENGTH_SHORT).show();
+        }
     }
 }
