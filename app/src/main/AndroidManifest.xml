@@ -2,8 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.abu.customizeecomerce">
 
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-
     <application
         android:allowBackup="true"
         android:icon="@drawable/icon"
@@ -34,8 +32,7 @@
         <activity android:name=".Bar2" />
         <activity android:name=".Bar3" />
         <activity android:name=".Bar4" />
-        <activity android:name=".PurchaseBasket" />
-        <activity android:name=".ChooseIconImage"></activity>
+        <activity android:name=".PurchaseBasket"></activity>
     </application>
 
 </manifest>
