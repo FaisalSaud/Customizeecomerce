@@ -42,7 +42,9 @@ public class Login extends AppCompatActivity {
                         Toast.makeText(Login.this, "Wrong email/password", Toast.LENGTH_LONG).show();
                 }
             });
+
         }
+
 
        catch (Exception e){
         Toast.makeText(this," missing field(s) ",Toast.LENGTH_LONG).show();

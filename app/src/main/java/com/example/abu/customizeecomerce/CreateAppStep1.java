@@ -1,5 +1,6 @@
 package com.example.abu.customizeecomerce;
 
+import android.annotation.TargetApi;
 import android.content.Intent;
 import android.database.Cursor;
 import android.graphics.Bitmap;
@@ -30,14 +31,20 @@ public class CreateAppStep1 extends AppCompatActivity {
         setContentView(R.layout.activity_create_app_step1);
 
         Button next = (Button) findViewById(R.id.nextButton);
-
+        Button chooseIcon = (Button) findViewById(R.id.chooseIconButton);
         img = (EditText) findViewById(R.id.storeIcon);
         storeName = (EditText) findViewById(R.id.storeName);
         storeNameS = storeName.getText().toString();
 
         //img.setCompoundDrawables(null, null, getResources().getDrawable(R.drawable.icon),null);
 
-
+        chooseIcon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(CreateAppStep1.this, ChooseIconImage.class);
+                startActivity(i);
+            }
+        });
 
         try{
         next.setOnClickListener(new View.OnClickListener() {
