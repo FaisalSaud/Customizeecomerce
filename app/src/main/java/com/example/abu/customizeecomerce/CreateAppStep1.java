@@ -46,17 +46,23 @@ public class CreateAppStep1 extends AppCompatActivity {
             }
         });
 
-        try{
-        next.setOnClickListener(new View.OnClickListener() {
+        if (storeNameS.isEmpty()) {
+
+            Toast.makeText(CreateAppStep1.this, "The store name is empty", Toast.LENGTH_SHORT).show();
+        }else{
+            try{
+                next.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                Intent i = new Intent(CreateAppStep1.this, CreateAppStep2.class);
-                Toast.makeText(CreateAppStep1.this, storeNameS , Toast.LENGTH_SHORT).show();
-                startActivity(i);
+                    public void onClick(View v) {
+                        Intent i = new Intent(CreateAppStep1.this, CreateAppStep2.class);
+                        Toast.makeText(CreateAppStep1.this, storeNameS , Toast.LENGTH_SHORT).show();
+                        startActivity(i);
+                    }
+                });
             }
-        });}
         catch (Exception e){
             Toast.makeText(this,"error in step 1.1", Toast.LENGTH_LONG).show();
+        }
         }
     }
 
@@ -130,6 +136,7 @@ public class CreateAppStep1 extends AppCompatActivity {
 
 //                    Toast.makeText(this, "4444444", Toast.LENGTH_LONG).show();
                     try {
+                     //   img.setBackgroundDrawable(d);
                         img.setBackground(d);
                     }catch (Exception e){
 //                        Toast.makeText(this, "555555", Toast.LENGTH_LONG).show();

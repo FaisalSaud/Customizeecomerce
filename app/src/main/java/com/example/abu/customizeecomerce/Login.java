@@ -18,6 +18,8 @@ public class Login extends AppCompatActivity {
 
 
     private FirebaseAuth con;
+    EditText email;
+    EditText pass;
 
 
     @Override
@@ -30,13 +32,15 @@ public class Login extends AppCompatActivity {
     }
     public void login(View view){
         try {
-            EditText email = (EditText) findViewById(R.id.email);
-            EditText pass = (EditText) findViewById(R.id.password);
+            email = (EditText) findViewById(R.id.email);
+            pass = (EditText) findViewById(R.id.password);
             con.signInWithEmailAndPassword(email.getText().toString(), pass.getText().toString()).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                 @Override
                 public void onComplete(@NonNull Task<AuthResult> task) {
                     if (task.isSuccessful()) {
                         Intent i = new Intent(Login.this, MainActivity.class);
+                        email.setText("");
+                        pass.setText("");
                         startActivity(i);
                     } else
                         Toast.makeText(Login.this, "Wrong email/password", Toast.LENGTH_LONG).show();

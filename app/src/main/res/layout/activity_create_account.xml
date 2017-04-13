@@ -48,11 +48,12 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/rePasswordText"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
         android:text="@string/Password"
-        android:textSize="18sp" />
+        android:textSize="18sp"
+        android:layout_alignBaseline="@+id/passwordText"
+        android:layout_alignBottom="@+id/passwordText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <TextView
         android:id="@+id/textView4"
@@ -104,7 +105,6 @@
         style="@style/Widget.AppCompat.AutoCompleteTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
         android:background="@android:drawable/editbox_background"
         android:capitalize="none"
         android:ems="10"
@@ -112,7 +112,7 @@
         android:password="false"
         android:selectAllOnFocus="false"
         android:singleLine="false"
-        android:layout_below="@+id/passwordText"
+        android:layout_centerVertical="true"
         android:layout_alignLeft="@+id/passwordText"
         android:layout_alignStart="@+id/passwordText" />
 
@@ -131,7 +131,7 @@
         android:layout_below="@+id/rePasswordText"
         android:layout_alignLeft="@+id/rePasswordText"
         android:layout_alignStart="@+id/rePasswordText"
-        android:layout_marginTop="16dp"/>
+        android:layout_marginTop="13dp" />
 
     <TextView
         android:layout_width="100px"
@@ -158,12 +158,12 @@
         android:id="@+id/textView13"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="@string/EMail"
+        android:textSize="18sp"
+        android:layout_above="@+id/Submit_Create"
         android:layout_alignLeft="@+id/textView5"
         android:layout_alignStart="@+id/textView5"
-        android:layout_below="@+id/phoneText"
-        android:layout_marginTop="16dp"
-        android:text="@string/EMail"
-        android:textSize="18sp" />
+        android:layout_marginBottom="53dp" />
 
     <EditText
         android:id="@+id/emailText"
@@ -171,12 +171,22 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textEmailAddress"
-        android:layout_alignBaseline="@+id/textView13"
-        android:layout_alignBottom="@+id/textView13"
-        android:layout_alignLeft="@+id/phoneText"
-        android:layout_alignStart="@+id/phoneText"
         style="@style/Widget.AppCompat.AutoCompleteTextView"
         android:background="@android:drawable/editbox_background"
-        android:layout_marginTop="16dp"/>
+        android:layout_alignBottom="@+id/textView13"
+        android:layout_alignLeft="@+id/phoneText"
+        android:layout_alignStart="@+id/phoneText" />
+
+    <TextView
+        android:id="@+id/textView40"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView5"
+        android:layout_alignStart="@+id/textView5"
+        android:layout_below="@+id/passwordText"
+        android:layout_marginTop="15dp"
+        android:text="* The password shoud be between 6 to 16 character"
+        android:textColor="@color/black_overlay"
+        android:visibility="visible" />
 
 </RelativeLayout>
