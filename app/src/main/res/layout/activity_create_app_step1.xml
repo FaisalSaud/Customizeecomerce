@@ -184,16 +184,27 @@
         android:id="@+id/uploadIconbutton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/chooseIconButton"
-        android:layout_alignBottom="@+id/chooseIconButton"
-        android:layout_marginRight="49dp"
-        android:layout_marginStart="49dp"
-        android:layout_toEndOf="@+id/chooseIconButton"
-        android:layout_toLeftOf="@+id/chooseIconButton"
         android:onClick="uploadImg"
         android:text="@string/UploadIcon"
         tools:layout_editor_absoluteX="40dp"
-        tools:layout_editor_absoluteY="317dp" />
+        tools:layout_editor_absoluteY="317dp"
+        android:layout_alignBaseline="@+id/chooseIconButton"
+        android:layout_alignBottom="@+id/chooseIconButton"
+        android:layout_alignRight="@+id/textView39"
+        android:layout_alignEnd="@+id/textView39" />
+
+    <Button
+        android:id="@+id/button12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="uploadImg"
+        android:text="@string/UploadIcon"
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="317dp"
+        android:layout_alignBaseline="@+id/nextButton"
+        android:layout_alignBottom="@+id/nextButton"
+        android:layout_alignLeft="@+id/textView12"
+        android:layout_alignStart="@+id/textView12" />
 
     <Button
         android:id="@+id/chooseIconButton"
@@ -214,16 +225,17 @@
         android:id="@+id/nextButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginLeft="15dp"
         android:background="@color/black_overlay"
+        android:onClick="nextButton"
         android:text="@string/next"
         tools:layout_editor_absoluteX="239dp"
-        tools:layout_editor_absoluteY="445dp"
-        android:layout_marginBottom="15dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginLeft="15dp"
-        android:layout_marginEnd="15dp" />
+        tools:layout_editor_absoluteY="445dp" />
 
     <TextView
         android:id="@+id/textView16"

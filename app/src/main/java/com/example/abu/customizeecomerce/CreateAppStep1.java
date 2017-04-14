@@ -29,18 +29,24 @@ public class CreateAppStep1 extends AppCompatActivity {
     String storeNameS;
     Button chooseIcon;
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_create_app_step1);
 
-        Button next = (Button) findViewById(R.id.nextButton);
-        chooseIcon = (Button) findViewById(R.id.chooseIconButton);
-        img = (EditText) findViewById(R.id.storeIcon);
-        storeName = (EditText) findViewById(R.id.storeName);
-        storeNameS = storeName.getText().toString();
+        @Override
+        protected void onCreate (Bundle savedInstanceState) {
 
-        //img.setCompoundDrawables(null, null, getResources().getDrawable(R.drawable.icon),null);
+            super.onCreate(savedInstanceState);
+            setContentView(R.layout.activity_create_app_step1);
+
+            Button next = (Button) findViewById(R.id.nextButton);
+            chooseIcon = (Button) findViewById(R.id.chooseIconButton);
+            img = (EditText) findViewById(R.id.storeIcon);
+
+
+            //////////////////////////////////////////////////////////////////////////////////////
+
+
+            //////////////////////////////////////////////////////////////////////////////////////
+
+            //img.setCompoundDrawables(null, null, getResources().getDrawable(R.drawable.icon),null);
 
 //        chooseIcon.setOnClickListener(new View.OnClickListener() {
 //            @Override
@@ -50,39 +56,47 @@ public class CreateAppStep1 extends AppCompatActivity {
 //            }
 //        });
 
-        if (storeNameS.isEmpty()) {
+//        if (storeNameS.isEmpty()) {
+//
+//            //Toast.makeText(CreateAppStep1.this, "The store name is empty", Toast.LENGTH_SHORT).show();
+//        }else{
+//            try{
+//                next.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//                    public void onClick(View v) {
+//                        Intent i = new Intent(CreateAppStep1.this, CreateAppStep2.class);
+//                        Toast.makeText(CreateAppStep1.this, storeNameS , Toast.LENGTH_SHORT).show();
+//                        startActivity(i);
+//                    }
+//                });
+//            }
+//        catch (Exception e){
+//            Toast.makeText(this,"error in step 1.1", Toast.LENGTH_LONG).show();
+//        }
+//        }
 
-            //Toast.makeText(CreateAppStep1.this, "The store name is empty", Toast.LENGTH_SHORT).show();
-        }else{
-            try{
-                next.setOnClickListener(new View.OnClickListener() {
-            @Override
-                    public void onClick(View v) {
-                        Intent i = new Intent(CreateAppStep1.this, CreateAppStep2.class);
-                        Toast.makeText(CreateAppStep1.this, storeNameS , Toast.LENGTH_SHORT).show();
-                        startActivity(i);
-                    }
-                });
-            }
-        catch (Exception e){
-            Toast.makeText(this,"error in step 1.1", Toast.LENGTH_LONG).show();
-        }
-        }
-    }
 
+        }
     public void nextButton (View view){
+
+        storeName = (EditText) findViewById(R.id.storeName);
+        storeNameS = storeName.getText().toString();
 
         if (storeNameS.isEmpty()){
             Toast.makeText(CreateAppStep1.this, "the Store Name is empty please" , Toast.LENGTH_SHORT).show();
             return;
         }else if (storeNameS.length()>29) {
             Toast.makeText(CreateAppStep1.this, "the Store Name is too long", Toast.LENGTH_SHORT).show();
+            return;
         }else{
 
             Toast.makeText(CreateAppStep1.this, storeNameS , Toast.LENGTH_SHORT).show();
 
             Intent i = new Intent(CreateAppStep1.this, CreateAppStep2.class);
+
             startActivity(i);
+
+
         }
     }
 
@@ -150,40 +164,15 @@ public class CreateAppStep1 extends AppCompatActivity {
 //                Toast.makeText(this, "the if is false", Toast.LENGTH_LONG).show();
                 break;
             case 2:
-                if (requestCode== Activity.RESULT_FIRST_USER){
+                if (requestCode== 2){
 
-//                    try {
-//                        CharSequence userIcon3 = data.getCharSequenceExtra("userIcon");
-//
-//                        BitmapDrawable userIcon = (BitmapDrawable) BitmapDrawable.createFromPath(data.getStringExtra("userIcon"));
-//
-//                        Drawable userIcon1 = userIcon;
-//                        img.setBackground(userI8con1);
-//
-//                    }catch (Exception e){
-//                        Toast.makeText(CreateAppStep1.this, e.getMessage() + " Create app s1" , Toast.LENGTH_LONG).show();
-//                    }
-                    Toast.makeText(CreateAppStep1.this,"2",Toast.LENGTH_LONG).show();
-                    Intent i = new Intent();
-                    Bitmap bb = (Bitmap)  i.getParcelableExtra("icon");
-                    ImageView iv = (ImageView) findViewById(R.id.imageView) ;
-                    iv.setImageBitmap(bb);
-
-                    Drawable d =  iv.getDrawable();
+                    //set the image from anther activity to this activity
+                    Bitmap bitmap = (Bitmap) data.getParcelableExtra("bitmap"); //you can delete the casting
+                    Drawable d = new BitmapDrawable(getResources(),bitmap);
 
                     img.setBackground(d);
 
 //
-//                    Bitmap b = BitmapFactory.decodeByteArray(getIntent().getByteArrayExtra("userIcon"),0,
-//                            getIntent().getByteArrayExtra("userIcon").length);
-//                    ImageView pr = new ImageView(this);
-//                    pr.setImageBitmap(b);
-//
-//                    Bitmap bitmap =(Bitmap) i.getParcelableExtra("icon");
-//                    //img.setImageBitmap(bitmap);
-//                    img.setBackground(bitmap);
-//
-//                    img.setBackground();
 
 
                 }
@@ -204,17 +193,8 @@ public class CreateAppStep1 extends AppCompatActivity {
 
     }
 
-//    protected void onActivityResult (int requestCode, int resultCode, Intent data){
-//        super.onActivityResult(requestCode, resultCode, data);
-//        if (requestCode==2){
-//            Parcelable[] userIcon2 = data.getParcelableArrayExtra("userIcon");
-//            CharSequence userIcon3 = data.getCharSequenceExtra("userIcon");
-//            Drawable userIcon = (Drawable) userIcon3;
-//            img.setBackground(userIcon);
-//
-//
-//        }
-//    }
+
+
 
 
 

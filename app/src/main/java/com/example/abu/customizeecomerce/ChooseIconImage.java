@@ -48,6 +48,68 @@ public class ChooseIconImage extends AppCompatActivity {
 
 
 
+        icon1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                BitmapDrawable bd = (BitmapDrawable) icon1.getDrawable();
+                Bitmap bitmap = (Bitmap) bd.getBitmap();
+
+                Intent i = new Intent(ChooseIconImage.this,CreateAppStep1.class);
+                i.putExtra("bitmap", bitmap);
+                setResult(2,i);
+                //finish();
+
+            }
+        });
+
+        icon2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                BitmapDrawable bd = (BitmapDrawable) icon2.getDrawable();
+                Bitmap bitmap = (Bitmap) bd.getBitmap();
+
+                Intent i = new Intent();
+                i.putExtra("bitmap", bitmap);
+                setResult(2,i);
+                finish();
+            }
+
+        });
+
+        icon6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                BitmapDrawable bd = (BitmapDrawable) icon6.getDrawable();
+                Bitmap bitmap = (Bitmap) bd.getBitmap();
+
+                Intent i = new Intent();
+                i.putExtra("bitmap", bitmap);
+                setResult(2,i);
+                finish();
+            }
+
+        });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
         icon1.setOnClickListener(new View.OnClickListener() {
@@ -60,16 +122,16 @@ public class ChooseIconImage extends AppCompatActivity {
                 Bitmap bit =icon1.getDrawingCache();
 
                 //icon1.setImageBitmap(bit);
-try {
-    Intent i = new Intent(ChooseIconImage.this,CreateAppStep1.class);
-    //Intent i = new Intent();
+                try {
+                    Intent i = new Intent(ChooseIconImage.this,CreateAppStep1.class);
+                    //Intent i = new Intent();
 
-    i.putExtra("icon", bitmap);
-    //startActivityForResult(i, 2);
-    setResult(Activity.RESULT_FIRST_USER, i);
-}catch(Exception e){
-    Toast.makeText(ChooseIconImage.this,e.getMessage(),Toast.LENGTH_LONG).show();
-}
+                    i.putExtra("icon", bitmap);
+                    //startActivityForResult(i, 2);
+                    setResult(Activity.RESULT_FIRST_USER, i);
+                }catch(Exception e){
+                    Toast.makeText(ChooseIconImage.this,e.getMessage(),Toast.LENGTH_LONG).show();
+                }
                 finish();
                 //BitmapDrawable bd = (BitmapDrawable) icon1.;
 
