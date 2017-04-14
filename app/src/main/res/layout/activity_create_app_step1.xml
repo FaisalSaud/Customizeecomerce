@@ -199,15 +199,16 @@
         android:id="@+id/chooseIconButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/ChooseIcon"
-        tools:layout_editor_absoluteX="225dp"
-        tools:layout_editor_absoluteY="317dp"
-        android:layout_marginStart="18dp"
-        android:layout_below="@+id/storeIcon"
         android:layout_alignLeft="@+id/textView12"
         android:layout_alignStart="@+id/textView12"
+        android:layout_below="@+id/storeIcon"
         android:layout_marginLeft="18dp"
-        android:layout_marginTop="42dp" />
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="42dp"
+        android:onClick="goToChooseIcon"
+        android:text="@string/ChooseIcon"
+        tools:layout_editor_absoluteX="225dp"
+        tools:layout_editor_absoluteY="317dp" />
 
     <Button
         android:id="@+id/nextButton"
@@ -245,5 +246,14 @@
         android:layout_below="@+id/textView16"
         android:layout_toRightOf="@+id/chooseIconButton"
         android:layout_toEndOf="@+id/chooseIconButton" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/storeIcon"
+        android:layout_toStartOf="@+id/storeName"
+        android:visibility="gone"
+        app:srcCompat="@android:drawable/dialog_holo_light_frame" />
 
 </RelativeLayout>
