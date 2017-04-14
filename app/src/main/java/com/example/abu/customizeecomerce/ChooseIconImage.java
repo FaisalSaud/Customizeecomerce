@@ -52,13 +52,15 @@ public class ChooseIconImage extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
+                Toast.makeText(ChooseIconImage.this,"icon 1", Toast.LENGTH_LONG).show();
+
                 BitmapDrawable bd = (BitmapDrawable) icon1.getDrawable();
                 Bitmap bitmap = (Bitmap) bd.getBitmap();
 
                 Intent i = new Intent(ChooseIconImage.this,CreateAppStep1.class);
                 i.putExtra("bitmap", bitmap);
                 setResult(2,i);
-                //finish();
+                finish();
 
             }
         });
@@ -66,6 +68,8 @@ public class ChooseIconImage extends AppCompatActivity {
         icon2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                Toast.makeText(ChooseIconImage.this,"icon 2", Toast.LENGTH_LONG).show();
 
                 BitmapDrawable bd = (BitmapDrawable) icon2.getDrawable();
                 Bitmap bitmap = (Bitmap) bd.getBitmap();
@@ -81,6 +85,8 @@ public class ChooseIconImage extends AppCompatActivity {
         icon6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                Toast.makeText(ChooseIconImage.this,"icon 6", Toast.LENGTH_LONG).show();
 
                 BitmapDrawable bd = (BitmapDrawable) icon6.getDrawable();
                 Bitmap bitmap = (Bitmap) bd.getBitmap();

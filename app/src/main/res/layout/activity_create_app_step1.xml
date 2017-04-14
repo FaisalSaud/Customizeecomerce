@@ -194,19 +194,6 @@
         android:layout_alignEnd="@+id/textView39" />
 
     <Button
-        android:id="@+id/button12"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="uploadImg"
-        android:text="@string/UploadIcon"
-        tools:layout_editor_absoluteX="40dp"
-        tools:layout_editor_absoluteY="317dp"
-        android:layout_alignBaseline="@+id/nextButton"
-        android:layout_alignBottom="@+id/nextButton"
-        android:layout_alignLeft="@+id/textView12"
-        android:layout_alignStart="@+id/textView12" />
-
-    <Button
         android:id="@+id/chooseIconButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
