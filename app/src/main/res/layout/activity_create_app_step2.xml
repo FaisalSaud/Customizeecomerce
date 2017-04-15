@@ -132,6 +132,7 @@
         android:layout_height="wrap_content"
         android:text="@string/UploadBackground"
         tools:layout_editor_absoluteX="37dp"
+        android:onClick="uploadImg"
         tools:layout_editor_absoluteY="370dp"
         android:layout_alignTop="@+id/button7"
         android:layout_alignParentRight="true"
@@ -141,15 +142,13 @@
         android:id="@+id/button7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="66dp"
+        android:layout_marginBottom="64dp"
         android:text="@string/ChooseBackground"
         tools:layout_editor_absoluteX="225dp"
         tools:layout_editor_absoluteY="370dp"
-        android:layout_above="@+id/nextButton"
-        android:layout_toLeftOf="@+id/textView36"
-        android:layout_toStartOf="@+id/textView36"
         android:layout_marginRight="17dp"
-        android:layout_marginEnd="17dp" />
+        android:layout_above="@+id/nextButton"
+        android:layout_toStartOf="@+id/textView35" />
 
     <Button
         android:id="@+id/nextButton"
