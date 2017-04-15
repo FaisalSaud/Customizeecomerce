@@ -13,17 +13,23 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class CreateAppStep2 extends AppCompatActivity {
-    private static final int SELECTED_PICTURE=1;
-EditText img;
+    private static final int SELECTED_PICTURE = 1;
+//    TextView img;
+    TextView img;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_app_step2);
 
         Button next = (Button) findViewById(R.id.nextButton);
+        img = (TextView) findViewById(R.id.backgrondImg);
+
 
 
         next.setOnClickListener(new View.OnClickListener() {
@@ -34,9 +40,10 @@ EditText img;
             }
         });
     }
-    public void uploadImg (View view){
+
+    public void uploadImg(View view) {
         Intent i = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
-        startActivityForResult(i , SELECTED_PICTURE);
+        startActivityForResult(i, SELECTED_PICTURE);
 
     }
 
@@ -45,16 +52,16 @@ EditText img;
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
 
-        Toast.makeText(CreateAppStep2.this,"before switch",Toast.LENGTH_LONG).show();
-        switch (requestCode){
+        Toast.makeText(CreateAppStep2.this, "before switch", Toast.LENGTH_LONG).show();
+        switch (requestCode) {
 
             case SELECTED_PICTURE:
-                if (!(requestCode==RESULT_OK)){
+                if (!(requestCode == RESULT_OK)) {
 
                     Uri uri = data.getData();
-                    String[]projection={MediaStore.Images.Media.DATA};
+                    String[] projection = {MediaStore.Images.Media.DATA};
 
-                    Cursor cursor= getContentResolver().query(uri, projection, null, null, null);
+                    Cursor cursor = getContentResolver().query(uri, projection, null, null, null);
                     cursor.moveToFirst();
 
                     int columnIndex = cursor.getColumnIndex(projection[0]);
@@ -66,15 +73,15 @@ EditText img;
 
                     try {
                         img.setBackground(d);
-                    }catch (Exception e){
+                    } catch (Exception e) {
                     }
                 }
                 break;
             case 2:
-                if (requestCode== 2){
+                if (requestCode == 2) {
 
                     Bitmap bitmap = (Bitmap) data.getParcelableExtra("bitmap"); //you can delete the casting
-                    Drawable d = new BitmapDrawable(getResources(),bitmap);
+                    Drawable d = new BitmapDrawable(getResources(), bitmap);
 
                     img.setBackground(d);
 
