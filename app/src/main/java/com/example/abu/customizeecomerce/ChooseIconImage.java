@@ -44,22 +44,14 @@ public class ChooseIconImage extends AppCompatActivity {
         icon5 = (ImageView) findViewById(R.id.icon5);
         icon6 = (ImageView) findViewById(R.id.icon6);
         icon7 = (ImageView) findViewById(R.id.icon7);
-        m = (ImageView) findViewById(R.id.imageView);
-
 
 
         icon1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                Toast.makeText(ChooseIconImage.this,"icon 1", Toast.LENGTH_LONG).show();
-
-                BitmapDrawable bd = (BitmapDrawable) icon1.getDrawable();
-                Bitmap bitmap = (Bitmap) bd.getBitmap();
 
                 Intent i = new Intent(ChooseIconImage.this,CreateAppStep1.class);
-                i.putExtra("bitmap", bitmap);
-                setResult(2,i);
+                CreateAppStep1.img.setBackgroundResource(R.drawable.food_icon2);
                 finish();
 
             }
@@ -69,156 +61,63 @@ public class ChooseIconImage extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Toast.makeText(ChooseIconImage.this,"icon 2", Toast.LENGTH_LONG).show();
-
-                BitmapDrawable bd = (BitmapDrawable) icon2.getDrawable();
-                Bitmap bitmap = (Bitmap) bd.getBitmap();
-
-                Intent i = new Intent();
-                i.putExtra("bitmap", bitmap);
-                setResult(2,i);
+                Intent i = new Intent(ChooseIconImage.this,CreateAppStep1.class);
+                CreateAppStep1.img.setBackgroundResource(R.drawable.bookshelf_icon);
                 finish();
             }
 
-        });
-
-        icon6.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                Toast.makeText(ChooseIconImage.this,"icon 6", Toast.LENGTH_LONG).show();
-
-                BitmapDrawable bd = (BitmapDrawable) icon6.getDrawable();
-                Bitmap bitmap = (Bitmap) bd.getBitmap();
-
-                Intent i = new Intent();
-                i.putExtra("bitmap", bitmap);
-                setResult(2,i);
-                finish();
-            }
-
-        });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        icon1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(ChooseIconImage.this,"111111111",Toast.LENGTH_LONG).show();
-                //icon1.buildDrawingCache();
-
-                icon1.setDrawingCacheEnabled(true);
-                Bitmap bit =icon1.getDrawingCache();
-
-                //icon1.setImageBitmap(bit);
-                try {
-                    Intent i = new Intent(ChooseIconImage.this,CreateAppStep1.class);
-                    //Intent i = new Intent();
-
-                    i.putExtra("icon", bitmap);
-                    //startActivityForResult(i, 2);
-                    setResult(Activity.RESULT_FIRST_USER, i);
-                }catch(Exception e){
-                    Toast.makeText(ChooseIconImage.this,e.getMessage(),Toast.LENGTH_LONG).show();
-                }
-                finish();
-                //BitmapDrawable bd = (BitmapDrawable) icon1.;
-
-
-
-
-
-//                try {
-//                    icon = icon1.getDrawable();
-//
-//                    BitmapDrawable yourIcon = (BitmapDrawable) icon ;
-//
-//                    Toast.makeText(ChooseIconImage.this,"22222",Toast.LENGTH_LONG).show();
-//
-//
-//
-//                    Toast.makeText(ChooseIconImage.this,"333333333333",Toast.LENGTH_LONG).show();
-//                    Bitmap b = ((BitmapDrawable) icon).getBitmap();
-//
-//                    Toast.makeText(ChooseIconImage.this,"4",Toast.LENGTH_LONG).show();
-//                    i.putExtra("userIcon", b);
-//                    Toast.makeText(ChooseIconImage.this,"5",Toast.LENGTH_LONG).show();
-//                    setResult(2, i);
-//                    Toast.makeText(ChooseIconImage.this,"6",Toast.LENGTH_LONG).show();
-//                    finish();
-//                    Toast.makeText(ChooseIconImage.this,"7",Toast.LENGTH_LONG).show();
-//
-//                }catch (Exception e){
-//                    Toast.makeText(ChooseIconImage.this,e.getMessage(),Toast.LENGTH_LONG).show();
-//                }
-
-              /*
-                Bitmap b = ((BitmapDrawable) icon).getBitmap();
-                ByteArrayOutputStream bs = new ByteArrayOutputStream();
-                b.compress(Bitmap.CompressFormat.PNG,100,bs);
-                i.putExtra("userIcon",bs.toByteArray());
-                finish();
-                */
-            }
-        });
-
-        icon2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-            }
         });
 
         icon3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
+                Intent i = new Intent(ChooseIconImage.this,CreateAppStep1.class);
+                CreateAppStep1.img.setBackgroundResource(R.drawable.car_icon);
+                finish();
             }
+
         });
 
         icon4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
+                Intent i = new Intent(ChooseIconImage.this,CreateAppStep1.class);
+                CreateAppStep1.img.setBackgroundResource(R.drawable.computer_icon);
+                finish();
             }
-        });
 
+        });
         icon5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
+                Intent i = new Intent(ChooseIconImage.this,CreateAppStep1.class);
+                CreateAppStep1.img.setBackgroundResource(R.drawable.flower_icon);
+                finish();
             }
-        });
 
+        });
         icon6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
+                Intent i = new Intent(ChooseIconImage.this,CreateAppStep1.class);
+                CreateAppStep1.img.setBackgroundResource(R.drawable.gamecontroller_icon);
+                finish();
             }
-        });
 
+        });
         icon7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
+                Intent i = new Intent(ChooseIconImage.this,CreateAppStep1.class);
+                CreateAppStep1.img.setBackgroundResource(R.drawable.paintcan_icon);
+                finish();
             }
+
         });
 
     }
