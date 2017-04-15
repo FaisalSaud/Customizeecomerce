@@ -16,6 +16,7 @@ public class StartPage extends AppCompatActivity {
         Button Create = (Button) findViewById(R.id.CreateAccount);
         Button Login = (Button) findViewById(R.id.Login);
         Button AboutUs = (Button) findViewById(R.id.AboutUs);
+        Button AasA = (Button) findViewById(R.id.button11);
         //ImageButton purchaseBasket = (ImageButton) findViewById(R.id.PurchaseBasket);
         Create.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -38,7 +39,16 @@ public class StartPage extends AppCompatActivity {
                 startActivity(i);
             }
         });
-//        purchaseBasket.setOnClickListener(new View.OnClickListener() {
+        AasA.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            Intent i = new Intent(StartPage.this, MainActivity.class);
+            startActivity(i);
+        }
+    });
+//
+
+// purchaseBasket.setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View v) {
 //                Intent i = new Intent(StartPage.this, PurchaseBasket.class);

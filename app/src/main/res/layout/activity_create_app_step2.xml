@@ -119,37 +119,35 @@
         tools:layout_constraintBaseline_creator="1"
         tools:layout_constraintLeft_creator="1"
         tools:layout_constraintRight_creator="1"
-        android:layout_below="@+id/button6"
-        android:layout_alignRight="@+id/textView31"
-        android:layout_alignEnd="@+id/textView31"
         android:layout_marginRight="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginTop="23dp" />
+        android:layout_above="@+id/nextButton"
+        android:layout_alignEnd="@+id/nextButton"
+        android:layout_marginBottom="17dp" />
 
     <Button
         android:id="@+id/button6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/UploadBackground"
+        android:onClick="uploadImg"
         tools:layout_editor_absoluteX="37dp"
         tools:layout_editor_absoluteY="370dp"
-        android:layout_alignTop="@+id/button7"
+        android:layout_alignTop="@+id/chooseicon"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 
     <Button
-        android:id="@+id/button7"
+        android:id="@+id/chooseicon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="66dp"
+        android:layout_marginBottom="60dp"
         android:text="@string/ChooseBackground"
+        android:onClick="goToChooseBackground"
         tools:layout_editor_absoluteX="225dp"
         tools:layout_editor_absoluteY="370dp"
-        android:layout_above="@+id/nextButton"
-        android:layout_toLeftOf="@+id/textView36"
-        android:layout_toStartOf="@+id/textView36"
         android:layout_marginRight="17dp"
-        android:layout_marginEnd="17dp" />
+        android:layout_above="@+id/nextButton"
+        android:layout_alignStart="@+id/textView30" />
 
     <Button
         android:id="@+id/nextButton"
@@ -182,14 +180,15 @@
         android:layout_marginLeft="23dp"
         android:layout_marginStart="23dp" />
 
-    <TextView
-        android:id="@+id/textView31"
-        android:layout_width="755px"
+    <EditText
+        android:id="@+id/background"
+        android:layout_width="match_parent"
         android:layout_height="150px"
-        android:text="__________________500X400px___________________"
-        tools:layout_editor_absoluteX="3dp"
-        tools:layout_editor_absoluteY="99dp"
-        android:layout_marginTop="74dp"
         android:layout_below="@+id/textView30"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="69dp"
+        android:editable="true"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="---------1280X720------" />
 </RelativeLayout>
