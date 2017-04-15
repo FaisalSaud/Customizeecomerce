@@ -47,7 +47,6 @@ public class ChooseIconImage extends AppCompatActivity {
         m = (ImageView) findViewById(R.id.imageView);
 
 
-
         icon1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
