@@ -36,6 +36,7 @@
         <activity android:name=".Bar4" />
         <activity android:name=".ChooseIconImage" />
         <activity android:name=".PurchaseBasket" />
+        <activity android:name=".ChooseBackground" />
     </application>
 
 </manifest>

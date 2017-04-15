@@ -24,7 +24,7 @@ public class CreateAppStep1 extends AppCompatActivity {
 
     //to add image
     private static final int SELECTED_PICTURE=1;
-    public static EditText img;
+    EditText img;
     EditText storeName;
     String storeNameS;
     Button chooseIcon;
@@ -120,41 +120,60 @@ public class CreateAppStep1 extends AppCompatActivity {
 
     }
 
+
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
 
+        //Toast.makeText(this, "before switch", Toast.LENGTH_LONG).show();
         Toast.makeText(CreateAppStep1.this,"before switch",Toast.LENGTH_LONG).show();
         switch (requestCode){
 
             case SELECTED_PICTURE:
                 if (!(requestCode==RESULT_OK)){
+
+                   // Toast.makeText(this, "after switch", Toast.LENGTH_LONG).show();
+
                     Uri uri = data.getData();
                     String[]projection={MediaStore.Images.Media.DATA};
 
+                    //Toast.makeText(this, "111111", Toast.LENGTH_LONG).show();
+
                     Cursor cursor= getContentResolver().query(uri, projection, null, null, null);
                     cursor.moveToFirst();
+
+//                    Toast.makeText(this, "222222", Toast.LENGTH_LONG).show();
 
                     int columnIndex = cursor.getColumnIndex(projection[0]);
                     String filePath = cursor.getString(columnIndex);
                     cursor.close();
 
+//                    Toast.makeText(this, "3333333", Toast.LENGTH_LONG).show();
+
                     Bitmap yourSelect = BitmapFactory.decodeFile(filePath);
                     Drawable d = new BitmapDrawable(yourSelect);
 
+//                    Toast.makeText(this, "4444444", Toast.LENGTH_LONG).show();
                     try {
+                     //   img.setBackgroundDrawable(d);
                         img.setBackground(d);
                     }catch (Exception e){
+//                        Toast.makeText(this, "555555", Toast.LENGTH_LONG).show();
                     }
                 }
+//                Toast.makeText(this, "the if is false", Toast.LENGTH_LONG).show();
                 break;
             case 2:
                 if (requestCode== 2){
 
+                    //set the image from anther activity to this activity
                     Bitmap bitmap = (Bitmap) data.getParcelableExtra("bitmap"); //you can delete the casting
                     Drawable d = new BitmapDrawable(getResources(),bitmap);
 
                     img.setBackground(d);
+
+//
+
 
                 }
             default:
