@@ -19,7 +19,7 @@ import android.widget.Toast;
 public class CreateAppStep2 extends AppCompatActivity {
     private static final int SELECTED_PICTURE = 1;
 //    TextView img;
-    TextView img;
+    EditText img;
 
 
     @Override
@@ -28,7 +28,7 @@ public class CreateAppStep2 extends AppCompatActivity {
         setContentView(R.layout.activity_create_app_step2);
 
         Button next = (Button) findViewById(R.id.nextButton);
-        img = (TextView) findViewById(R.id.backgrondImg);
+        img = (EditText) findViewById(R.id.editText4);
 
 
 

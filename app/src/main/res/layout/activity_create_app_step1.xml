@@ -139,12 +139,10 @@
         android:capitalize="none"
         android:editable="false"
         android:ems="10"
-        android:inputType="none"
         android:password="false"
-        android:selectAllOnFocus="false"
-        android:singleLine="false"
         android:textColor="?attr/colorControlNormal"
         android:textSize="@dimen/activity_horizontal_margin"
+        tools:editable="false"
         tools:ignore="Deprecated,MissingConstraints,UnknownIdInLayout"
         tools:layout_editor_absoluteX="114dp"
         tools:layout_editor_absoluteY="176dp" />

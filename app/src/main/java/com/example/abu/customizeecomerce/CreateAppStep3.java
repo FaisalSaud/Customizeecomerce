@@ -12,6 +12,10 @@ import android.widget.Toast;
 
 public class CreateAppStep3 extends AppCompatActivity {
     int cont ;
+    EditText bar1;
+    EditText bar2;
+    EditText bar3;
+    EditText bar4;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,7 +23,10 @@ public class CreateAppStep3 extends AppCompatActivity {
 
         cont =1;    //to count the number of "EditText" for Bars
         Button next = (Button) findViewById(R.id.nextButton);
-
+         bar1= (EditText) findViewById(R.id.bar1);
+         bar2= (EditText) findViewById(R.id.bar2);
+         bar3= (EditText) findViewById(R.id.bar3);
+         bar4= (EditText) findViewById(R.id.bar4);
 
         next.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -31,28 +38,25 @@ public class CreateAppStep3 extends AppCompatActivity {
 
 
     }
-/*
+
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     public void addBar(View view){
         if (cont==1) {
-            EditText a = (EditText) findViewById(R.id.bar2);
-            a.setVisibility(View.VISIBLE);
+            bar2.setVisibility(View.VISIBLE);
 
             Button removeBarButton = (Button) findViewById(R.id.removeBarButton);
             removeBarButton.setVisibility(View.VISIBLE);
 
         }
         else if (cont==2) {
-            EditText a = (EditText) findViewById(R.id.bar3);
-            a.setVisibility(View.VISIBLE);
+            bar3.setVisibility(View.VISIBLE);
 
         }
         else if (cont==3) {
-            EditText a = (EditText) findViewById(R.id.bar44);
-            a.setVisibility(View.VISIBLE);
+            bar4.setVisibility(View.VISIBLE);
             Toast.makeText(this, "you have reached the bar limit", Toast.LENGTH_LONG).show();
             Button addBarButton = (Button) findViewById(R.id.addBarButton);
-            addBarButton.setVisibility(View.GONE);
+            addBarButton.setVisibility(View.INVISIBLE);
 
         }
         cont++;
@@ -60,25 +64,22 @@ public class CreateAppStep3 extends AppCompatActivity {
     }
     public void remorveBar(View view){
         if (cont==2) {
-            EditText a = (EditText) findViewById(R.id.bar2);
-            a.setVisibility(View.GONE);
+            bar2.setVisibility(View.GONE);
             Button removeBarButton = (Button) findViewById(R.id.removeBarButton);
             removeBarButton.setVisibility(View.GONE);
            // Toast.makeText(this, "you have reached the minim", Toast.LENGTH_LONG).show();
         }
         else if (cont==3) {
-            EditText a = (EditText) findViewById(R.id.bar3);
-            a.setVisibility(View.GONE);
+            bar3.setVisibility(View.GONE);
         }
         else if (cont==4) {
-            EditText a = (EditText) findViewById(R.id.bar44);
-            a.setVisibility(View.GONE);
+            bar4.setVisibility(View.GONE);
             Button addBarButton = (Button) findViewById(R.id.addBarButton);
-            addBarButton.setVisibility(View.VISIBLE);
+            addBarButton.setVisibility(View.INVISIBLE);
         }
         cont--;
 
 
 
-    } */
+    }
 }
