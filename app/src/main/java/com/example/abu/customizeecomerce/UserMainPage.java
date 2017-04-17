@@ -1,6 +1,7 @@
 package com.example.abu.customizeecomerce;
 
 import android.content.Intent;
+import android.graphics.Bitmap;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -53,6 +54,11 @@ public class UserMainPage extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(UserMainPage.this, PurchaseBasket.class);
+
+//                Bundle b = new Bundle();
+//                String storeName = b.getString("storeName");
+//                b.getParcelable("storeIcon");
+
                 startActivity(i);
             }
         });

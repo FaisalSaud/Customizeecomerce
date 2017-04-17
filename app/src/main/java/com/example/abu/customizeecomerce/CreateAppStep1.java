@@ -93,6 +93,16 @@ public class CreateAppStep1 extends AppCompatActivity {
             Toast.makeText(CreateAppStep1.this, storeNameS , Toast.LENGTH_SHORT).show();
 
             Intent i = new Intent(CreateAppStep1.this, CreateAppStep2.class);
+            Intent intent = new Intent(CreateAppStep1.this, UserMainPage.class);
+
+//            //send the store name
+//            intent.putExtra("storeName", storeNameS);
+//
+//            //send the store icon
+//            Drawable drawable = (Drawable) img.getBackground();
+//            BitmapDrawable bd = (BitmapDrawable) drawable;
+//            Bitmap bitmap = (Bitmap) bd.getBitmap();
+//            intent.putExtra("storeIcon", bitmap);
 
             startActivity(i);
 
@@ -155,6 +165,7 @@ public class CreateAppStep1 extends AppCompatActivity {
 
                     Bitmap bitmap = (Bitmap) data.getParcelableExtra("bitmap"); //you can delete the casting
                     Drawable d = new BitmapDrawable(getResources(),bitmap);
+
 
                     img.setBackground(d);
 

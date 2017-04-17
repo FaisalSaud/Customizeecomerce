@@ -11,18 +11,341 @@
         android:layout_height="495dp"
         android:orientation="vertical"
         tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="8dp">
+        tools:layout_editor_absoluteY="8dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true">
 
-        <Button
-            android:id="@+id/button17"
+        <android.support.v7.widget.CardView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Button" />
+            android:layout_height="21dp"
+            android:layout_weight="0.18"
+            android:layout_margin="7dp">
 
-        <Button
-            android:id="@+id/button18"
+            <Button
+                android:id="@+id/perchaseButtonBarItem21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="265dp"
+                android:text="Buy" />
+
+            <Button
+                android:id="@+id/addToBasketButtonBarItem21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="175dp"
+                android:text="Basket" />
+
+            <ImageView
+                android:id="@+id/imageView3BarItem21"
+                android:layout_width="95dp"
+                android:layout_height="102dp"
+                app:srcCompat="@drawable/bookshelf_icon" />
+
+            <TextView
+                android:id="@+id/itemPriceBarItem21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="275dp"
+                android:layout_marginTop="10dp"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/itemNameTextBarItem21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="100dp"
+                android:layout_marginTop="10dp"
+                android:text="TextView"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView55BarItem21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="280dp"
+                android:layout_marginTop="35dp"
+                android:text="TextView" />
+
+            <EditText
+                android:id="@+id/editText4BarItem21"
+                android:layout_width="65dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="190dp"
+                android:layout_marginTop="30dp"
+                android:ems="10"
+                android:inputType="number"
+                android:text="Name" />
+
+
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Button" />
+            android:layout_height="21dp"
+            android:layout_weight="0.18"
+            android:layout_marginTop="3dp">
+
+            <Button
+                android:id="@+id/perchaseButtonBarItem22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="265dp"
+                android:text="Buy" />
+
+            <Button
+                android:id="@+id/addToBasketButtonBarItem22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="175dp"
+                android:text="Basket" />
+
+            <ImageView
+                android:id="@+id/imageView3BarItem22"
+                android:layout_width="95dp"
+                android:layout_height="102dp"
+                app:srcCompat="@drawable/bookshelf_icon" />
+
+            <TextView
+                android:id="@+id/itemPriceBarItem22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="275dp"
+                android:layout_marginTop="10dp"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/itemNameTextBarItem22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="100dp"
+                android:layout_marginTop="10dp"
+                android:text="TextView"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView55BarItem22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="280dp"
+                android:layout_marginTop="35dp"
+                android:text="TextView" />
+
+            <EditText
+                android:id="@+id/editText4BarItem22"
+                android:layout_width="65dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="190dp"
+                android:layout_marginTop="30dp"
+                android:ems="10"
+                android:inputType="number"
+                android:text="Name" />
+
+
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="21dp"
+            android:layout_weight="0.18"
+            android:layout_marginTop="3dp">
+
+            <Button
+                android:id="@+id/perchaseButtonBarItem23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="265dp"
+                android:text="Buy" />
+
+            <Button
+                android:id="@+id/addToBasketButtonBarItem23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="175dp"
+                android:text="Basket" />
+
+            <ImageView
+                android:id="@+id/imageView3BarItem23"
+                android:layout_width="95dp"
+                android:layout_height="102dp"
+                app:srcCompat="@drawable/bookshelf_icon" />
+
+            <TextView
+                android:id="@+id/itemPriceBarItem23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="275dp"
+                android:layout_marginTop="10dp"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/itemNameTextBarItem23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="100dp"
+                android:layout_marginTop="10dp"
+                android:text="TextView"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView55BarItem23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="280dp"
+                android:layout_marginTop="35dp"
+                android:text="TextView" />
+
+            <EditText
+                android:id="@+id/editText4BarItem23"
+                android:layout_width="65dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="190dp"
+                android:layout_marginTop="30dp"
+                android:ems="10"
+                android:inputType="number"
+                android:text="Name" />
+
+
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="21dp"
+            android:layout_weight="0.18"
+            android:layout_marginTop="3dp">
+
+            <Button
+                android:id="@+id/perchaseButtonBarItem24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="265dp"
+                android:text="Buy" />
+
+            <Button
+                android:id="@+id/addToBasketButtonBarItem24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="175dp"
+                android:text="Basket" />
+
+            <ImageView
+                android:id="@+id/imageView3BarItem24"
+                android:layout_width="95dp"
+                android:layout_height="102dp"
+                app:srcCompat="@drawable/bookshelf_icon" />
+
+            <TextView
+                android:id="@+id/itemPriceBarItem24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="275dp"
+                android:layout_marginTop="10dp"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/itemNameTextBarItem24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="100dp"
+                android:layout_marginTop="10dp"
+                android:text="TextView"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView55BarItem24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="280dp"
+                android:layout_marginTop="35dp"
+                android:text="TextView" />
+
+            <EditText
+                android:id="@+id/editText4BarItem24"
+                android:layout_width="65dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="190dp"
+                android:layout_marginTop="30dp"
+                android:ems="10"
+                android:inputType="number"
+                android:text="Name" />
+
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="21dp"
+            android:layout_weight="0.18"
+            android:layout_marginTop="3dp">
+
+            <Button
+                android:id="@+id/perchaseButtonBarItem25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="265dp"
+                android:text="Buy" />
+
+            <Button
+                android:id="@+id/addToBasketButtonBarItem25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="175dp"
+                android:text="Basket" />
+
+            <ImageView
+                android:id="@+id/imageView3BarItem25"
+                android:layout_width="95dp"
+                android:layout_height="102dp"
+                app:srcCompat="@drawable/bookshelf_icon" />
+
+            <TextView
+                android:id="@+id/itemPriceBarItem25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="275dp"
+                android:layout_marginTop="10dp"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/itemNameTextBarItem25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="100dp"
+                android:layout_marginTop="10dp"
+                android:text="TextView"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView55BarItem25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="280dp"
+                android:layout_marginTop="35dp"
+                android:text="TextView" />
+
+            <EditText
+                android:id="@+id/editText4BarItem25"
+                android:layout_width="65dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="190dp"
+                android:layout_marginTop="30dp"
+                android:ems="10"
+                android:inputType="number"
+                android:text="Name" />
+
+
+        </android.support.v7.widget.CardView>
+
     </LinearLayout>
 </RelativeLayout>
