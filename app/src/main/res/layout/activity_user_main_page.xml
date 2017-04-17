@@ -71,7 +71,7 @@
         android:layout_alignParentEnd="true" />
 
     <Button
-        android:id="@+id/bar4"
+        android:id="@+id/bar1Button"
         style="@android:style/Widget.Material.Light.Button.Small"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -81,29 +81,29 @@
         android:text="bar1" />
 
     <Button
-        android:id="@+id/Bar3"
+        android:id="@+id/Bar3Button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/bar4"
+        android:layout_above="@+id/bar1Button"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginBottom="47dp"
         android:text="bar3" />
 
     <Button
-        android:id="@+id/Bar2"
+        android:id="@+id/Bar2Button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/bar4"
+        android:layout_above="@+id/bar1Button"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:text="bar2" />
 
     <Button
-        android:id="@+id/Bar4"
+        android:id="@+id/Bar4Button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/Bar3"
+        android:layout_above="@+id/Bar3Button"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:text="bar4" />

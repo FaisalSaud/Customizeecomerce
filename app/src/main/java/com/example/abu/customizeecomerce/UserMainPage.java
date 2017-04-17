@@ -1,26 +1,33 @@
 package com.example.abu.customizeecomerce;
 
 import android.content.Intent;
-import android.graphics.Bitmap;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.Toast;
 
 public class UserMainPage extends AppCompatActivity {
     public static Button Bar1;
     public static Button Bar2;
     public static Button Bar3;
     public static Button Bar4;
+    public static Boolean isCom=false;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_main_page);
-        Bar1 = (Button) findViewById(R.id.bar4);
-        Bar2 = (Button) findViewById(R.id.Bar2);
-        Bar3 = (Button) findViewById(R.id.Bar3);
-        Bar4 = (Button) findViewById(R.id.Bar4);
+        Toast.makeText(UserMainPage.this, "Start ump" , Toast.LENGTH_SHORT).show();
+        if(!isCom) {
+            Intent i = new Intent(this,CreateAppStep1.class);
+            moveTaskToBack(true);
+            startActivity(i);
+        }
+        Bar1 = (Button) findViewById(R.id.bar1Button);
+        Bar2 = (Button) findViewById(R.id.Bar2Button);
+        Bar3 = (Button) findViewById(R.id.Bar3Button);
+        Bar4 = (Button) findViewById(R.id.Bar4Button);
         ImageButton ShoppingCart = (ImageButton) findViewById(R.id.imageButton);
         Bar1.setOnClickListener(new View.OnClickListener(){
             @Override

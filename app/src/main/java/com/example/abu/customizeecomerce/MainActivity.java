@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -20,8 +21,20 @@ public class MainActivity extends AppCompatActivity {
         createNewApp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(MainActivity.this, CreateAppStep1.class);
-                startActivity(i);
+//                Intent[] intents = new Intent[2];
+                Intent intent = new Intent(MainActivity.this, UserMainPage.class);
+//                intents[1]=intent;
+//                Intent i = new Intent(MainActivity.this, CreateAppStep1.class);
+//                intents[0]=i;
+
+                try {
+
+
+                }catch (Exception e){
+                    Toast.makeText(MainActivity.this,e.getMessage(),Toast.LENGTH_LONG).show();
+                }
+                startActivity(intent);
+//                startActivities(intents);
             }
         });
         ST.setOnClickListener(new View.OnClickListener() {

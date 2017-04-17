@@ -120,33 +120,33 @@
         tools:layout_constraintLeft_creator="1"
         tools:layout_constraintRight_creator="1"
         android:layout_above="@+id/nextButton"
-        android:layout_alignRight="@+id/bar4"
-        android:layout_alignEnd="@+id/bar4"
+        android:layout_alignRight="@+id/bar4Text"
+        android:layout_alignEnd="@+id/bar4Text"
         android:layout_marginBottom="46dp" />
 
     <EditText
-        android:id="@+id/bar4"
+        android:id="@+id/bar4Text"
         style="@style/Widget.AppCompat.AutoCompleteTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bar3Text"
+        android:layout_alignStart="@+id/bar3Text"
+        android:layout_below="@+id/bar3Text"
+        android:layout_marginTop="11dp"
         android:background="@android:drawable/editbox_background"
         android:capitalize="none"
         android:ems="10"
-        android:visibility="invisible"
         android:inputType="text"
         android:password="false"
         android:selectAllOnFocus="false"
         android:singleLine="false"
+        android:visibility="invisible"
         tools:ignore="Deprecated,MissingConstraints,UnknownIdInLayout"
         tools:layout_editor_absoluteX="85dp"
-        tools:layout_editor_absoluteY="176dp"
-        android:layout_below="@+id/bar3"
-        android:layout_alignLeft="@+id/bar3"
-        android:layout_alignStart="@+id/bar3"
-        android:layout_marginTop="11dp" />
+        tools:layout_editor_absoluteY="176dp" />
 
     <EditText
-        android:id="@+id/bar1"
+        android:id="@+id/bar1Text"
         style="@style/Widget.AppCompat.AutoCompleteTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -166,7 +166,7 @@
         tools:layout_editor_absoluteY="176dp" />
 
     <EditText
-        android:id="@+id/bar2"
+        android:id="@+id/bar2Text"
         style="@style/Widget.AppCompat.AutoCompleteTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -181,13 +181,13 @@
         tools:ignore="Deprecated,MissingConstraints,UnknownIdInLayout"
         tools:layout_editor_absoluteX="85dp"
         tools:layout_editor_absoluteY="176dp"
-        android:layout_below="@+id/bar1"
-        android:layout_alignLeft="@+id/bar1"
-        android:layout_alignStart="@+id/bar1"
+        android:layout_below="@+id/bar1Text"
+        android:layout_alignLeft="@+id/bar1Text"
+        android:layout_alignStart="@+id/bar1Text"
         android:layout_marginTop="17dp" />
 
     <EditText
-        android:id="@+id/bar3"
+        android:id="@+id/bar3Text"
         style="@style/Widget.AppCompat.AutoCompleteTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -202,9 +202,9 @@
         tools:ignore="Deprecated,MissingConstraints,UnknownIdInLayout"
         tools:layout_editor_absoluteX="85dp"
         tools:layout_editor_absoluteY="176dp"
-        android:layout_below="@+id/bar2"
-        android:layout_alignLeft="@+id/bar2"
-        android:layout_alignStart="@+id/bar2"
+        android:layout_below="@+id/bar2Text"
+        android:layout_alignLeft="@+id/bar2Text"
+        android:layout_alignStart="@+id/bar2Text"
         android:layout_marginTop="17dp" />
 
     <Button
@@ -280,7 +280,7 @@
         tools:ignore="HardcodedText"
         android:layout_marginRight="17dp"
         android:layout_marginEnd="17dp"
-        android:layout_alignTop="@+id/bar1"
+        android:layout_alignTop="@+id/bar1Text"
         android:layout_alignRight="@+id/nextButton"
         android:layout_alignEnd="@+id/nextButton" />
 

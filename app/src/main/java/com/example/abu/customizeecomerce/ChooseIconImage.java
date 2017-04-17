@@ -52,6 +52,7 @@ public class ChooseIconImage extends AppCompatActivity {
             public void onClick(View v) {
                 Intent i = new Intent(ChooseIconImage.this,CreateAppStep1.class);
                 CreateAppStep1.img.setBackgroundResource(R.drawable.food_icon2);
+
                 //CreateAppStep1.img.setBackground(icon1.getDrawable());    // Or like this
                 finish();
 

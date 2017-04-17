@@ -93,7 +93,6 @@ public class CreateAppStep1 extends AppCompatActivity {
             Toast.makeText(CreateAppStep1.this, storeNameS , Toast.LENGTH_SHORT).show();
 
             Intent i = new Intent(CreateAppStep1.this, CreateAppStep2.class);
-            Intent intent = new Intent(CreateAppStep1.this, UserMainPage.class);
 
 //            //send the store name
 //            intent.putExtra("storeName", storeNameS);
@@ -104,7 +103,11 @@ public class CreateAppStep1 extends AppCompatActivity {
 //            Bitmap bitmap = (Bitmap) bd.getBitmap();
 //            intent.putExtra("storeIcon", bitmap);
 
+
             startActivity(i);
+            finish();
+
+
 
 
         }

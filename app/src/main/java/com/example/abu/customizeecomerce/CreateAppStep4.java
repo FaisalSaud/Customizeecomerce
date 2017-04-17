@@ -13,6 +13,7 @@ public class CreateAppStep4 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_app_step4);
         final UserMainPage userMainPage = new UserMainPage();
@@ -26,6 +27,8 @@ public class CreateAppStep4 extends AppCompatActivity {
             public void onClick(View v) {
                 Intent i = new Intent(CreateAppStep4.this, CreateAppStep5.class);
                 startActivity(i);
+                finish();
+
             }
         });
 

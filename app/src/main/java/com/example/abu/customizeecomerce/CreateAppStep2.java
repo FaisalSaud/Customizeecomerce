@@ -37,6 +37,7 @@ public class CreateAppStep2 extends AppCompatActivity {
             public void onClick(View v) {
                 Intent i = new Intent(CreateAppStep2.this, CreateAppStep3.class);
                 startActivity(i);
+                finish();
             }
         });
     }

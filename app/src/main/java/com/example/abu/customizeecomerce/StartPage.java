@@ -9,14 +9,20 @@ import android.widget.ImageButton;
 
 public class StartPage extends AppCompatActivity {
 
+
+    public static Button Create;
+    Button Login;
+    Button AboutUs;
+    Button AasA;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_starte_page);
-        Button Create = (Button) findViewById(R.id.CreateAccount);
-        Button Login = (Button) findViewById(R.id.Login);
-        Button AboutUs = (Button) findViewById(R.id.AboutUs);
-        Button AasA = (Button) findViewById(R.id.button11);
+        Create = (Button) findViewById(R.id.CreateAccount);
+        Login = (Button) findViewById(R.id.Login);
+        AboutUs = (Button) findViewById(R.id.AboutUs);
+        AasA = (Button) findViewById(R.id.button11);
         //ImageButton purchaseBasket = (ImageButton) findViewById(R.id.PurchaseBasket);
         Create.setOnClickListener(new View.OnClickListener() {
             @Override

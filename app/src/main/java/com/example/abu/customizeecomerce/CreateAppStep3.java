@@ -23,16 +23,19 @@ public class CreateAppStep3 extends AppCompatActivity {
 
         cont =1;    //to count the number of "EditText" for Bars
         Button next = (Button) findViewById(R.id.nextButton);
-         bar1= (EditText) findViewById(R.id.bar1);
-         bar2= (EditText) findViewById(R.id.bar2);
-         bar3= (EditText) findViewById(R.id.bar3);
-         bar4= (EditText) findViewById(R.id.bar4);
+         bar1= (EditText) findViewById(R.id.bar1Text);
+         bar2= (EditText) findViewById(R.id.bar2Text);
+         bar3= (EditText) findViewById(R.id.bar3Text);
+         bar4= (EditText) findViewById(R.id.bar4Text);
 
         next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(CreateAppStep3.this, CreateAppStep4.class);
+
+                UserMainPage.Bar1.setText(bar1.getText());
                 startActivity(i);
+                finish();
             }
         });
 
