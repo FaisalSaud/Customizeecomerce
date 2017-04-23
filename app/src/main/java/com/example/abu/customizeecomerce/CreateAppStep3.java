@@ -32,8 +32,7 @@ public class CreateAppStep3 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(CreateAppStep3.this, CreateAppStep4.class);
-
-                UserMainPage.Bar1.setText(bar1.getText());
+                barsOnMainPage();
                 startActivity(i);
                 finish();
             }
@@ -82,6 +81,22 @@ public class CreateAppStep3 extends AppCompatActivity {
         }
         cont--;
 
+    }
+    public void barsOnMainPage() {
+        if(cont == 4){
+            UserMainPage.Bar1.setText(bar1.getText());
+            UserMainPage.Bar2.setText(bar2.getText());
+            UserMainPage.Bar3.setText(bar3.getText());
+            UserMainPage.Bar4.setText(bar4.getText());}
+        else if (cont == 3) {
+            UserMainPage.Bar1.setText(bar1.getText());
+            UserMainPage.Bar2.setText(bar2.getText());
+            UserMainPage.Bar3.setText(bar3.getText());
+      } else if (cont == 2){
+            UserMainPage.Bar1.setText(bar1.getText());
+            UserMainPage.Bar2.setText(bar2.getText());
+        } else
+            UserMainPage.Bar1.setText(bar1.getText());
 
 
     }

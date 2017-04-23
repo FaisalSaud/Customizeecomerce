@@ -51,7 +51,8 @@
         android:layout_marginRight="30dp"
         android:text="@string/UploadImage"
         tools:layout_editor_absoluteX="192dp"
-        tools:layout_editor_absoluteY="288dp" />
+        tools:layout_editor_absoluteY="288dp"
+        android:onClick="uploadImg"/>
 
     <TextView
         android:id="@+id/textView14"

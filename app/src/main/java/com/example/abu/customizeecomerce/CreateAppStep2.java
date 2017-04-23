@@ -36,6 +36,7 @@ public class CreateAppStep2 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(CreateAppStep2.this, CreateAppStep3.class);
+                //UserMainPage.Background.setImage(SelectedImage);
                 startActivity(i);
                 finish();
             }

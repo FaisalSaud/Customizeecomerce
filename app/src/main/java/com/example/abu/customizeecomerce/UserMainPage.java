@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
@@ -13,6 +14,7 @@ public class UserMainPage extends AppCompatActivity {
     public static Button Bar2;
     public static Button Bar3;
     public static Button Bar4;
+    public static EditText Background;
     public static Boolean isCom=false;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
