@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class UserMainPage extends AppCompatActivity {
@@ -15,6 +16,8 @@ public class UserMainPage extends AppCompatActivity {
     public static Button Bar3;
     public static Button Bar4;
     public static EditText Background;
+    public static TextView promoSlide;
+    public static ImageButton ShoppingCart;
     public static Boolean isCom=false;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,7 +33,8 @@ public class UserMainPage extends AppCompatActivity {
         Bar2 = (Button) findViewById(R.id.Bar2Button);
         Bar3 = (Button) findViewById(R.id.Bar3Button);
         Bar4 = (Button) findViewById(R.id.Bar4Button);
-        ImageButton ShoppingCart = (ImageButton) findViewById(R.id.imageButton);
+        ShoppingCart = (ImageButton) findViewById(R.id.imageButton);
+        promoSlide = (TextView) findViewById(R.id.textView42);
         Bar1.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {

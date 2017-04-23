@@ -33,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
                 }catch (Exception e){
                     Toast.makeText(MainActivity.this,e.getMessage(),Toast.LENGTH_LONG).show();
                 }
+                UserMainPage.isCom = false;
                 startActivity(intent);
 //                startActivities(intents);
             }
@@ -41,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(MainActivity.this, UserMainPage.class);
+                UserMainPage.isCom = true;
                 startActivity(i);
             }
         });

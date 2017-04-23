@@ -92,11 +92,18 @@ public class CreateAppStep3 extends AppCompatActivity {
             UserMainPage.Bar1.setText(bar1.getText());
             UserMainPage.Bar2.setText(bar2.getText());
             UserMainPage.Bar3.setText(bar3.getText());
+            UserMainPage.Bar4.setVisibility(View.INVISIBLE);
       } else if (cont == 2){
             UserMainPage.Bar1.setText(bar1.getText());
             UserMainPage.Bar2.setText(bar2.getText());
-        } else
+            UserMainPage.Bar3.setVisibility(View.INVISIBLE);
+            UserMainPage.Bar4.setVisibility(View.INVISIBLE);
+        } else{
             UserMainPage.Bar1.setText(bar1.getText());
+            UserMainPage.Bar2.setVisibility(View.INVISIBLE);
+            UserMainPage.Bar3.setVisibility(View.INVISIBLE);
+            UserMainPage.Bar4.setVisibility(View.INVISIBLE);
+        }
 
 
     }
