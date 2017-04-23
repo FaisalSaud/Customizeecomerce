@@ -28,8 +28,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom"
                 android:layout_marginLeft="265dp"
-                android:text="Buy"
-                />
+                android:text="@string/Buy" />
 
             <Button
                 android:id="@+id/addToBasketButtonBarItem41"
@@ -37,7 +36,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom"
                 android:layout_marginLeft="175dp"
-                android:text="Basket"
+                android:text="@string/Basket"
                 tools:ignore="DuplicateIds" />
 
             <ImageView
@@ -96,7 +95,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom"
                 android:layout_marginLeft="265dp"
-                android:text="Buy" />
+                android:text="@string/Buy" />
 
             <Button
                 android:id="@+id/addToBasketButtonBarItem42"
@@ -104,7 +103,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom"
                 android:layout_marginLeft="175dp"
-                android:text="Basket" />
+                android:text="@string/Basket" />
 
             <ImageView
                 android:id="@+id/imageView3BarItem42"
@@ -162,7 +161,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom"
                 android:layout_marginLeft="265dp"
-                android:text="Buy" />
+                android:text="@string/Buy" />
 
             <Button
                 android:id="@+id/addToBasketButtonBarItem43"
@@ -170,7 +169,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom"
                 android:layout_marginLeft="175dp"
-                android:text="Basket" />
+                android:text="@string/Basket" />
 
             <ImageView
                 android:id="@+id/imageView3BarItem43"
@@ -228,7 +227,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom"
                 android:layout_marginLeft="265dp"
-                android:text="Buy" />
+                android:text="@string/Buy" />
 
             <Button
                 android:id="@+id/addToBasketButtonBarItem44"
@@ -236,7 +235,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom"
                 android:layout_marginLeft="175dp"
-                android:text="Basket" />
+                android:text="@string/Basket" />
 
             <ImageView
                 android:id="@+id/imageView3BarItem44"
@@ -303,7 +302,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom"
                 android:layout_marginLeft="175dp"
-                android:text="Basket" />
+                android:text="@string/Basket" />
 
             <ImageView
                 android:id="@+id/imageView3BarItem45"

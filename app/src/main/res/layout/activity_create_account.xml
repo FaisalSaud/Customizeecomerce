@@ -185,7 +185,7 @@
         android:layout_alignStart="@+id/textView5"
         android:layout_below="@+id/passwordText"
         android:layout_marginTop="15dp"
-        android:text="* The password shoud be between 6 to 16 character"
+        android:text="@string/PasswordInfo"
         android:textColor="@color/black_overlay"
         android:visibility="visible" />
 

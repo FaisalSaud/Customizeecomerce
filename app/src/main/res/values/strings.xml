@@ -96,7 +96,6 @@
         "when a user tries to pick up one of cards.\n\n"
     </string>
     <string name="action_settings" translatable="false">Settings</string>
-    <string name="title_activity_purchase_basket">Purchase Basket</string>
     <string name="username">"Username "</string>
     <string name="Password">Password</string>
     <string name="RePassword">RePassword</string>
@@ -142,4 +141,7 @@
     <string name="Bar3">Bar3</string>
     <string name="Bar4">Bar4</string>
     <string name="Purchase">Purchase Options</string>
+    <string name="Basket">To Basket</string>
+    <string name="Buy">Buy</string>
+    <string name="PasswordInfo">* The password shoud be between 6 to 16 character</string>
 </resources>

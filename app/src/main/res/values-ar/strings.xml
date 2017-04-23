@@ -4,7 +4,6 @@
     <string name="title_activity_create_account">إنشاء جساب جديد</string>
     <string name="title_activity_main_page">الصفحة الرئيسية</string>
     <string name="username">إسم المستخدم</string>
-    <string name="title_activity_purchase_basket" translatable="false">سلة التسوق</string>
     <string name="AboutUs">من نحن</string>
     <string name="ChooseIcon">إختيار شعار</string>
     <string name="CreateAccount">إنشاء حساب</string>
@@ -37,10 +36,10 @@
     <string name="Build">بناء</string>
     <string name="AddBar">اضف عنوان فرعي</string>
     <string name="Background">الخلفية</string>
-    <string name="Bar1">ع.ف 1</string>
-    <string name="Bar2">ع.ف2</string>
-    <string name="Bar3">ع.ف3</string>
-    <string name="Bar4">ع.ف4</string>
+    <string name="Bar1">عنوان فرعي 1</string>
+    <string name="Bar2">عنوان فرعي 2</string>
+    <string name="Bar3">عنوان فرعي 3</string>
+    <string name="Bar4">عنوان فرعي 4</string>
     <string name="ChooseBackground">اختر خلفية</string>
     <string name="ItemName">اسم المنتج</string>
     <string name="SaveItem">حفظ المنتج</string>
@@ -48,4 +47,8 @@
     <string name="Step5">الخطوة 5</string>
     <string name="UploadBackground">ارفع خلفية</string>
     <string name="UploadImage">ارفع صورة</string>
+    <string name="Basket">إلى السلة</string>
+    <string name="Buy">شراء</string>
+    <string name="PasswordInfo">*كلمة المرور يجب أن تحتوي على  6إلى 16 حرف أو رقم</string>
+    <string name="Purchase">خيارات الدفع</string>
 </resources>
