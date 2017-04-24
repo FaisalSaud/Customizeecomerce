@@ -37,7 +37,7 @@ public class PaymentAndDelaviry extends AppCompatActivity {
                     android.R.layout.simple_spinner_item, ParraySpinner);
             Payment.setAdapter(Padapter);
             this.DarraySpinner = new String[3];
-            ParraySpinner[0]="Please Select";
+            DarraySpinner[0]="Please Select";
             if (UserMainPage.Delivery == 0) {
                 DarraySpinner[1]="By hand";
                 DarraySpinner[2]="";
@@ -51,7 +51,7 @@ public class PaymentAndDelaviry extends AppCompatActivity {
                 DarraySpinner[2]="In Store";
             }
             ArrayAdapter<String> Dadapter = new ArrayAdapter<String>(this,
-                    android.R.layout.simple_spinner_item, ParraySpinner);
+                    android.R.layout.simple_spinner_item, DarraySpinner);
             Delivery.setAdapter(Dadapter);
         }
         catch(Exception e){
