@@ -37,6 +37,7 @@
         <activity android:name=".ChooseIconImage" />
         <activity android:name=".PurchaseBasket" />
         <activity android:name=".ChooseBackground" />
+        <activity android:name=".PaymentAndDelaviry"/>
     </application>
 
 </manifest>

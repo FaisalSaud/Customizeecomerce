@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class PurchaseBasket extends AppCompatActivity {
 
@@ -16,8 +17,13 @@ public class PurchaseBasket extends AppCompatActivity {
         PurchaseOptions.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(PurchaseBasket.this, PaymentAndDelaviry.class);
-                startActivity(i);
+                try{
+                    Intent i = new Intent(PurchaseBasket.this, PaymentAndDelaviry.class);
+                    startActivity(i);
+                }catch(Exception e){
+                    Toast.makeText(PurchaseBasket.this,e.getMessage(),Toast.LENGTH_LONG).show();
+                }
+
             }
         });
     }

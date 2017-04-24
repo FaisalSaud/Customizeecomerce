@@ -8,17 +8,15 @@
 
     <Button
         android:id="@+id/button4"
-        android:layout_width="wrap_content"
+        android:layout_width="130dp"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/button2"
-        android:layout_alignBottom="@+id/button2"
-        android:layout_alignEnd="@+id/editText2"
-        android:layout_alignRight="@+id/editText2"
-        android:layout_marginEnd="17dp"
         android:layout_marginRight="17dp"
         android:text="@string/SaveItem"
         tools:layout_editor_absoluteX="40dp"
-        tools:layout_editor_absoluteY="288dp" />
+        tools:layout_editor_absoluteY="288dp"
+        android:layout_marginTop="43dp"
+        android:layout_alignTop="@+id/editText"
+        android:layout_alignStart="@+id/button2" />
 
     <Button
         android:id="@+id/button3"
@@ -41,18 +39,17 @@
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="wrap_content"
+        android:layout_width="130dp"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/button3"
-        android:layout_alignEnd="@+id/textView14"
-        android:layout_alignRight="@+id/textView14"
-        android:layout_marginBottom="45dp"
-        android:layout_marginEnd="30dp"
         android:layout_marginRight="30dp"
         android:text="@string/UploadImage"
         tools:layout_editor_absoluteX="192dp"
         tools:layout_editor_absoluteY="288dp"
-        android:onClick="uploadImg"/>
+        android:onClick="uploadImg"
+        android:layout_below="@+id/editText2"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="20dp" />
 
     <TextView
         android:id="@+id/textView14"
@@ -81,10 +78,9 @@
         android:inputType="textPersonName"
         tools:layout_editor_absoluteX="172dp"
         tools:layout_editor_absoluteY="142dp"
+        android:layout_marginTop="34dp"
         android:layout_below="@+id/editText2"
-        android:layout_toLeftOf="@+id/button3"
-        android:layout_toStartOf="@+id/button3"
-        android:layout_marginTop="63dp" />
+        android:layout_toEndOf="@+id/textView28" />
 
     <EditText
         android:id="@+id/editText2"
@@ -185,4 +181,23 @@
         android:layout_alignBottom="@+id/textView28"
         android:layout_toRightOf="@+id/textView28"
         android:layout_toEndOf="@+id/textView28" />
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView25"
+        android:layout_centerVertical="true"
+        android:text="@string/ItemDescription" />
+
+    <EditText
+        android:id="@+id/editText5"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_alignStart="@+id/textView31"
+        android:layout_below="@+id/textView31"
+        android:layout_marginTop="13dp"
+        android:layout_toStartOf="@+id/button3"
+        android:ems="10"
+        android:inputType="textPersonName" />
 </RelativeLayout>

@@ -144,4 +144,5 @@
     <string name="Basket">To Basket</string>
     <string name="Buy">Buy</string>
     <string name="PasswordInfo">* The password shoud be between 6 to 16 character</string>
+    <string name="ItemDescription">Item Description</string>
 </resources>

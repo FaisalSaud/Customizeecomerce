@@ -20,6 +20,8 @@ public class UserMainPage extends AppCompatActivity {
     public static TextView promoSlide;
     public static ImageButton ShoppingCart;
     public static Boolean isCom=false;
+    public static int Payment;
+    public static int Delivery;
 
 
     public static Activity UserMainPage;
