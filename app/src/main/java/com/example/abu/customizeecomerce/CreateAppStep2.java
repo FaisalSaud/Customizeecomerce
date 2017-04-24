@@ -1,5 +1,6 @@
 package com.example.abu.customizeecomerce;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.database.Cursor;
 import android.graphics.Bitmap;
@@ -21,11 +22,15 @@ public class CreateAppStep2 extends AppCompatActivity {
 //    TextView img;
     EditText img;
 
+    public static Activity step2;//test
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_app_step2);
+
+
+        step2=this;//test
 
         Button next = (Button) findViewById(R.id.nextButton);
         img = (EditText) findViewById(R.id.editText4);
@@ -38,6 +43,7 @@ public class CreateAppStep2 extends AppCompatActivity {
                 Intent i = new Intent(CreateAppStep2.this, CreateAppStep3.class);
                 //UserMainPage.Background.setImage(SelectedImage);
                 startActivity(i);
+                if(UserMainPage.isCom)
                 finish();
             }
         });

@@ -3,6 +3,7 @@ package com.example.abu.customizeecomerce;
 import android.annotation.TargetApi;
 import android.app.Activity;
 import android.content.Intent;
+import android.content.pm.LabeledIntent;
 import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -29,12 +30,16 @@ public class CreateAppStep1 extends AppCompatActivity {
     String storeNameS;
     Button chooseIcon;
 
+    public static Activity step1;//test
+
 
         @Override
         protected void onCreate (Bundle savedInstanceState) {
 
             super.onCreate(savedInstanceState);
             setContentView(R.layout.activity_create_app_step1);
+
+            step1=this;//test
 
             Button next = (Button) findViewById(R.id.nextButton);
             chooseIcon = (Button) findViewById(R.id.chooseIconButton);
@@ -105,7 +110,8 @@ public class CreateAppStep1 extends AppCompatActivity {
 
 
             startActivity(i);
-            finish();
+            if(UserMainPage.isCom)
+                finish();
 
 
 
@@ -190,10 +196,10 @@ public class CreateAppStep1 extends AppCompatActivity {
 
     }
 
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
 
-
-
-
-
-
+        UserMainPage.UserMainPage.finish();
+    }
 }

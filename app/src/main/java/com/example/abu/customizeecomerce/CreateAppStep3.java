@@ -1,5 +1,6 @@
 package com.example.abu.customizeecomerce;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Build;
 import android.support.annotation.RequiresApi;
@@ -16,10 +17,13 @@ public class CreateAppStep3 extends AppCompatActivity {
     EditText bar2;
     EditText bar3;
     EditText bar4;
+
+    public static Activity step3;//test
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_app_step3);
+        step3=this; //test
 
         cont =1;    //to count the number of "EditText" for Bars
         Button next = (Button) findViewById(R.id.nextButton);
@@ -34,6 +38,7 @@ public class CreateAppStep3 extends AppCompatActivity {
                 Intent i = new Intent(CreateAppStep3.this, CreateAppStep4.class);
                 barsOnMainPage();
                 startActivity(i);
+                if(UserMainPage.isCom)
                 finish();
             }
         });
@@ -66,18 +71,18 @@ public class CreateAppStep3 extends AppCompatActivity {
     }
     public void remorveBar(View view){
         if (cont==2) {
-            bar2.setVisibility(View.GONE);
+            bar2.setVisibility(View.INVISIBLE);
             Button removeBarButton = (Button) findViewById(R.id.removeBarButton);
-            removeBarButton.setVisibility(View.GONE);
+            removeBarButton.setVisibility(View.INVISIBLE);
            // Toast.makeText(this, "you have reached the minim", Toast.LENGTH_LONG).show();
         }
         else if (cont==3) {
-            bar3.setVisibility(View.GONE);
+            bar3.setVisibility(View.INVISIBLE);
         }
         else if (cont==4) {
-            bar4.setVisibility(View.GONE);
+            bar4.setVisibility(View.INVISIBLE);
             Button addBarButton = (Button) findViewById(R.id.addBarButton);
-            addBarButton.setVisibility(View.INVISIBLE);
+            addBarButton.setVisibility(View.VISIBLE);
         }
         cont--;
 

@@ -29,6 +29,10 @@ public class CreateAppStep5 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 UserMainPage.isCom=true;
+                CreateAppStep1.step1.finish();
+                CreateAppStep2.step2.finish();
+                CreateAppStep3.step3.finish();
+                CreateAppStep4.step4.finish();
                 finish();
             }
         });

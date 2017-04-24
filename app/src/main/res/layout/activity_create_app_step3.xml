@@ -254,18 +254,18 @@
         android:id="@+id/removeBarButton"
         android:layout_width="41dp"
         android:layout_height="39dp"
-        android:background="@color/black_overlay"
-        android:text="-"
-        android:textSize="24sp"
-        android:visibility="visible"
-        android:onClick= "remorveBar"
-        tools:ignore="HardcodedText"
-        tools:layout_editor_absoluteX="700dp"
-        tools:layout_editor_absoluteY="520dp"
         android:layout_alignBaseline="@+id/textView16"
         android:layout_alignBottom="@+id/addBarButton"
         android:layout_alignLeft="@+id/addBarButton"
-        android:layout_alignStart="@+id/addBarButton" />
+        android:layout_alignStart="@+id/addBarButton"
+        android:background="@color/black_overlay"
+        android:onClick="remorveBar"
+        android:text="-"
+        android:textSize="24sp"
+        android:visibility="invisible"
+        tools:ignore="HardcodedText"
+        tools:layout_editor_absoluteX="700dp"
+        tools:layout_editor_absoluteY="520dp" />
 
     <Button
         android:id="@+id/addBarButton"

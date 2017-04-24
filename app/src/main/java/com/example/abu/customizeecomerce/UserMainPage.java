@@ -1,5 +1,6 @@
 package com.example.abu.customizeecomerce;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -19,15 +20,23 @@ public class UserMainPage extends AppCompatActivity {
     public static TextView promoSlide;
     public static ImageButton ShoppingCart;
     public static Boolean isCom=false;
+
+
+    public static Activity UserMainPage;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_main_page);
+
+        UserMainPage=this;
+
+
         Toast.makeText(UserMainPage.this, "Start ump" , Toast.LENGTH_SHORT).show();
         if(!isCom) {
             Intent i = new Intent(this,CreateAppStep1.class);
             moveTaskToBack(true);
             startActivity(i);
+
         }
         Bar1 = (Button) findViewById(R.id.bar1Button);
         Bar2 = (Button) findViewById(R.id.Bar2Button);
@@ -76,4 +85,13 @@ public class UserMainPage extends AppCompatActivity {
             }
         });
     }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+
+        if(requestCode==500){
+            finish();
+        }
     }
+}
