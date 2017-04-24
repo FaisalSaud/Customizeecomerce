@@ -23,6 +23,8 @@ public class CreateAppStep2 extends AppCompatActivity {
     EditText img;
 
     public static Activity step2;//test
+    public static EditText backgroundImg;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,8 +34,9 @@ public class CreateAppStep2 extends AppCompatActivity {
 
         step2=this;//test
 
+        backgroundImg = (EditText) findViewById(R.id.backgroundImage);
         Button next = (Button) findViewById(R.id.nextButton);
-        img = (EditText) findViewById(R.id.editText4);
+        //img = (EditText) findViewById(R.id.editText4);
 
 
 
@@ -60,29 +63,33 @@ public class CreateAppStep2 extends AppCompatActivity {
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
 
-        Toast.makeText(CreateAppStep2.this, "before switch", Toast.LENGTH_LONG).show();
+        //Toast.makeText(CreateAppStep2.this, "before switch", Toast.LENGTH_LONG).show();
         switch (requestCode) {
 
             case SELECTED_PICTURE:
-                if (!(requestCode == RESULT_OK)) {
+                try {
+                    if (!(requestCode == RESULT_OK)) {
 
-                    Uri uri = data.getData();
-                    String[] projection = {MediaStore.Images.Media.DATA};
+                        Uri uri = data.getData();
+                        String[] projection = {MediaStore.Images.Media.DATA};
 
-                    Cursor cursor = getContentResolver().query(uri, projection, null, null, null);
-                    cursor.moveToFirst();
+                        Cursor cursor = getContentResolver().query(uri, projection, null, null, null);
+                        cursor.moveToFirst();
 
-                    int columnIndex = cursor.getColumnIndex(projection[0]);
-                    String filePath = cursor.getString(columnIndex);
-                    cursor.close();
+                        int columnIndex = cursor.getColumnIndex(projection[0]);
+                        String filePath = cursor.getString(columnIndex);
+                        cursor.close();
 
-                    Bitmap yourSelect = BitmapFactory.decodeFile(filePath);
-                    Drawable d = new BitmapDrawable(yourSelect);
+                        Bitmap yourSelect = BitmapFactory.decodeFile(filePath);
+                        Drawable d = new BitmapDrawable(yourSelect);
 
-                    try {
-                        img.setBackground(d);
-                    } catch (Exception e) {
+                        try {
+                            img.setBackground(d);
+                        } catch (Exception e) {
+                        }
                     }
+                }catch (Exception e){
+                    //empty
                 }
                 break;
             case 2:
@@ -98,6 +105,11 @@ public class CreateAppStep2 extends AppCompatActivity {
                 Toast.makeText(this, "in default", Toast.LENGTH_LONG).show();
                 break;
         }
+    }
+
+    public void chooseBackgroundImage (View view){
+        Intent i = new Intent(CreateAppStep2.this,ChooseBackground.class);
+        startActivity(i);
     }
 
 }

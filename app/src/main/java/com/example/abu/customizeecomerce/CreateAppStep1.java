@@ -144,29 +144,33 @@ public class CreateAppStep1 extends AppCompatActivity {
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
 
-        Toast.makeText(CreateAppStep1.this,"before switch",Toast.LENGTH_LONG).show();
+        //Toast.makeText(CreateAppStep1.this,"before switch",Toast.LENGTH_LONG).show();
         switch (requestCode){
 
             case SELECTED_PICTURE:
-                if (!(requestCode==RESULT_OK)){
+                try {
+                    if (!(requestCode == RESULT_OK)) {
 
-                    Uri uri = data.getData();
-                    String[]projection={MediaStore.Images.Media.DATA};
+                        Uri uri = data.getData();
+                        String[] projection = {MediaStore.Images.Media.DATA};
 
-                    Cursor cursor= getContentResolver().query(uri, projection, null, null, null);
-                    cursor.moveToFirst();
+                        Cursor cursor = getContentResolver().query(uri, projection, null, null, null);
+                        cursor.moveToFirst();
 
-                    int columnIndex = cursor.getColumnIndex(projection[0]);
-                    String filePath = cursor.getString(columnIndex);
-                    cursor.close();
+                        int columnIndex = cursor.getColumnIndex(projection[0]);
+                        String filePath = cursor.getString(columnIndex);
+                        cursor.close();
 
-                    Bitmap yourSelect = BitmapFactory.decodeFile(filePath);
-                    Drawable d = new BitmapDrawable(yourSelect);
+                        Bitmap yourSelect = BitmapFactory.decodeFile(filePath);
+                        Drawable d = new BitmapDrawable(yourSelect);
 
-                   try {
-                        img.setBackground(d);
-                    }catch (Exception e){
+                        try {
+                            img.setBackground(d);
+                        } catch (Exception e) {
+                        }
                     }
+                }catch (Exception e){
+                    //empty
                 }
                 break;
             case 2:

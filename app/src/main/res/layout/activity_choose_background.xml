@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.abu.customizeecomerce.ChooseBackground">
+
+    <ImageView
+        android:id="@+id/Background1Orange"
+        android:layout_width="361dp"
+        android:layout_height="54dp"
+        android:layout_alignStart="@+id/Background2Blue"
+        android:layout_below="@+id/textView31"
+        android:layout_marginTop="61dp"
+        android:background="@android:color/holo_orange_dark"
+        app:srcCompat="@android:color/holo_orange_dark"
+        tools:layout_editor_absoluteX="12dp"
+        tools:layout_editor_absoluteY="113dp" />
+
+    <ImageView
+        android:id="@+id/Background5P"
+        android:layout_width="361dp"
+        android:layout_height="54dp"
+        android:layout_alignStart="@+id/Background4Red"
+        android:layout_below="@+id/Background4Red"
+        android:layout_marginTop="13dp"
+        android:background="@android:color/holo_purple"
+        app:srcCompat="@android:color/holo_purple"
+        tools:layout_editor_absoluteX="12dp"
+        tools:layout_editor_absoluteY="372dp" />
+
+    <ImageView
+        android:id="@+id/Background4Red"
+        android:layout_width="361dp"
+        android:layout_height="54dp"
+        android:layout_alignStart="@+id/Background3Green"
+        android:layout_below="@+id/Background3Green"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/holo_red_dark"
+        app:srcCompat="@android:color/holo_red_dark"
+        tools:layout_editor_absoluteX="12dp"
+        tools:layout_editor_absoluteY="309dp" />
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose Background"
+        tools:layout_editor_absoluteX="130dp"
+        tools:layout_editor_absoluteY="16dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp" />
+
+    <ImageView
+        android:id="@+id/Background3Green"
+        android:layout_width="361dp"
+        android:layout_height="54dp"
+        android:layout_alignStart="@+id/Background2Blue"
+        android:layout_below="@+id/Background2Blue"
+        android:layout_marginTop="13dp"
+        android:background="@android:color/holo_green_dark"
+        app:srcCompat="@android:color/holo_green_dark"
+        tools:layout_editor_absoluteX="12dp"
+        tools:layout_editor_absoluteY="242dp" />
+
+    <ImageView
+        android:id="@+id/Background6Black"
+        android:layout_width="361dp"
+        android:layout_height="54dp"
+        android:layout_alignStart="@+id/Background5P"
+        android:layout_below="@+id/Background5P"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/black"
+        app:srcCompat="@android:color/black"
+        tools:layout_editor_absoluteX="12dp"
+        tools:layout_editor_absoluteY="435dp" />
+
+    <ImageView
+        android:id="@+id/Background2Blue"
+        android:layout_width="361dp"
+        android:layout_height="54dp"
+        android:layout_below="@+id/Background1Orange"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:background="@color/colorPrimaryDark"
+        app:srcCompat="@color/colorPrimaryDark"
+        tools:layout_editor_absoluteX="12dp"
+        tools:layout_editor_absoluteY="178dp" />
+</RelativeLayout>

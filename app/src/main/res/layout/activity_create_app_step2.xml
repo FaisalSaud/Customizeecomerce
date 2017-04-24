@@ -140,13 +140,14 @@
         android:id="@+id/button7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_above="@+id/nextButton"
         android:layout_marginBottom="64dp"
+        android:layout_marginRight="17dp"
+        android:layout_toStartOf="@+id/textView35"
+        android:onClick="chooseBackgroundImage"
         android:text="@string/ChooseBackground"
         tools:layout_editor_absoluteX="225dp"
-        tools:layout_editor_absoluteY="370dp"
-        android:layout_marginRight="17dp"
-        android:layout_above="@+id/nextButton"
-        android:layout_toStartOf="@+id/textView35" />
+        tools:layout_editor_absoluteY="370dp" />
 
     <Button
         android:id="@+id/nextButton"
@@ -180,7 +181,7 @@
         android:layout_marginStart="23dp" />
 
     <EditText
-        android:id="@+id/editText4"
+        android:id="@+id/backgroundImage"
         style="@android:style/Widget.DeviceDefault.AutoCompleteTextView"
         android:layout_width="wrap_content"
         android:layout_height="200px"
