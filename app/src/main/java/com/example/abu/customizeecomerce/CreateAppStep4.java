@@ -60,29 +60,29 @@ public class CreateAppStep4 extends AppCompatActivity {
         else
             UserMainPage.ShoppingCart.setVisibility(View.INVISIBLE);
         if(Cash.isChecked() && Mada.isChecked()){
-            UserMainPage.Payment=2;
+            UserMainPage.Payment = 2;
         }
         else if(Cash.isChecked() && !Mada.isChecked()){
-            UserMainPage.Payment=1;
+            UserMainPage.Payment = 1;
         }
         else if(!Cash.isChecked() && Mada.isChecked()){
-            UserMainPage.Payment=0;
+            UserMainPage.Payment = 0;
         }
         else{
-            UserMainPage.Payment=-1;
+            UserMainPage.Payment = -1;
             Toast.makeText(CreateAppStep4.this ,"Please Select a payment method" , Toast.LENGTH_SHORT).show();
         }
         if(InStore.isChecked() && byHand.isChecked()){
-            UserMainPage.Delivery=2;
+            UserMainPage.Delivery = 2;
         }
         else if(InStore.isChecked() && !byHand.isChecked()){
-            UserMainPage.Delivery=1;
+            UserMainPage.Delivery = 1;
         }
         else if(!InStore.isChecked() && byHand.isChecked()){
-            UserMainPage.Delivery=0;
+            UserMainPage.Delivery = 0;
         }
         else{
-            UserMainPage.Delivery=-1;
+            UserMainPage.Delivery = -1;
             Toast.makeText(CreateAppStep4.this ,"Please Select a delaviry method" , Toast.LENGTH_SHORT).show();}
     }
 

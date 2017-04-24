@@ -50,7 +50,7 @@ public class PaymentAndDelaviry extends AppCompatActivity {
                 DarraySpinner[1]="By Hand";
                 DarraySpinner[2]="In Store";
             }
-            ArrayAdapter<String> Dadapter = new ArrayAdapter<String>(this,
+            ArrayAdapter<String> Dadapter = new ArrayAdapter<String>( this,
                     android.R.layout.simple_spinner_item, DarraySpinner);
             Delivery.setAdapter(Dadapter);
         }
