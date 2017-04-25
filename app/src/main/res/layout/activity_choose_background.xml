@@ -14,6 +14,7 @@
         android:layout_below="@+id/textView31"
         android:layout_marginTop="61dp"
         android:background="@android:color/holo_orange_dark"
+        android:clickable="true"
         app:srcCompat="@android:color/holo_orange_dark"
         tools:layout_editor_absoluteX="12dp"
         tools:layout_editor_absoluteY="113dp" />
@@ -26,6 +27,7 @@
         android:layout_below="@+id/Background4Red"
         android:layout_marginTop="13dp"
         android:background="@android:color/holo_purple"
+        android:clickable="true"
         app:srcCompat="@android:color/holo_purple"
         tools:layout_editor_absoluteX="12dp"
         tools:layout_editor_absoluteY="372dp" />
@@ -38,6 +40,7 @@
         android:layout_below="@+id/Background3Green"
         android:layout_marginTop="16dp"
         android:background="@android:color/holo_red_dark"
+        android:clickable="true"
         app:srcCompat="@android:color/holo_red_dark"
         tools:layout_editor_absoluteX="12dp"
         tools:layout_editor_absoluteY="309dp" />
@@ -61,6 +64,7 @@
         android:layout_below="@+id/Background2Blue"
         android:layout_marginTop="13dp"
         android:background="@android:color/holo_green_dark"
+        android:clickable="true"
         app:srcCompat="@android:color/holo_green_dark"
         tools:layout_editor_absoluteX="12dp"
         tools:layout_editor_absoluteY="242dp" />
@@ -73,6 +77,7 @@
         android:layout_below="@+id/Background5P"
         android:layout_marginTop="16dp"
         android:background="@android:color/black"
+        android:clickable="true"
         app:srcCompat="@android:color/black"
         tools:layout_editor_absoluteX="12dp"
         tools:layout_editor_absoluteY="435dp" />
@@ -85,6 +90,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="17dp"
         android:background="@color/colorPrimaryDark"
+        android:clickable="true"
         app:srcCompat="@color/colorPrimaryDark"
         tools:layout_editor_absoluteX="12dp"
         tools:layout_editor_absoluteY="178dp" />

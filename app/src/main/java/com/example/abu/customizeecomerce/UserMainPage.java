@@ -16,7 +16,7 @@ public class UserMainPage extends AppCompatActivity {
     public static Button Bar2;
     public static Button Bar3;
     public static Button Bar4;
-    public static EditText Background;
+    public static EditText background;
     public static TextView promoSlide;
     public static ImageButton ShoppingCart;
     public static Boolean isCom=false;
@@ -31,6 +31,8 @@ public class UserMainPage extends AppCompatActivity {
         setContentView(R.layout.activity_user_main_page);
 
         UserMainPage=this;
+        background = (EditText) findViewById(R.id.userBackground);
+
 
 
         Toast.makeText(UserMainPage.this, "Start ump" , Toast.LENGTH_SHORT).show();

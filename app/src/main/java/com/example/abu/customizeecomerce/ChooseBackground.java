@@ -32,6 +32,7 @@ public class ChooseBackground extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 CreateAppStep2.backgroundImg.setBackground(orange.getBackground());
+                CreateAppStep2.backColor = "orange";//test
                 finish();
             }
         });

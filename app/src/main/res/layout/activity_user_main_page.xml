@@ -5,10 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.abu.customizeecomerce.UserMainPage">
+
     <EditText
-        android:id="@+id/editText3"
-        android:layout_width="362dp"
+        android:id="@+id/userBackground"
+        android:layout_width="400dp"
         android:layout_height="62dp"
+        android:background="@android:drawable/dialog_holo_light_frame"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="@string/Background"
@@ -39,8 +41,8 @@
         tools:layout_editor_absoluteY="250dp"
         android:visibility="visible"
         android:layout_alignBottom="@+id/textView41"
-        android:layout_alignRight="@+id/editText3"
-        android:layout_alignEnd="@+id/editText3"
+        android:layout_alignRight="@+id/userBackground"
+        android:layout_alignEnd="@+id/userBackground"
         android:layout_marginRight="15dp"
         android:layout_marginEnd="15dp" />
 
@@ -53,7 +55,7 @@
         tools:layout_editor_absoluteY="112dp"
         android:visibility="visible"
         android:layout_marginTop="45dp"
-        android:layout_below="@+id/editText3"
+        android:layout_below="@+id/userBackground"
         android:layout_toLeftOf="@+id/imageButton"
         android:layout_toStartOf="@+id/imageButton"
         android:layout_marginRight="15dp"

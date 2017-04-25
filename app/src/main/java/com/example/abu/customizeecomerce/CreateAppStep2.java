@@ -20,10 +20,11 @@ import android.widget.Toast;
 public class CreateAppStep2 extends AppCompatActivity {
     private static final int SELECTED_PICTURE = 1;
 //    TextView img;
-    EditText img;
+//    EditText img;
 
-    public static Activity step2;//test
+    public static Activity step2;
     public static EditText backgroundImg;
+    public static String backColor;//test
 
 
     @Override
@@ -32,7 +33,8 @@ public class CreateAppStep2 extends AppCompatActivity {
         setContentView(R.layout.activity_create_app_step2);
 
 
-        step2=this;//test
+        step2 = this;
+        backColor = ""; //test
 
         backgroundImg = (EditText) findViewById(R.id.backgroundImage);
         Button next = (Button) findViewById(R.id.nextButton);
@@ -45,6 +47,7 @@ public class CreateAppStep2 extends AppCompatActivity {
             public void onClick(View v) {
                 Intent i = new Intent(CreateAppStep2.this, CreateAppStep3.class);
                 //UserMainPage.Background.setImage(SelectedImage);
+                putOnMainPage();
                 startActivity(i);
                 if(UserMainPage.isCom)
                 finish();
@@ -84,7 +87,7 @@ public class CreateAppStep2 extends AppCompatActivity {
                         Drawable d = new BitmapDrawable(yourSelect);
 
                         try {
-                            img.setBackground(d);
+                            backgroundImg.setBackground(d);
                         } catch (Exception e) {
                         }
                     }
@@ -98,7 +101,7 @@ public class CreateAppStep2 extends AppCompatActivity {
                     Bitmap bitmap = (Bitmap) data.getParcelableExtra("bitmap"); //you can delete the casting
                     Drawable d = new BitmapDrawable(getResources(), bitmap);
 
-                    img.setBackground(d);
+                    backgroundImg.setBackground(d);
 
                 }
             default:
@@ -110,6 +113,23 @@ public class CreateAppStep2 extends AppCompatActivity {
     public void chooseBackgroundImage (View view){
         Intent i = new Intent(CreateAppStep2.this,ChooseBackground.class);
         startActivity(i);
+    }
+
+    public void putOnMainPage (){
+        try{
+
+//            switch (backColor){//test
+//                case "orange":
+//                    //UserMainPage.Background.setBackgroundResource(R.color.orange);
+//                    UserMainPage.promoSlide.setBackgroundResource(R.color.orange);
+//            }
+            UserMainPage.background.setBackground(backgroundImg.getBackground());
+
+            //UserMainPage.Background.setBackgroundDrawable(backgroundImg.getBackground());
+
+        }catch (Exception e){
+            Toast.makeText(CreateAppStep2.this, e.getMessage(),Toast.LENGTH_LONG).show();
+        }
     }
 
 }
