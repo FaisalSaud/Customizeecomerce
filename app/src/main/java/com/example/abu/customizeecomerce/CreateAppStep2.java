@@ -123,6 +123,7 @@ public class CreateAppStep2 extends AppCompatActivity {
 //                    //UserMainPage.Background.setBackgroundResource(R.color.orange);
 //                    UserMainPage.promoSlide.setBackgroundResource(R.color.orange);
 //            }
+
             UserMainPage.background.setBackground(backgroundImg.getBackground());
 
             //UserMainPage.Background.setBackgroundDrawable(backgroundImg.getBackground());
