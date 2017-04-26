@@ -4,20 +4,34 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.view.menu.MenuAdapter;
 import android.widget.ArrayAdapter;
+import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class PaymentAndDelaviry extends AppCompatActivity {
     public String[] ParraySpinner;
     public String[] DarraySpinner;
+
+    TextView itemName;
+    TextView itemDescription;
+    TextView itemPrice;
+    EditText itemQuantity;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_payment_and_delaviry);
+
+        itemName = (TextView) findViewById(R.id.itemName);
+        itemDescription = (TextView) findViewById(R.id.itemDescription);
+        itemPrice = (TextView) findViewById(R.id.itemPrice);
+        itemQuantity = (EditText) findViewById(R.id.numberOfItem);
+
         try{
             Spinner Payment =(Spinner) findViewById(R.id.Paymentspinner);
             Spinner Delivery =(Spinner) findViewById(R.id.Deliveryspinner);
-//          Payment.setPrompt("Select your payment methode needed");
+//          Payment.setPrompt("Select your payment methode needed");5
 //          delivery.setPrompt("Select your payment methode needed");
             this.ParraySpinner = new String[3];
             ParraySpinner[0]="Please Select";

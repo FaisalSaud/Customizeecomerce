@@ -53,4 +53,68 @@
         android:text="[Select a Method...]"
         android:layout_marginBottom="25dp" />
 
+    <TextView
+        android:id="@+id/itemName"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="31dp"
+        android:text="item"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/textView54"
+        android:layout_width="110dp"
+        android:layout_height="20dp"
+        android:layout_alignStart="@+id/itemName"
+        android:layout_below="@+id/itemName"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="23dp"
+        android:text="Item Description:" />
+
+    <TextView
+        android:id="@+id/itemDescription"
+        android:layout_width="380dp"
+        android:layout_height="120dp"
+        android:layout_below="@+id/textView54"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="17dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textView58"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="250dp"
+        android:text="Number of item" />
+
+    <EditText
+        android:id="@+id/numberOfItem"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="number"
+        android:layout_below="@+id/textView58"
+        android:layout_alignEnd="@+id/textView54" />
+
+    <TextView
+        android:id="@+id/textView59"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView58"
+        android:layout_marginStart="280dp"
+        android:text="Item Price" />
+
+    <TextView
+        android:id="@+id/itemPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_alignBaseline="@+id/numberOfItem"
+        android:layout_alignBottom="@+id/numberOfItem"
+        android:layout_alignStart="@+id/textView59" />
+
 </RelativeLayout>

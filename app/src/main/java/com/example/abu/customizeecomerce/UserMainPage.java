@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -23,6 +24,17 @@ public class UserMainPage extends AppCompatActivity {
     public static int Payment;
     public static int Delivery;
 
+    //test
+    static String [] bars;
+    static String [] itemsBar1;
+    static String [] itemsBar2;
+    static String [] itemsBar3;
+    static String [] itemsBar4;
+    static ImageView [] imgItemsBar1;
+    static ImageView [] imgItemsBar2;
+    static ImageView [] imgItemsBar3;
+    static ImageView [] imgItemsBar4;
+//end test
 
     public static Activity UserMainPage;
     @Override
@@ -33,6 +45,16 @@ public class UserMainPage extends AppCompatActivity {
         UserMainPage=this;
         background = (EditText) findViewById(R.id.userBackground);
 
+        //test
+        itemsBar1 = new String[5];
+        itemsBar2 = new String[5];
+        itemsBar3 = new String[5];
+        itemsBar4 = new String[5];
+        imgItemsBar1 = new ImageView[5];
+        imgItemsBar2 = new ImageView[5];
+        imgItemsBar3 = new ImageView[5];
+        imgItemsBar4 = new ImageView[5];
+//end test
 
 
         Toast.makeText(UserMainPage.this, "Start ump" , Toast.LENGTH_SHORT).show();
@@ -46,6 +68,7 @@ public class UserMainPage extends AppCompatActivity {
         Bar2 = (Button) findViewById(R.id.Bar2Button);
         Bar3 = (Button) findViewById(R.id.Bar3Button);
         Bar4 = (Button) findViewById(R.id.Bar4Button);
+
         ShoppingCart = (ImageButton) findViewById(R.id.imageButton);
         promoSlide = (TextView) findViewById(R.id.textView42);
         Bar1.setOnClickListener(new View.OnClickListener(){

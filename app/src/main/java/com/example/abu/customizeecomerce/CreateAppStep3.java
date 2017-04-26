@@ -12,11 +12,11 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 public class CreateAppStep3 extends AppCompatActivity {
-    int cont ;
-    EditText bar1;
-    EditText bar2;
-    EditText bar3;
-    EditText bar4;
+    public static int cont ;
+    public static EditText bar1;
+    public static EditText bar2;
+    public static EditText bar3;
+    public static EditText bar4;
 
     public static Activity step3;//test
     @Override
