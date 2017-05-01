@@ -40,11 +40,19 @@
                 android:layout_marginLeft="175dp"
                 android:text="@string/Basket" />
 
-            <ImageView
-                android:id="@+id/imageView3BarItem11"
-                android:layout_width="95dp"
-                android:layout_height="102dp"
-                app:srcCompat="@drawable/bookshelf_icon" />
+            <EditText
+                android:id="@+id/editTextBarItem11"
+                android:layout_width="200px"
+                android:layout_height="200px"
+                android:layout_below="@+id/ItemNameStep5"
+                android:layout_toEndOf="@+id/textView14"
+                android:editable="false"
+                android:ems="10"
+                android:inputType="none"
+                tools:editable="false"
+                tools:inputType="none"
+                tools:layout_editor_absoluteX="172dp"
+                tools:layout_editor_absoluteY="142dp" />
 
             <TextView
                 android:id="@+id/itemPriceBarItem11"
@@ -90,11 +98,19 @@
                 android:layout_marginLeft="175dp"
                 android:text="@string/Basket" />
 
-            <ImageView
-                android:id="@+id/imageView3BarItem12"
-                android:layout_width="95dp"
-                android:layout_height="102dp"
-                app:srcCompat="@drawable/bookshelf_icon" />
+            <EditText
+                android:id="@+id/editTextBarItem12"
+                android:layout_width="200px"
+                android:layout_height="200px"
+                android:layout_below="@+id/ItemNameStep5"
+                android:layout_toEndOf="@+id/textView14"
+                android:editable="false"
+                android:ems="10"
+                android:inputType="none"
+                tools:editable="false"
+                tools:inputType="none"
+                tools:layout_editor_absoluteX="172dp"
+                tools:layout_editor_absoluteY="142dp" />
 
             <TextView
                 android:id="@+id/itemPriceBarItem12"
@@ -113,24 +129,6 @@
                 android:text="TextView"
                 android:textColor="@color/common_google_signin_btn_text_dark_focused"
                 android:textSize="18sp" />
-
-            <TextView
-                android:id="@+id/textView55BarItem12"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="280dp"
-                android:layout_marginTop="35dp"
-                android:text="TextView" />
-
-            <EditText
-                android:id="@+id/editText4BarItem12"
-                android:layout_width="65dp"
-                android:layout_height="35dp"
-                android:layout_marginLeft="190dp"
-                android:layout_marginTop="30dp"
-                android:ems="10"
-                android:inputType="number"
-                android:text="Name" />
 
 
         </android.support.v7.widget.CardView>
@@ -158,11 +156,19 @@
                 android:layout_marginLeft="175dp"
                 android:text="@string/Basket" />
 
-            <ImageView
-                android:id="@+id/imageView3BarItem13"
-                android:layout_width="95dp"
-                android:layout_height="102dp"
-                app:srcCompat="@drawable/bookshelf_icon" />
+            <EditText
+                android:id="@+id/editTextBarItem13"
+                android:layout_width="200px"
+                android:layout_height="200px"
+                android:layout_below="@+id/ItemNameStep5"
+                android:layout_toEndOf="@+id/textView14"
+                android:editable="false"
+                android:ems="10"
+                android:inputType="none"
+                tools:editable="false"
+                tools:inputType="none"
+                tools:layout_editor_absoluteX="172dp"
+                tools:layout_editor_absoluteY="142dp" />
 
             <TextView
                 android:id="@+id/itemPriceBarItem13"
@@ -181,24 +187,6 @@
                 android:text="TextView"
                 android:textColor="@color/common_google_signin_btn_text_dark_focused"
                 android:textSize="18sp" />
-
-            <TextView
-                android:id="@+id/textView55BarItem13"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="280dp"
-                android:layout_marginTop="35dp"
-                android:text="TextView" />
-
-            <EditText
-                android:id="@+id/editText4BarItem13"
-                android:layout_width="65dp"
-                android:layout_height="35dp"
-                android:layout_marginLeft="190dp"
-                android:layout_marginTop="30dp"
-                android:ems="10"
-                android:inputType="number"
-                android:text="Name" />
 
 
         </android.support.v7.widget.CardView>
@@ -226,11 +214,19 @@
                 android:layout_marginLeft="175dp"
                 android:text="@string/Basket" />
 
-            <ImageView
-                android:id="@+id/imageView3BarItem14"
-                android:layout_width="95dp"
-                android:layout_height="102dp"
-                app:srcCompat="@drawable/bookshelf_icon" />
+            <EditText
+                android:id="@+id/editTextBarItem14"
+                android:layout_width="200px"
+                android:layout_height="200px"
+                android:layout_below="@+id/ItemNameStep5"
+                android:layout_toEndOf="@+id/textView14"
+                android:editable="false"
+                android:ems="10"
+                android:inputType="none"
+                tools:editable="false"
+                tools:inputType="none"
+                tools:layout_editor_absoluteX="172dp"
+                tools:layout_editor_absoluteY="142dp" />
 
             <TextView
                 android:id="@+id/itemPriceBarItem14"
@@ -249,24 +245,6 @@
                 android:text="TextView"
                 android:textColor="@color/common_google_signin_btn_text_dark_focused"
                 android:textSize="18sp" />
-
-            <TextView
-                android:id="@+id/textView55BarItem14"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="280dp"
-                android:layout_marginTop="35dp"
-                android:text="TextView" />
-
-            <EditText
-                android:id="@+id/editText4BarItem14"
-                android:layout_width="65dp"
-                android:layout_height="35dp"
-                android:layout_marginLeft="190dp"
-                android:layout_marginTop="30dp"
-                android:ems="10"
-                android:inputType="number"
-                android:text="Name" />
 
 
         </android.support.v7.widget.CardView>
@@ -294,11 +272,19 @@
                 android:layout_marginLeft="175dp"
                 android:text="@string/Basket" />
 
-            <ImageView
-                android:id="@+id/imageView3BarItem15"
-                android:layout_width="95dp"
-                android:layout_height="102dp"
-                app:srcCompat="@drawable/bookshelf_icon" />
+            <EditText
+                android:id="@+id/editTextBarItem15"
+                android:layout_width="200px"
+                android:layout_height="200px"
+                android:layout_below="@+id/ItemNameStep5"
+                android:layout_toEndOf="@+id/textView14"
+                android:editable="false"
+                android:ems="10"
+                android:inputType="none"
+                tools:editable="false"
+                tools:inputType="none"
+                tools:layout_editor_absoluteX="172dp"
+                tools:layout_editor_absoluteY="142dp" />
 
             <TextView
                 android:id="@+id/itemPriceBarItem15"
@@ -317,24 +303,6 @@
                 android:text="TextView"
                 android:textColor="@color/common_google_signin_btn_text_dark_focused"
                 android:textSize="18sp" />
-
-            <TextView
-                android:id="@+id/textView55BarItem15"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="280dp"
-                android:layout_marginTop="35dp"
-                android:text="TextView" />
-
-            <EditText
-                android:id="@+id/editText4BarItem15"
-                android:layout_width="65dp"
-                android:layout_height="35dp"
-                android:layout_marginLeft="190dp"
-                android:layout_marginTop="30dp"
-                android:ems="10"
-                android:inputType="number"
-                android:text="Name" />
 
 
         </android.support.v7.widget.CardView>

@@ -30,10 +30,15 @@ public class UserMainPage extends AppCompatActivity {
     static String [] itemsBar2;
     static String [] itemsBar3;
     static String [] itemsBar4;
-    static ImageView [] imgItemsBar1;
-    static ImageView [] imgItemsBar2;
-    static ImageView [] imgItemsBar3;
-    static ImageView [] imgItemsBar4;
+    static EditText [] imgItemsBar1;
+    static EditText [] imgItemsBar2;
+    static EditText [] imgItemsBar3;
+    static EditText [] imgItemsBar4;
+
+    static int B1IteamC = 0; //item count for bar1
+    static int B2IteamC = 0;               //bar2
+    static int B3IteamC = 0;               //bar3
+    static int B4IteamC = 0;
 //end test
 
     public static Activity UserMainPage;
@@ -46,14 +51,14 @@ public class UserMainPage extends AppCompatActivity {
         background = (EditText) findViewById(R.id.userBackground);
 
         //test
-        itemsBar1 = new String[5];
-        itemsBar2 = new String[5];
-        itemsBar3 = new String[5];
-        itemsBar4 = new String[5];
-        imgItemsBar1 = new ImageView[5];
-        imgItemsBar2 = new ImageView[5];
-        imgItemsBar3 = new ImageView[5];
-        imgItemsBar4 = new ImageView[5];
+        itemsBar1 = new String[15];
+        itemsBar2 = new String[15];
+        itemsBar3 = new String[15];
+        itemsBar4 = new String[15];
+        imgItemsBar1 = new EditText[5];
+        imgItemsBar2 = new EditText[5];
+        imgItemsBar3 = new EditText[5];
+        imgItemsBar4 = new EditText[5];
 //end test
 
 

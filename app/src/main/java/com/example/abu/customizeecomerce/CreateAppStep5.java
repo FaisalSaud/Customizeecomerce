@@ -14,8 +14,11 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.Toast;
+
+import java.io.IOException;
 
 public class CreateAppStep5 extends AppCompatActivity {
     private static final int SELECTED_PICTURE = 1;
@@ -52,6 +55,7 @@ public class CreateAppStep5 extends AppCompatActivity {
         itemDescriptionStep5 = (EditText) findViewById(R.id.ItemDescriptionStep5);
         itemPriceStep5 = (EditText) findViewById(R.id.itemPriceStep5);
         barsListStep5 = (Spinner) findViewById(R.id.barsSpinnerStep5);
+        img = (EditText) findViewById(R.id.ItemImageStep5);
 
 
         try {
@@ -102,7 +106,7 @@ public class CreateAppStep5 extends AppCompatActivity {
                 finish();
             }
         });
-         img = (EditText) findViewById(R.id.ItemImageStep5);}
+    }
     public void uploadImg(View view) {
         Intent i = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
         startActivityForResult(i, SELECTED_PICTURE);
@@ -159,48 +163,97 @@ public class CreateAppStep5 extends AppCompatActivity {
         }
     }
 
-    public void saveItem (View view){
+    public boolean iEmpty (String [] bar , int count){      //to find if there is an empty space for item in array "String only"
 
-        if(barsListStep5.getSelectedItemPosition()==0){
-            if (UserMainPage.itemsBar1.length >= 15){
-                Toast.makeText(CreateAppStep5.this,"you have reach the item limit",Toast.LENGTH_LONG).show();
-                return;
-            }else {
-                UserMainPage.itemsBar1[UserMainPage.itemsBar1.length - 1]=itemNameStep5.getText().toString();           //name
-                UserMainPage.itemsBar1[UserMainPage.itemsBar1.length - 1]=itemDescriptionStep5.getText().toString();    //description
-                UserMainPage.itemsBar1[UserMainPage.itemsBar1.length - 1]=itemPriceStep5.getText().toString();          //price
-            }
-        }else if(barsListStep5.getSelectedItemPosition()==1){
-            if (UserMainPage.itemsBar2.length >= 15){
-                Toast.makeText(CreateAppStep5.this,"you have reach the item limit",Toast.LENGTH_LONG).show();
-                return;
-            }else {
-                UserMainPage.itemsBar2[UserMainPage.itemsBar2.length - 1] = itemNameStep5.getText().toString();           //name
-                UserMainPage.itemsBar2[UserMainPage.itemsBar2.length - 1] = itemDescriptionStep5.getText().toString();    //description
-                UserMainPage.itemsBar2[UserMainPage.itemsBar2.length - 1] = itemPriceStep5.getText().toString();          //price
-            }
-        }else if(barsListStep5.getSelectedItemPosition()==2){
-            if (UserMainPage.itemsBar3.length >= 15){
-                Toast.makeText(CreateAppStep5.this,"you have reach the item limit",Toast.LENGTH_LONG).show();
-                return;
-            }else {
-                UserMainPage.itemsBar3[UserMainPage.itemsBar3.length - 1] = itemNameStep5.getText().toString();           //name
-                UserMainPage.itemsBar3[UserMainPage.itemsBar3.length - 1] = itemDescriptionStep5.getText().toString();    //description
-                UserMainPage.itemsBar3[UserMainPage.itemsBar3.length - 1] = itemPriceStep5.getText().toString();          //price
-            }
-        }else if(barsListStep5.getSelectedItemPosition()==3){
-            if (UserMainPage.itemsBar4.length >= 15){
-                Toast.makeText(CreateAppStep5.this,"you have reach the item limit",Toast.LENGTH_LONG).show();
-                return;
-            }else {
-                UserMainPage.itemsBar3[UserMainPage.itemsBar3.length - 1] = itemNameStep5.getText().toString();           //name
-                UserMainPage.itemsBar3[UserMainPage.itemsBar3.length - 1] = itemDescriptionStep5.getText().toString();    //description
-                UserMainPage.itemsBar3[UserMainPage.itemsBar3.length - 1] = itemPriceStep5.getText().toString();          //price
-            }
-        }else {
-            Toast.makeText(CreateAppStep5.this,"imposable to reach this Toast in CreateAppStep5 ",Toast.LENGTH_LONG).show();
+        Toast.makeText(CreateAppStep5.this, "enter to 'iEmpty' method", Toast.LENGTH_LONG).show();
+        boolean empty = true;
+        if (count > 15)
+            return false;
+        for (int i = count ; i < bar.length ; i++){
+            if (bar[i]!= null)
+                empty = false;
         }
+        return empty;
+    }
 
+
+
+    public void saveItem (View view) {
+
+        try {
+            if (barsListStep5.getSelectedItemPosition() == 0) { //bar1
+
+                try {
+                    if (!iEmpty(UserMainPage.itemsBar1 , UserMainPage.B1IteamC)){
+                        Toast.makeText(CreateAppStep5.this, "you have reach the item limit", Toast.LENGTH_LONG).show();
+                        return;
+                    } else {
+
+
+                        Toast.makeText(CreateAppStep5.this, "in 1st else", Toast.LENGTH_LONG).show();
+                        UserMainPage.itemsBar1[UserMainPage.B1IteamC ++] = itemNameStep5.getText().toString();           //name
+                        UserMainPage.itemsBar1[UserMainPage.B1IteamC ++] = itemDescriptionStep5.getText().toString();    //description
+                        UserMainPage.itemsBar1[UserMainPage.B1IteamC ++] = itemPriceStep5.getText().toString();          //price
+                        UserMainPage.imgItemsBar1[(UserMainPage.B1IteamC-1) / 3] = img;     //image
+
+                    }
+                }catch (Exception e){
+                    Toast.makeText(CreateAppStep5.this, "error in 1 ---   "+ e.getMessage()  , Toast.LENGTH_LONG).show();
+                }
+
+            } else if (barsListStep5.getSelectedItemPosition() == 1) {  //bar2
+
+                try {
+                    if (!iEmpty(UserMainPage.itemsBar2,UserMainPage.B2IteamC)) {
+                        Toast.makeText(CreateAppStep5.this, "you have reach the item limit", Toast.LENGTH_LONG).show();
+                        return;
+                    } else {
+                        UserMainPage.itemsBar2[UserMainPage.B2IteamC ++] = itemNameStep5.getText().toString();           //name
+                        UserMainPage.itemsBar2[UserMainPage.B2IteamC ++] = itemDescriptionStep5.getText().toString();    //description
+                        UserMainPage.itemsBar2[UserMainPage.B2IteamC ++] = itemPriceStep5.getText().toString();          //price
+                        UserMainPage.imgItemsBar2[(UserMainPage.B2IteamC-1) / 3].setBackground(img.getBackground());     //image
+                    }
+
+                }catch (Exception e){
+                Toast.makeText(CreateAppStep5.this, "error in 2 ---   "+ e.getMessage()  , Toast.LENGTH_LONG).show();
+            }
+            } else if (barsListStep5.getSelectedItemPosition() == 2) { //bar3
+
+                try {
+                    if (!iEmpty(UserMainPage.itemsBar3,UserMainPage.B3IteamC)) {
+                        Toast.makeText(CreateAppStep5.this, "you have reach the item limit", Toast.LENGTH_LONG).show();
+                        return;
+                    } else {
+                        UserMainPage.itemsBar3[UserMainPage.B3IteamC ++] = itemNameStep5.getText().toString();           //name
+                        UserMainPage.itemsBar3[UserMainPage.B3IteamC ++] = itemDescriptionStep5.getText().toString();    //description
+                        UserMainPage.itemsBar3[UserMainPage.B3IteamC ++] = itemPriceStep5.getText().toString();          //price
+                        UserMainPage.imgItemsBar3[(UserMainPage.B3IteamC-1) / 3]=img ;
+                    }
+                }catch (Exception e){
+                    Toast.makeText(CreateAppStep5.this, "error in 3 ---   "+ e.getMessage()  , Toast.LENGTH_LONG).show();
+                }
+            } else if (barsListStep5.getSelectedItemPosition() == 3) { //bar4
+
+                try {
+                    if (!iEmpty(UserMainPage.itemsBar4,UserMainPage.B4IteamC)) {
+                        Toast.makeText(CreateAppStep5.this, "you have reach the item limit", Toast.LENGTH_LONG).show();
+                        return;
+                    } else {
+                        UserMainPage.itemsBar4[UserMainPage.B4IteamC ++] = itemNameStep5.getText().toString();           //name
+                        UserMainPage.itemsBar4[UserMainPage.B4IteamC ++] = itemDescriptionStep5.getText().toString();    //description
+                        UserMainPage.itemsBar4[UserMainPage.B4IteamC ++] = itemPriceStep5.getText().toString();          //price
+                        UserMainPage.imgItemsBar4[(UserMainPage.B4IteamC-1) / 3]=img ;
+                    }
+                }catch (Exception e){
+                    Toast.makeText(CreateAppStep5.this, "error in 4 ---   "+ e.getMessage()  , Toast.LENGTH_LONG).show();
+                }
+            } else {
+                Toast.makeText(CreateAppStep5.this, "imposable to reach this Toast in CreateAppStep5 ", Toast.LENGTH_LONG).show();
+            }
+            Toast.makeText(CreateAppStep5.this, "one item done", Toast.LENGTH_LONG).show();
+        }catch (Exception e){
+            Toast.makeText(CreateAppStep5.this, e.getMessage() ,Toast.LENGTH_LONG).show();
+        }
     }
 
 

@@ -16,7 +16,8 @@
         android:onClick="saveItem"
         android:text="@string/SaveItem"
         tools:layout_editor_absoluteX="40dp"
-        tools:layout_editor_absoluteY="288dp" />
+        tools:layout_editor_absoluteY="288dp"
+        android:layout_above="@+id/textView46" />
 
     <Button
         android:id="@+id/buildButtonStep5"
@@ -54,11 +55,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/ItemNameStep5"
-        android:layout_alignParentTop="true"
         android:layout_alignStart="@+id/ItemNameStep5"
         android:layout_marginLeft="14dp"
         android:layout_marginStart="14dp"
-        android:layout_marginTop="21dp"
         android:text="@string/Step5"
         android:textColor="@android:color/black"
         android:textSize="24sp"
@@ -69,17 +68,17 @@
 
     <EditText
         android:id="@+id/ItemImageStep5"
-        android:layout_width="200px"
-        android:layout_height="200px"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_alignEnd="@+id/ItemNameStep5"
+        android:layout_alignTop="@+id/button2"
+        android:editable="false"
         android:ems="10"
         android:inputType="none"
-        tools:inputType="none"
         tools:editable="false"
-        android:editable="false"
+        tools:inputType="none"
         tools:layout_editor_absoluteX="172dp"
-        tools:layout_editor_absoluteY="142dp"
-        android:layout_below="@+id/ItemNameStep5"
-        android:layout_toEndOf="@+id/textView14" />
+        tools:layout_editor_absoluteY="142dp" />
 
     <EditText
         android:id="@+id/ItemNameStep5"
@@ -97,7 +96,7 @@
         android:id="@+id/textView17"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="20dp"
         android:text="@string/ItemName"
         android:textSize="24sp"
         tools:layout_editor_absoluteX="9dp"
@@ -205,41 +204,45 @@
         android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:text="Please select bars"
-        android:layout_marginTop="400dp"
-        android:layout_marginStart="20dp"
-        android:layout_alignParentStart="true" />
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/textView45"
+        android:layout_alignEnd="@+id/saveItemButtonStep5" />
 
     <TextView
         android:id="@+id/textView45"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="*please enter your bar"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="375dp"/>
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/itemPriceStep5"
+        android:layout_toStartOf="@+id/textView57" />
 
     <TextView
         android:id="@+id/textView55"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/barsSpinnerStep5"
-        android:layout_below="@+id/ItemDescriptionStep5"
-        android:layout_marginTop="17dp"
-        android:text="Price" />
+        android:text="Price"
+        android:layout_alignBaseline="@+id/itemPriceStep5"
+        android:layout_alignBottom="@+id/itemPriceStep5"
+        android:layout_alignStart="@+id/barsSpinnerStep5" />
 
     <EditText
         android:id="@+id/itemPriceStep5"
         android:layout_width="70dp"
         android:layout_height="70px"
-        android:layout_marginStart="80dp"
-        android:layout_marginTop="325dp"
+        android:layout_marginTop="16dp"
+        android:editable="true"
         android:ems="10"
-        android:inputType="number" />
+        android:inputType="numberDecimal"
+        android:layout_below="@+id/ItemDescriptionStep5"
+        android:layout_toStartOf="@+id/ItemNameStep5" />
 
     <TextView
         android:id="@+id/textView57"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/ItemNameStep5"
-        android:layout_alignTop="@+id/textView55"
-        android:text="SR" />
+        android:text="SR"
+        android:layout_alignBaseline="@+id/itemPriceStep5"
+        android:layout_alignBottom="@+id/itemPriceStep5"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>
