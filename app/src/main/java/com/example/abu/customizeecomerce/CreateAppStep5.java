@@ -13,6 +13,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Spinner;
@@ -24,7 +25,6 @@ public class CreateAppStep5 extends AppCompatActivity {
     private static final int SELECTED_PICTURE = 1;
     Button bulid ;
     EditText img;
-
     EditText itemNameStep5;
     EditText itemDescriptionStep5;
     EditText itemPriceStep5;
@@ -43,7 +43,7 @@ public class CreateAppStep5 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_app_step5);
-
+        final CheckBox Cm = (CheckBox) findViewById(R.id.checkMode);
 //        itemsBar1 = new String[5];
 //        itemsBar2 = new String[5];
 //        itemsBar3 = new String[5];
@@ -98,12 +98,19 @@ public class CreateAppStep5 extends AppCompatActivity {
         bulid.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                UserMainPage.isCom=true;
-                CreateAppStep1.step1.finish();
-                CreateAppStep2.step2.finish();
-                CreateAppStep3.step3.finish();
-                CreateAppStep4.step4.finish();
-                finish();
+               if(Cm.isChecked()){
+                   Intent i = new Intent(CreateAppStep5.this, CreateAppStepFinal.class);
+                   startActivity(i);
+               }
+                else{
+                   UserMainPage.isCom=true;
+                   CreateAppStep1.step1.finish();
+                   CreateAppStep2.step2.finish();
+                   CreateAppStep3.step3.finish();
+                   CreateAppStep4.step4.finish();
+                   finish();
+                }
+
             }
         });
     }

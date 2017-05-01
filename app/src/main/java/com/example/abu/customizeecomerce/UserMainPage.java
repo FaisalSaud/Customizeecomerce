@@ -12,7 +12,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class UserMainPage extends AppCompatActivity {
+public class  UserMainPage extends AppCompatActivity {
     public static Button Bar1;
     public static Button Bar2;
     public static Button Bar3;
