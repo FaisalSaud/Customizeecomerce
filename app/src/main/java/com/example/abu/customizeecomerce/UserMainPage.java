@@ -13,7 +13,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class  UserMainPage extends AppCompatActivity {
+public class UserMainPage extends AppCompatActivity {
     public static Button Bar1;
     public static Button Bar2;
     public static Button Bar3;
@@ -31,7 +31,7 @@ public class  UserMainPage extends AppCompatActivity {
     static String [] itemsBar2;
     static String [] itemsBar3;
     static String [] itemsBar4;
-    static Drawable [] imgItemsBar1;
+    static Drawable[] imgItemsBar1;
     static Drawable [] imgItemsBar2;
     static Drawable [] imgItemsBar3;
     static Drawable [] imgItemsBar4;

@@ -26,7 +26,7 @@ public class CreateAppStep1 extends AppCompatActivity {
     //to add image
     private static final int SELECTED_PICTURE=1;
    public static EditText img;
-    EditText storeName;
+    public static EditText storeName;
     String storeNameS;
     Button chooseIcon;
 

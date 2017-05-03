@@ -12,28 +12,160 @@
         android:orientation="vertical"
         tools:layout_editor_absoluteX="8dp"
         tools:layout_editor_absoluteY="8dp"
-        android:id="@+id/linearLayout">
+        android:id="@+id/linearLayout"
+        android:weightSum="1"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
 
-        <Button
-            android:id="@+id/button17"
+        <android.support.v7.widget.CardView
+            android:id="@+id/viewCard11PB"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Button" />
+            android:layout_height="140dp">
 
-        <Button
-            android:id="@+id/button18"
+            <Button
+                android:id="@+id/removeButtonPBItem11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="265dp"
+                android:text="@string/Remove" />
+
+            <EditText
+                android:id="@+id/editTextPBItem11"
+                android:layout_width="200px"
+                android:layout_height="200px"
+                android:layout_below="@+id/ItemNameStep5"
+                android:layout_toEndOf="@+id/textView14"
+                android:editable="false"
+                android:ems="10"
+                android:inputType="none"
+                tools:editable="false"
+                tools:inputType="none"
+                tools:layout_editor_absoluteX="172dp"
+                tools:layout_editor_absoluteY="142dp" />
+
+            <TextView
+                android:id="@+id/itemPricePBItem11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="275dp"
+                android:layout_marginTop="10dp"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/itemNameTextPBItem11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="100dp"
+                android:layout_marginTop="10dp"
+                android:text="TextView"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                android:textSize="18sp" />
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/viewCard12PB"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Button" />
+            android:layout_height="140dp"
+            android:layout_weight="0.02">
+
+            <Button
+                android:id="@+id/perchaseButtonPBItem12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="265dp"
+                android:text="@string/Remove" />
+
+            <EditText
+                android:id="@+id/editTextPBItem12"
+                android:layout_width="200px"
+                android:layout_height="200px"
+                android:layout_below="@+id/ItemNameStep5"
+                android:layout_toEndOf="@+id/textView14"
+                android:editable="false"
+                android:ems="10"
+                android:inputType="none"
+                tools:editable="false"
+                tools:inputType="none"
+                tools:layout_editor_absoluteX="172dp"
+                tools:layout_editor_absoluteY="142dp" />
+
+            <TextView
+                android:id="@+id/itemPricePBItem12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="275dp"
+                android:layout_marginTop="10dp"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/itemNameTextPBItem12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="100dp"
+                android:layout_marginTop="10dp"
+                android:text="TextView"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                android:textSize="18sp" />
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/viewCard13PB"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_weight="0.12">
+
+            <Button
+                android:id="@+id/perchaseButtonPBItem13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="265dp"
+                android:text="@string/Remove" />
+
+            <EditText
+                android:id="@+id/editTextPBItem13"
+                android:layout_width="200px"
+                android:layout_height="200px"
+                android:layout_below="@+id/ItemNameStep5"
+                android:layout_toEndOf="@+id/textView14"
+                android:editable="false"
+                android:ems="10"
+                android:inputType="none"
+                tools:editable="false"
+                tools:inputType="none"
+                tools:layout_editor_absoluteX="172dp"
+                tools:layout_editor_absoluteY="142dp" />
+
+            <TextView
+                android:id="@+id/itemPricePBItem13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="275dp"
+                android:layout_marginTop="10dp"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/itemNameTextPBItem13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="100dp"
+                android:layout_marginTop="10dp"
+                android:text="TextView"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                android:textSize="18sp" />
+        </android.support.v7.widget.CardView>
     </LinearLayout>
 
     <Button
-        android:id="@+id/button9"
+        android:id="@+id/purchaseOptionsButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignEnd="@+id/linearLayout"
         android:layout_alignRight="@+id/linearLayout"
         android:layout_below="@+id/linearLayout"
         android:layout_marginTop="8dp"
+        android:onClick="toPurchaseOptions"
         android:text="@string/Purchase" />
 </RelativeLayout>

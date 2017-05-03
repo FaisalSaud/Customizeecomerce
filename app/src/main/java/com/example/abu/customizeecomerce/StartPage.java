@@ -6,10 +6,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
-
 public class StartPage extends AppCompatActivity {
 
-
+    public static int  Try=0;
     public static Button Create;
     Button Login;
     Button AboutUs;

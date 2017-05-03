@@ -13,7 +13,6 @@
         <activity android:name=".StartPage">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -29,15 +28,20 @@
         <activity android:name=".CreateAppStep4" />
         <activity android:name=".CreateAppStep5" />
         <activity android:name=".CreateAppStepFinal" />
-        <activity android:name=".UserMainPage" />
+        <activity android:name=".ChooseIconImage" />
+        <activity android:name=".ChooseBackground" />
+
         <activity android:name=".Bar1" />
         <activity android:name=".Bar2" />
         <activity android:name=".Bar3" />
-        <activity android:name=".Bar4" />
-        <activity android:name=".ChooseIconImage" />
-        <activity android:name=".PurchaseBasket" />
-        <activity android:name=".ChooseBackground" />
         <activity android:name=".PaymentAndDelaviry"/>
-    </application>
+        <activity android:name=".PurchaseBasket" />
+        <activity android:name=".Bar4"/>
+        <activity android:name=".UserMainPage">
 
+
+        </activity>
+
+
+    </application>
 </manifest>

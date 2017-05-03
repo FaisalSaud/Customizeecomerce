@@ -9,22 +9,26 @@ import android.widget.Toast;
 
 public class PurchaseBasket extends AppCompatActivity {
 
+
+    Button PurchaseOptions;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_purchase_basket);
-        Button PurchaseOptions = (Button) findViewById(R.id.button9);
-        PurchaseOptions.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                try{
-                    Intent i = new Intent(PurchaseBasket.this, PaymentAndDelaviry.class);
-                    startActivity(i);
-                }catch(Exception e){
-                    Toast.makeText(PurchaseBasket.this,e.getMessage(),Toast.LENGTH_LONG).show();
-                }
 
-            }
-        });
+        PurchaseOptions = (Button) findViewById(R.id.purchaseOptionsButton);
+
+    }
+
+    public void toPurchaseOptions (View view){
+
+        try{
+            Intent i = new Intent(PurchaseBasket.this, PaymentAndDelaviry.class);
+            startActivity(i);
+        }catch(Exception e){
+            Toast.makeText(PurchaseBasket.this,e.getMessage(),Toast.LENGTH_LONG).show();
+        }
+
     }
 }
