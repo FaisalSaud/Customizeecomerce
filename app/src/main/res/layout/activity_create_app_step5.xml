@@ -75,6 +75,7 @@
         android:editable="false"
         android:ems="10"
         android:inputType="none"
+        android:visibility="visible"
         tools:editable="false"
         tools:inputType="none"
         tools:layout_editor_absoluteX="172dp"
@@ -228,14 +229,14 @@
 
     <EditText
         android:id="@+id/itemPriceStep5"
-        android:layout_width="70dp"
-        android:layout_height="70px"
-        android:layout_marginTop="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ItemDescriptionStep5"
+        android:layout_marginLeft="50dp"
+        android:layout_toStartOf="@+id/ItemNameStep5"
         android:editable="true"
         android:ems="10"
-        android:inputType="numberDecimal"
-        android:layout_below="@+id/ItemDescriptionStep5"
-        android:layout_toStartOf="@+id/ItemNameStep5" />
+        android:inputType="numberDecimal" />
 
     <TextView
         android:id="@+id/textView57"
@@ -252,4 +253,14 @@
         android:text="Check Mode"
         android:layout_below="@+id/textView27"
         android:layout_toStartOf="@+id/ItemImageStep5" />
+
+    <ImageView
+        android:id="@+id/ItemImageStep5test"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignTop="@+id/ItemImageStep5"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@+id/button2"
+        app:srcCompat="@drawable/food_icon" />
+
 </RelativeLayout>

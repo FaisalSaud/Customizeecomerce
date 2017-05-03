@@ -17,6 +17,7 @@
         >
 
         <android.support.v7.widget.CardView
+            android:id="@+id/cardView41"
             android:layout_width="match_parent"
             android:layout_height="21dp"
             android:layout_weight="0.18"
@@ -39,11 +40,19 @@
                 android:text="@string/Basket"
                 tools:ignore="DuplicateIds" />
 
-            <ImageView
-                android:id="@+id/imageView3BarItem41"
-                android:layout_width="95dp"
-                android:layout_height="102dp"
-                app:srcCompat="@drawable/bookshelf_icon" />
+            <EditText
+                android:id="@+id/editTextBarItem41"
+                android:layout_width="200px"
+                android:layout_height="200px"
+                android:layout_below="@+id/ItemNameStep5"
+                android:layout_toEndOf="@+id/textView14"
+                android:editable="false"
+                android:ems="10"
+                android:inputType="none"
+                tools:editable="false"
+                tools:inputType="none"
+                tools:layout_editor_absoluteX="172dp"
+                tools:layout_editor_absoluteY="142dp" />
 
             <TextView
                 android:id="@+id/itemPriceBarItem41"
@@ -84,6 +93,7 @@
 
         </android.support.v7.widget.CardView>
         <android.support.v7.widget.CardView
+            android:id="@+id/cardView42"
             android:layout_width="match_parent"
             android:layout_height="21dp"
             android:layout_weight="0.18"
@@ -105,11 +115,19 @@
                 android:layout_marginLeft="175dp"
                 android:text="@string/Basket" />
 
-            <ImageView
-                android:id="@+id/imageView3BarItem42"
-                android:layout_width="95dp"
-                android:layout_height="102dp"
-                app:srcCompat="@drawable/bookshelf_icon" />
+            <EditText
+                android:id="@+id/editTextBarItem42"
+                android:layout_width="200px"
+                android:layout_height="200px"
+                android:layout_below="@+id/ItemNameStep5"
+                android:layout_toEndOf="@+id/textView14"
+                android:editable="false"
+                android:ems="10"
+                android:inputType="none"
+                tools:editable="false"
+                tools:inputType="none"
+                tools:layout_editor_absoluteX="172dp"
+                tools:layout_editor_absoluteY="142dp" />
 
             <TextView
                 android:id="@+id/itemPriceBarItem42"
@@ -150,6 +168,7 @@
 
         </android.support.v7.widget.CardView>
         <android.support.v7.widget.CardView
+            android:id="@+id/cardView43"
             android:layout_width="match_parent"
             android:layout_height="21dp"
             android:layout_weight="0.18"
@@ -171,11 +190,19 @@
                 android:layout_marginLeft="175dp"
                 android:text="@string/Basket" />
 
-            <ImageView
-                android:id="@+id/imageView3BarItem43"
-                android:layout_width="95dp"
-                android:layout_height="102dp"
-                app:srcCompat="@drawable/bookshelf_icon" />
+            <EditText
+                android:id="@+id/editTextBarItem43"
+                android:layout_width="200px"
+                android:layout_height="200px"
+                android:layout_below="@+id/ItemNameStep5"
+                android:layout_toEndOf="@+id/textView14"
+                android:editable="false"
+                android:ems="10"
+                android:inputType="none"
+                tools:editable="false"
+                tools:inputType="none"
+                tools:layout_editor_absoluteX="172dp"
+                tools:layout_editor_absoluteY="142dp" />
 
             <TextView
                 android:id="@+id/itemPriceBarItem43"
@@ -216,6 +243,7 @@
 
         </android.support.v7.widget.CardView>
         <android.support.v7.widget.CardView
+            android:id="@+id/cardView44"
             android:layout_width="match_parent"
             android:layout_height="21dp"
             android:layout_weight="0.18"
@@ -237,11 +265,19 @@
                 android:layout_marginLeft="175dp"
                 android:text="@string/Basket" />
 
-            <ImageView
-                android:id="@+id/imageView3BarItem44"
-                android:layout_width="95dp"
-                android:layout_height="102dp"
-                app:srcCompat="@drawable/bookshelf_icon" />
+            <EditText
+                android:id="@+id/editTextBarItem44"
+                android:layout_width="200px"
+                android:layout_height="200px"
+                android:layout_below="@+id/ItemNameStep5"
+                android:layout_toEndOf="@+id/textView14"
+                android:editable="false"
+                android:ems="10"
+                android:inputType="none"
+                tools:editable="false"
+                tools:inputType="none"
+                tools:layout_editor_absoluteX="172dp"
+                tools:layout_editor_absoluteY="142dp" />
 
             <TextView
                 android:id="@+id/itemPriceBarItem44"
@@ -283,6 +319,7 @@
         </android.support.v7.widget.CardView>
 
         <android.support.v7.widget.CardView
+            android:id="@+id/cardView45"
             android:layout_width="match_parent"
             android:layout_height="21dp"
             android:layout_weight="0.18"
@@ -304,11 +341,19 @@
                 android:layout_marginLeft="175dp"
                 android:text="@string/Basket" />
 
-            <ImageView
-                android:id="@+id/imageView3BarItem45"
-                android:layout_width="95dp"
-                android:layout_height="102dp"
-                app:srcCompat="@drawable/bookshelf_icon" />
+            <EditText
+                android:id="@+id/editTextBarItem45"
+                android:layout_width="200px"
+                android:layout_height="200px"
+                android:layout_below="@+id/ItemNameStep5"
+                android:layout_toEndOf="@+id/textView14"
+                android:editable="false"
+                android:ems="10"
+                android:inputType="none"
+                tools:editable="false"
+                tools:inputType="none"
+                tools:layout_editor_absoluteX="172dp"
+                tools:layout_editor_absoluteY="142dp" />
 
             <TextView
                 android:id="@+id/itemPriceBarItem45"

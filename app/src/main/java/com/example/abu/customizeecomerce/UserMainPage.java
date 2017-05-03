@@ -2,6 +2,7 @@ package com.example.abu.customizeecomerce;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.drawable.Drawable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -30,10 +31,10 @@ public class  UserMainPage extends AppCompatActivity {
     static String [] itemsBar2;
     static String [] itemsBar3;
     static String [] itemsBar4;
-    static EditText [] imgItemsBar1;
-    static EditText [] imgItemsBar2;
-    static EditText [] imgItemsBar3;
-    static EditText [] imgItemsBar4;
+    static Drawable [] imgItemsBar1;
+    static Drawable [] imgItemsBar2;
+    static Drawable [] imgItemsBar3;
+    static Drawable [] imgItemsBar4;
 
     static int B1IteamC = 0; //item count for bar1
     static int B2IteamC = 0;               //bar2
@@ -55,10 +56,10 @@ public class  UserMainPage extends AppCompatActivity {
         itemsBar2 = new String[15];
         itemsBar3 = new String[15];
         itemsBar4 = new String[15];
-        imgItemsBar1 = new EditText[5];
-        imgItemsBar2 = new EditText[5];
-        imgItemsBar3 = new EditText[5];
-        imgItemsBar4 = new EditText[5];
+        imgItemsBar1 = new Drawable[5];
+        imgItemsBar2 = new Drawable[5];
+        imgItemsBar3 = new Drawable[5];
+        imgItemsBar4 = new Drawable[5];
 //end test
 
 

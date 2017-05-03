@@ -10,6 +10,7 @@ import android.net.Uri;
 import android.provider.MediaStore;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.graphics.drawable.DrawableWrapper;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -30,6 +31,7 @@ public class CreateAppStep5 extends AppCompatActivity {
     EditText itemPriceStep5;
     Spinner barsListStep5;
 
+    ImageView imgTest;
 //    String [] bars;
 //
 ////    String []
@@ -56,6 +58,9 @@ public class CreateAppStep5 extends AppCompatActivity {
         itemPriceStep5 = (EditText) findViewById(R.id.itemPriceStep5);
         barsListStep5 = (Spinner) findViewById(R.id.barsSpinnerStep5);
         img = (EditText) findViewById(R.id.ItemImageStep5);
+
+        //test
+        imgTest = (ImageView) findViewById(R.id.ItemImageStep5test);
 
 
         try {
@@ -148,6 +153,8 @@ public class CreateAppStep5 extends AppCompatActivity {
 
                         try {
                             img.setBackground(d);
+
+                            imgTest.setImageDrawable(d); ///////////////////////////////////////////// TEST
                         } catch (Exception e) {
                         }
                     }
@@ -174,7 +181,7 @@ public class CreateAppStep5 extends AppCompatActivity {
 
         Toast.makeText(CreateAppStep5.this, "enter to 'iEmpty' method", Toast.LENGTH_LONG).show();
         boolean empty = true;
-        if (count > 15)
+        if (count >= 15)
             return false;
         for (int i = count ; i < bar.length ; i++){
             if (bar[i]!= null)
@@ -201,8 +208,9 @@ public class CreateAppStep5 extends AppCompatActivity {
                         UserMainPage.itemsBar1[UserMainPage.B1IteamC ++] = itemNameStep5.getText().toString();           //name
                         UserMainPage.itemsBar1[UserMainPage.B1IteamC ++] = itemDescriptionStep5.getText().toString();    //description
                         UserMainPage.itemsBar1[UserMainPage.B1IteamC ++] = itemPriceStep5.getText().toString();          //price
-                        UserMainPage.imgItemsBar1[(UserMainPage.B1IteamC-1) / 3] = img;     //image
+                        //UserMainPage.imgItemsBar1[(UserMainPage.B1IteamC-1) / 3] = img.getBackground();     //image
 
+                        UserMainPage.imgItemsBar1[(UserMainPage.B1IteamC-1) / 3] = imgTest.getDrawable() ;
                     }
                 }catch (Exception e){
                     Toast.makeText(CreateAppStep5.this, "error in 1 ---   "+ e.getMessage()  , Toast.LENGTH_LONG).show();
@@ -218,7 +226,7 @@ public class CreateAppStep5 extends AppCompatActivity {
                         UserMainPage.itemsBar2[UserMainPage.B2IteamC ++] = itemNameStep5.getText().toString();           //name
                         UserMainPage.itemsBar2[UserMainPage.B2IteamC ++] = itemDescriptionStep5.getText().toString();    //description
                         UserMainPage.itemsBar2[UserMainPage.B2IteamC ++] = itemPriceStep5.getText().toString();          //price
-                        UserMainPage.imgItemsBar2[(UserMainPage.B2IteamC-1) / 3].setBackground(img.getBackground());     //image
+                        UserMainPage.imgItemsBar2[(UserMainPage.B2IteamC-1) / 3] = imgTest.getDrawable();     //image
                     }
 
                 }catch (Exception e){
@@ -234,7 +242,7 @@ public class CreateAppStep5 extends AppCompatActivity {
                         UserMainPage.itemsBar3[UserMainPage.B3IteamC ++] = itemNameStep5.getText().toString();           //name
                         UserMainPage.itemsBar3[UserMainPage.B3IteamC ++] = itemDescriptionStep5.getText().toString();    //description
                         UserMainPage.itemsBar3[UserMainPage.B3IteamC ++] = itemPriceStep5.getText().toString();          //price
-                        UserMainPage.imgItemsBar3[(UserMainPage.B3IteamC-1) / 3]=img ;
+                        UserMainPage.imgItemsBar3[(UserMainPage.B3IteamC-1) / 3]= imgTest.getDrawable(); ;
                     }
                 }catch (Exception e){
                     Toast.makeText(CreateAppStep5.this, "error in 3 ---   "+ e.getMessage()  , Toast.LENGTH_LONG).show();
@@ -249,13 +257,13 @@ public class CreateAppStep5 extends AppCompatActivity {
                         UserMainPage.itemsBar4[UserMainPage.B4IteamC ++] = itemNameStep5.getText().toString();           //name
                         UserMainPage.itemsBar4[UserMainPage.B4IteamC ++] = itemDescriptionStep5.getText().toString();    //description
                         UserMainPage.itemsBar4[UserMainPage.B4IteamC ++] = itemPriceStep5.getText().toString();          //price
-                        UserMainPage.imgItemsBar4[(UserMainPage.B4IteamC-1) / 3]=img ;
+                        UserMainPage.imgItemsBar4[(UserMainPage.B4IteamC-1) / 3]= imgTest.getDrawable(); ;
                     }
                 }catch (Exception e){
                     Toast.makeText(CreateAppStep5.this, "error in 4 ---   "+ e.getMessage()  , Toast.LENGTH_LONG).show();
                 }
             } else {
-                Toast.makeText(CreateAppStep5.this, "imposable to reach this Toast in CreateAppStep5 ", Toast.LENGTH_LONG).show();
+                Toast.makeText(CreateAppStep5.this, "impossible to reach this Toast in CreateAppStep5 ", Toast.LENGTH_LONG).show();
             }
             Toast.makeText(CreateAppStep5.this, "one item done", Toast.LENGTH_LONG).show();
         }catch (Exception e){

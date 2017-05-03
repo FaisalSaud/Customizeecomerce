@@ -35,6 +35,7 @@ public class Bar1 extends AppCompatActivity {
     CardView cardView4;
     CardView cardView5;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -63,6 +64,7 @@ public class Bar1 extends AppCompatActivity {
         cardView3 = (CardView) findViewById(R.id.cardView13);
         cardView4 = (CardView) findViewById(R.id.cardView14);
         cardView5 = (CardView) findViewById(R.id.cardView15);
+
 
 
         createThisPage();// MOST TO BE IN THE FIRST !!! test
@@ -99,7 +101,9 @@ public class Bar1 extends AppCompatActivity {
                 case 3 : //item1     0 -> item name       1 -> item description        3 -> item price
                     item1NameBar1.setText(UserMainPage.itemsBar1[0]);
                     item1PriceBar1.setText(UserMainPage.itemsBar1[2]);
-                    item1ImageBar1.setBackground(UserMainPage.imgItemsBar1[0].getBackground());
+                    item1ImageBar1.setBackground(UserMainPage.imgItemsBar1[0]);
+
+
 
                     cardView1.setVisibility(View.VISIBLE);
                     cardView2.setVisibility(View.INVISIBLE);
@@ -113,12 +117,15 @@ public class Bar1 extends AppCompatActivity {
                     //first item
                     item1NameBar1.setText(UserMainPage.itemsBar1[0]);
                     item1PriceBar1.setText(UserMainPage.itemsBar1[2]);
-                    item1ImageBar1.setBackground(UserMainPage.imgItemsBar1[0].getBackground());
+                    item1ImageBar1.setBackground(UserMainPage.imgItemsBar1[0]);
+
 
                     //second item
                     item2NameBar1.setText(UserMainPage.itemsBar1[3]);
                     item2PriceBar1.setText(UserMainPage.itemsBar1[5]);
-                    item2ImageBar1.setBackground(UserMainPage.imgItemsBar1[1].getBackground());
+                    item2ImageBar1.setBackground(UserMainPage.imgItemsBar1[1]);
+
+
 
                     cardView1.setVisibility(View.VISIBLE);
                     cardView2.setVisibility(View.VISIBLE);
@@ -132,17 +139,17 @@ public class Bar1 extends AppCompatActivity {
                     //first item
                     item1NameBar1.setText(UserMainPage.itemsBar1[0]);
                     item1PriceBar1.setText(UserMainPage.itemsBar1[2]);
-                    item1ImageBar1.setBackground(UserMainPage.imgItemsBar1[0].getBackground());
+                    item1ImageBar1.setBackground(UserMainPage.imgItemsBar1[0]);
 
                     //second item
                     item2NameBar1.setText(UserMainPage.itemsBar1[3]);
                     item2PriceBar1.setText(UserMainPage.itemsBar1[5]);
-                    item2ImageBar1.setBackground(UserMainPage.imgItemsBar1[1].getBackground());
+                    item2ImageBar1.setBackground(UserMainPage.imgItemsBar1[1]);
 
                     //third item
                     item3NameBar1.setText(UserMainPage.itemsBar1[6]);
                     item3PriceBar1.setText(UserMainPage.itemsBar1[8]);
-                    item3ImageBar1.setBackground(UserMainPage.imgItemsBar1[2].getBackground());
+                    item3ImageBar1.setBackground(UserMainPage.imgItemsBar1[2]);
 
                     cardView1.setVisibility(View.VISIBLE);
                     cardView2.setVisibility(View.VISIBLE);
@@ -156,22 +163,22 @@ public class Bar1 extends AppCompatActivity {
                     //first item
                     item1NameBar1.setText(UserMainPage.itemsBar1[0]);
                     item1PriceBar1.setText(UserMainPage.itemsBar1[2]);
-                    item1ImageBar1.setBackground(UserMainPage.imgItemsBar1[0].getBackground());
+                    item1ImageBar1.setBackground(UserMainPage.imgItemsBar1[0]);
 
                     //second item
                     item2NameBar1.setText(UserMainPage.itemsBar1[3]);
                     item2PriceBar1.setText(UserMainPage.itemsBar1[5]);
-                    item2ImageBar1.setBackground(UserMainPage.imgItemsBar1[1].getBackground());
+                    item2ImageBar1.setBackground(UserMainPage.imgItemsBar1[1]);
 
                     //third item
                     item3NameBar1.setText(UserMainPage.itemsBar1[6]);
                     item3PriceBar1.setText(UserMainPage.itemsBar1[8]);
-                    item3ImageBar1.setBackground(UserMainPage.imgItemsBar1[2].getBackground());
+                    item3ImageBar1.setBackground(UserMainPage.imgItemsBar1[2]);
 
                     //forth item
                     item4NameBar1.setText(UserMainPage.itemsBar1[9]);
                     item4PriceBar1.setText(UserMainPage.itemsBar1[11]);
-                    item4ImageBar1.setBackground(UserMainPage.imgItemsBar1[3].getBackground());
+                    item4ImageBar1.setBackground(UserMainPage.imgItemsBar1[3]);
 
                     cardView1.setVisibility(View.VISIBLE);
                     cardView2.setVisibility(View.VISIBLE);
@@ -186,27 +193,27 @@ public class Bar1 extends AppCompatActivity {
                     //first item
                     item1NameBar1.setText(UserMainPage.itemsBar1[0]);
                     item1PriceBar1.setText(UserMainPage.itemsBar1[2]);
-                    item1ImageBar1.setBackground(UserMainPage.imgItemsBar1[0].getBackground());
+                    item1ImageBar1.setBackground(UserMainPage.imgItemsBar1[0]);
 
                     //second item
                     item2NameBar1.setText(UserMainPage.itemsBar1[3]);
                     item2PriceBar1.setText(UserMainPage.itemsBar1[5]);
-                    item2ImageBar1.setBackground(UserMainPage.imgItemsBar1[1].getBackground());
+                    item2ImageBar1.setBackground(UserMainPage.imgItemsBar1[1]);
 
                     //third item
                     item3NameBar1.setText(UserMainPage.itemsBar1[6]);
                     item3PriceBar1.setText(UserMainPage.itemsBar1[8]);
-                    item3ImageBar1.setBackground(UserMainPage.imgItemsBar1[2].getBackground());
+                    item3ImageBar1.setBackground(UserMainPage.imgItemsBar1[2]);
 
                     //forth item
                     item4NameBar1.setText(UserMainPage.itemsBar1[9]);
                     item4PriceBar1.setText(UserMainPage.itemsBar1[11]);
-                    item4ImageBar1.setBackground(UserMainPage.imgItemsBar1[3].getBackground());
+                    item4ImageBar1.setBackground(UserMainPage.imgItemsBar1[3]);
 
                     //fifth item
                     item5NameBar1.setText(UserMainPage.itemsBar1[12]);
                     item5PriceBar1.setText(UserMainPage.itemsBar1[14]);
-                    item5ImageBar1.setBackground(UserMainPage.imgItemsBar1[4].getBackground());
+                    item5ImageBar1.setBackground(UserMainPage.imgItemsBar1[4]);
 
                     cardView1.setVisibility(View.VISIBLE);
                     cardView2.setVisibility(View.VISIBLE);
@@ -216,7 +223,7 @@ public class Bar1 extends AppCompatActivity {
 
                     break;
                 default:
-                    Toast.makeText(this, "this is not posable Bar1 page", Toast.LENGTH_LONG).show();
+                    Toast.makeText(this, "this is not possible Bar1 page", Toast.LENGTH_LONG).show();
                     break;
             }
         }catch (Exception e){
