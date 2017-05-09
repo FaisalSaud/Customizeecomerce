@@ -13,6 +13,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Spinner;
@@ -95,15 +96,23 @@ public class CreateAppStep5 extends AppCompatActivity {
         }
 
         bulid = (Button) findViewById(R.id.buildButtonStep5);
+        final CheckBox CM = (CheckBox)findViewById(R.id.checkMode);
         bulid.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                UserMainPage.isCom=true;
-                CreateAppStep1.step1.finish();
-                CreateAppStep2.step2.finish();
-                CreateAppStep3.step3.finish();
-                CreateAppStep4.step4.finish();
-                finish();
+                if(CM.isChecked()){
+                    Intent i = new Intent(CreateAppStep5.this , CreateAppStepFinal.class);
+                    startActivity(i);
+                }
+                else{
+                    UserMainPage.isCom=true;
+                    CreateAppStep1.step1.finish();
+                    CreateAppStep2.step2.finish();
+                    CreateAppStep3.step3.finish();
+                    CreateAppStep4.step4.finish();
+                    finish();
+                }
+
             }
         });
     }
@@ -167,7 +176,7 @@ public class CreateAppStep5 extends AppCompatActivity {
 
         Toast.makeText(CreateAppStep5.this, "enter to 'iEmpty' method", Toast.LENGTH_LONG).show();
         boolean empty = true;
-        if (count > 15)
+        if (count >= 15)
             return false;
         for (int i = count ; i < bar.length ; i++){
             if (bar[i]!= null)

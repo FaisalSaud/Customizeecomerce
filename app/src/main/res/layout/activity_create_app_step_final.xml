@@ -6,12 +6,11 @@
     android:layout_height="match_parent"
     tools:context="com.example.abu.customizeecomerce.CreateAppStepFinal">
 
-    <Button
-        android:id="@+id/button5"
+    <TextView
+        android:id="@+id/textView43"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Build"
-        android:textSize="24sp"
-        tools:layout_editor_absoluteX="452dp"
-        tools:layout_editor_absoluteY="704dp" />
+        android:text="TextView"
+        tools:layout_editor_absoluteX="141dp"
+        tools:layout_editor_absoluteY="79dp" />
 </android.support.constraint.ConstraintLayout>
