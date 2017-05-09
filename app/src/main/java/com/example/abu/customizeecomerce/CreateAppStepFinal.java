@@ -51,6 +51,7 @@ public class CreateAppStepFinal extends AppCompatActivity implements ApkMakingIn
         }
         return workingDirPath;
     }
+
     public Map<String, String> generateReplaces() {
         String filePath;
         Map<String, String> replaces = new HashMap<>();
@@ -60,9 +61,9 @@ public class CreateAppStepFinal extends AppCompatActivity implements ApkMakingIn
             FileOutputStream fos = new FileOutputStream(resFilePath);
             InputStream input = getAssets().open("resources.3");
             LinkedHashMap<Integer, String> offsetStrings = new LinkedHashMap();
-            offsetStrings.put(Integer.valueOf(559), "A");
-            offsetStrings.put(Integer.valueOf(626), "B");
-            offsetStrings.put(Integer.valueOf(693), "C");
+//            offsetStrings.put(Integer.valueOf(559), "A");
+//            offsetStrings.put(Integer.valueOf(626), "B");
+            offsetStrings.put(Integer.valueOf(693), CreateAppStep1.storeNameS);
             this.prepareResourceFile(input, fos, offsetStrings);
             replaces.put("resources.arsc", resFilePath);
         } catch (IOException e) {
@@ -72,7 +73,7 @@ public class CreateAppStepFinal extends AppCompatActivity implements ApkMakingIn
         try {
             filePath = new StringBuilder(String.valueOf(workingDirPath)).append("/icon.png").toString();
             fos = new FileOutputStream(filePath);
-//            input = getResources().openRawResource(/*R.drawable.picapk_icon*/ );
+//            input = getResources().openRawResource(R.id.storeIcon);
 //            IOUtils.copy(input, fos);
 //            input.close();
             fos.close();
@@ -80,6 +81,7 @@ public class CreateAppStepFinal extends AppCompatActivity implements ApkMakingIn
         } catch (Exception e2) {
             e2.printStackTrace();
         }
+
         try {
             String manifestPath = new StringBuilder(String.valueOf(workingDirPath)).append("/AndroidManifest.xml").toString();
             new ManifestModifier(getAssets().open("AndroidManifest.3"), manifestPath).renameString("com.gmail.heagoo.livewallpaper", "BackageNameOfUser");
@@ -126,6 +128,11 @@ public class CreateAppStepFinal extends AppCompatActivity implements ApkMakingIn
             }
             fos.write(buffer, 0, read);
         }
+    }
+    private void createWallpaperApk() {
+        MakingThread thread = new MakingThread(this, this);
+        thread.start();
+        //\new MakingDialog(this, thread, this.adManager).show();
     }
     public void onFinish(boolean result) {
     }

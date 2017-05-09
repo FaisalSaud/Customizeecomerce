@@ -27,7 +27,7 @@ public class CreateAppStep1 extends AppCompatActivity {
     private static final int SELECTED_PICTURE=1;
    public static EditText img;
     public static EditText storeName;
-    String storeNameS;
+    public static String storeNameS;
     Button chooseIcon;
 
     public static Activity step1;//test
