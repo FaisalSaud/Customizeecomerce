@@ -15,6 +15,12 @@ public class Bar4 extends AppCompatActivity {
     TextView item4NameBar4;
     TextView item5NameBar4;
 
+    TextView item1DescBar4;
+    TextView item2DescBar4;
+    TextView item3DescBar4;
+    TextView item4DescBar4;
+    TextView item5DescBar4;
+
     TextView item1PriceBar4;
     TextView item2PriceBar4;
     TextView item3PriceBar4;
@@ -44,6 +50,12 @@ public class Bar4 extends AppCompatActivity {
         item4NameBar4 = (TextView) findViewById(R.id.itemNameTextBarItem44);
         item5NameBar4 = (TextView) findViewById(R.id.itemNameTextBarItem45);
 
+        item1DescBar4 = (TextView) findViewById(R.id.itemDescBarItem41);
+        item2DescBar4 = (TextView) findViewById(R.id.itemDescBarItem42);
+        item3DescBar4 = (TextView) findViewById(R.id.itemDescBarItem43);
+        item4DescBar4 = (TextView) findViewById(R.id.itemDescBarItem44);
+        item5DescBar4 = (TextView) findViewById(R.id.itemDescBarItem45);
+
         item1PriceBar4 = (TextView) findViewById(R.id.itemPriceBarItem41);
         item2PriceBar4 = (TextView) findViewById(R.id.itemPriceBarItem42);
         item3PriceBar4 = (TextView) findViewById(R.id.itemPriceBarItem43);
@@ -72,9 +84,10 @@ public class Bar4 extends AppCompatActivity {
         try {
             switch (UserMainPage.B2IteamC) {
                 case 3 : //item1     0 -> item name       1 -> item description        3 -> item price
-                    item1NameBar4.setText(UserMainPage.itemsBar2[0]);
-                    item1PriceBar4.setText(UserMainPage.itemsBar2[2]);
-                    item1ImageBar4.setBackground(UserMainPage.imgItemsBar2[0]);
+                    item1NameBar4.setText(UserMainPage.itemsBar4[0]);
+                    item1DescBar4.setText(UserMainPage.itemsBar4[1]);
+                    item1PriceBar4.setText(UserMainPage.itemsBar4[2]);
+                    item1ImageBar4.setBackground(UserMainPage.imgItemsBar4[0]);
 
                     cardView41.setVisibility(View.VISIBLE);
                     cardView42.setVisibility(View.INVISIBLE);
@@ -86,14 +99,16 @@ public class Bar4 extends AppCompatActivity {
                 case 6: //item2
 
                     //first item
-                    item1NameBar4.setText(UserMainPage.itemsBar2[0]);
-                    item1PriceBar4.setText(UserMainPage.itemsBar2[2]);
-                    item1ImageBar4.setBackground(UserMainPage.imgItemsBar2[0]);
+                    item1NameBar4.setText(UserMainPage.itemsBar4[0]);
+                    item1DescBar4.setText(UserMainPage.itemsBar4[1]);
+                    item1PriceBar4.setText(UserMainPage.itemsBar4[2]);
+                    item1ImageBar4.setBackground(UserMainPage.imgItemsBar4[0]);
 
                     //second item
-                    item2NameBar4.setText(UserMainPage.itemsBar2[3]);
-                    item2PriceBar4.setText(UserMainPage.itemsBar2[5]);
-                    item2ImageBar4.setBackground(UserMainPage.imgItemsBar2[1]);
+                    item2NameBar4.setText(UserMainPage.itemsBar4[3]);
+                    item2DescBar4.setText(UserMainPage.itemsBar4[4]);
+                    item2PriceBar4.setText(UserMainPage.itemsBar4[5]);
+                    item2ImageBar4.setBackground(UserMainPage.imgItemsBar4[1]);
 
                     cardView41.setVisibility(View.VISIBLE);
                     cardView42.setVisibility(View.VISIBLE);
@@ -105,19 +120,22 @@ public class Bar4 extends AppCompatActivity {
                 case 9: //item3
 
                     //first item
-                    item1NameBar4.setText(UserMainPage.itemsBar2[0]);
-                    item1PriceBar4.setText(UserMainPage.itemsBar2[2]);
-                    item1ImageBar4.setBackground(UserMainPage.imgItemsBar2[0]);
+                    item1NameBar4.setText(UserMainPage.itemsBar4[0]);
+                    item1DescBar4.setText(UserMainPage.itemsBar4[1]);
+                    item1PriceBar4.setText(UserMainPage.itemsBar4[2]);
+                    item1ImageBar4.setBackground(UserMainPage.imgItemsBar4[0]);
 
                     //second item
-                    item2NameBar4.setText(UserMainPage.itemsBar2[3]);
-                    item2PriceBar4.setText(UserMainPage.itemsBar2[5]);
-                    item2ImageBar4.setBackground(UserMainPage.imgItemsBar2[1]);
+                    item2NameBar4.setText(UserMainPage.itemsBar4[3]);
+                    item2DescBar4.setText(UserMainPage.itemsBar4[4]);
+                    item2PriceBar4.setText(UserMainPage.itemsBar4[5]);
+                    item2ImageBar4.setBackground(UserMainPage.imgItemsBar4[1]);
 
                     //third item
-                    item3NameBar4.setText(UserMainPage.itemsBar2[6]);
-                    item3PriceBar4.setText(UserMainPage.itemsBar2[8]);
-                    item3ImageBar4.setBackground(UserMainPage.imgItemsBar2[2]);
+                    item3NameBar4.setText(UserMainPage.itemsBar4[6]);
+                    item3DescBar4.setText(UserMainPage.itemsBar4[1]);
+                    item3PriceBar4.setText(UserMainPage.itemsBar4[8]);
+                    item3ImageBar4.setBackground(UserMainPage.imgItemsBar4[2]);
 
                     cardView41.setVisibility(View.VISIBLE);
                     cardView42.setVisibility(View.VISIBLE);
@@ -129,24 +147,28 @@ public class Bar4 extends AppCompatActivity {
                 case 12: //item4
 
                     //first item
-                    item1NameBar4.setText(UserMainPage.itemsBar2[0]);
-                    item1PriceBar4.setText(UserMainPage.itemsBar2[2]);
-                    item1ImageBar4.setBackground(UserMainPage.imgItemsBar2[0]);
+                    item1NameBar4.setText(UserMainPage.itemsBar4[0]);
+                    item1DescBar4.setText(UserMainPage.itemsBar4[1]);
+                    item1PriceBar4.setText(UserMainPage.itemsBar4[2]);
+                    item1ImageBar4.setBackground(UserMainPage.imgItemsBar4[0]);
 
                     //second item
-                    item2NameBar4.setText(UserMainPage.itemsBar2[3]);
-                    item2PriceBar4.setText(UserMainPage.itemsBar2[5]);
-                    item2ImageBar4.setBackground(UserMainPage.imgItemsBar2[1]);
+                    item2NameBar4.setText(UserMainPage.itemsBar4[3]);
+                    item2DescBar4.setText(UserMainPage.itemsBar4[4]);
+                    item2PriceBar4.setText(UserMainPage.itemsBar4[5]);
+                    item2ImageBar4.setBackground(UserMainPage.imgItemsBar4[1]);
 
                     //third item
-                    item3NameBar4.setText(UserMainPage.itemsBar2[6]);
-                    item3PriceBar4.setText(UserMainPage.itemsBar2[8]);
-                    item3ImageBar4.setBackground(UserMainPage.imgItemsBar2[2]);
+                    item3NameBar4.setText(UserMainPage.itemsBar4[6]);
+                    item3DescBar4.setText(UserMainPage.itemsBar4[7]);
+                    item3PriceBar4.setText(UserMainPage.itemsBar4[8]);
+                    item3ImageBar4.setBackground(UserMainPage.imgItemsBar4[2]);
 
                     //forth item
-                    item4NameBar4.setText(UserMainPage.itemsBar2[9]);
-                    item4PriceBar4.setText(UserMainPage.itemsBar2[11]);
-                    item4ImageBar4.setBackground(UserMainPage.imgItemsBar2[3]);
+                    item4NameBar4.setText(UserMainPage.itemsBar4[9]);
+                    item4DescBar4.setText(UserMainPage.itemsBar4[10]);
+                    item4PriceBar4.setText(UserMainPage.itemsBar4[11]);
+                    item4ImageBar4.setBackground(UserMainPage.imgItemsBar4[3]);
 
                     cardView41.setVisibility(View.VISIBLE);
                     cardView42.setVisibility(View.VISIBLE);
@@ -160,28 +182,33 @@ public class Bar4 extends AppCompatActivity {
 
                     //first item
                     item1NameBar4.setText(UserMainPage.itemsBar2[0]);
+                    item1DescBar4.setText(UserMainPage.itemsBar4[1]);
                     item1PriceBar4.setText(UserMainPage.itemsBar2[2]);
                     item1ImageBar4.setBackground(UserMainPage.imgItemsBar2[0]);
 
                     //second item
-                    item2NameBar4.setText(UserMainPage.itemsBar2[3]);
-                    item2PriceBar4.setText(UserMainPage.itemsBar2[5]);
-                    item2ImageBar4.setBackground(UserMainPage.imgItemsBar2[1]);
+                    item2NameBar4.setText(UserMainPage.itemsBar4[3]);
+                    item2DescBar4.setText(UserMainPage.itemsBar4[4]);
+                    item2PriceBar4.setText(UserMainPage.itemsBar4[5]);
+                    item2ImageBar4.setBackground(UserMainPage.imgItemsBar4[1]);
 
                     //third item
-                    item3NameBar4.setText(UserMainPage.itemsBar2[6]);
-                    item3PriceBar4.setText(UserMainPage.itemsBar2[8]);
-                    item3ImageBar4.setBackground(UserMainPage.imgItemsBar2[2]);
+                    item3NameBar4.setText(UserMainPage.itemsBar4[6]);
+                    item3DescBar4.setText(UserMainPage.itemsBar4[7]);
+                    item3PriceBar4.setText(UserMainPage.itemsBar4[8]);
+                    item3ImageBar4.setBackground(UserMainPage.imgItemsBar4[2]);
 
                     //forth item
-                    item4NameBar4.setText(UserMainPage.itemsBar2[9]);
-                    item4PriceBar4.setText(UserMainPage.itemsBar2[11]);
-                    item4ImageBar4.setBackground(UserMainPage.imgItemsBar2[3]);
+                    item4NameBar4.setText(UserMainPage.itemsBar4[9]);
+                    item4DescBar4.setText(UserMainPage.itemsBar4[10]);
+                    item4PriceBar4.setText(UserMainPage.itemsBar4[11]);
+                    item4ImageBar4.setBackground(UserMainPage.imgItemsBar4[3]);
 
                     //fifth item
-                    item5NameBar4.setText(UserMainPage.itemsBar2[12]);
-                    item5PriceBar4.setText(UserMainPage.itemsBar2[14]);
-                    item5ImageBar4.setBackground(UserMainPage.imgItemsBar2[4]);
+                    item5NameBar4.setText(UserMainPage.itemsBar4[12]);
+                    item5DescBar4.setText(UserMainPage.itemsBar4[13]);
+                    item5PriceBar4.setText(UserMainPage.itemsBar4[14]);
+                    item5ImageBar4.setBackground(UserMainPage.imgItemsBar4[4]);
 
                     cardView41.setVisibility(View.VISIBLE);
                     cardView42.setVisibility(View.VISIBLE);
@@ -197,5 +224,40 @@ public class Bar4 extends AppCompatActivity {
         }catch (Exception e){
             Toast.makeText(this, e.getMessage(), Toast.LENGTH_LONG).show();
         }
+    }
+    public void addToPurchaseBasketItem41 (View view){
+
+        UserMainPage.addItemToPurchaseBasket(item1NameBar4.getText().toString(),item1DescBar4.getText().toString(),
+                item1PriceBar4.getText().toString(), item1ImageBar4.getBackground());
+
+        Toast.makeText(this, "you enter a new item to Shopping Cart", Toast.LENGTH_SHORT).show();
+    }
+    public void addToPurchaseBasketItem42 (View view){
+
+        UserMainPage.addItemToPurchaseBasket(item2NameBar4.getText().toString(),item2DescBar4.getText().toString(),
+                item2PriceBar4.getText().toString(), item2ImageBar4.getBackground());
+
+        Toast.makeText(this, "you enter a new item to Shopping Cart", Toast.LENGTH_SHORT).show();
+    }
+    public void addToPurchaseBasketItem43 (View view){
+
+        UserMainPage.addItemToPurchaseBasket(item3NameBar4.getText().toString(),item3DescBar4.getText().toString(),
+                item3PriceBar4.getText().toString(), item3ImageBar4.getBackground());
+
+        Toast.makeText(this, "you enter a new item to Shopping Cart", Toast.LENGTH_SHORT).show();
+    }
+    public void addToPurchaseBasketItem44 (View view){
+
+        UserMainPage.addItemToPurchaseBasket(item4NameBar4.getText().toString(),item4DescBar4.getText().toString(),
+                item4PriceBar4.getText().toString(), item4ImageBar4.getBackground());
+
+        Toast.makeText(this, "you enter a new item to Shopping Cart", Toast.LENGTH_SHORT).show();
+    }
+    public void addToPurchaseBasketItem45 (View view){
+
+        UserMainPage.addItemToPurchaseBasket(item5NameBar4.getText().toString(),item5DescBar4.getText().toString(),
+                item5PriceBar4.getText().toString(), item5ImageBar4.getBackground());
+
+        Toast.makeText(this, "you enter a new item to Shopping Cart", Toast.LENGTH_SHORT).show();
     }
 }

@@ -9,7 +9,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
-import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -25,22 +24,28 @@ public class UserMainPage extends AppCompatActivity {
     public static int Payment;
     public static int Delivery;
 
-    //test
+
     static String [] bars;
     static String [] itemsBar1;
     static String [] itemsBar2;
     static String [] itemsBar3;
     static String [] itemsBar4;
-    static Drawable[] imgItemsBar1;
+    static Drawable [] imgItemsBar1;
     static Drawable [] imgItemsBar2;
     static Drawable [] imgItemsBar3;
     static Drawable [] imgItemsBar4;
 
-    static int B1IteamC = 0; //item count for bar1
-    static int B2IteamC = 0;               //bar2
-    static int B3IteamC = 0;               //bar3
-    static int B4IteamC = 0;
-//end test
+    static int B1IteamC ;//= 0; //item count for bar1
+    static int B2IteamC ;//= 0;               //bar2
+    static int B3IteamC ;//= 0;               //bar3
+    static int B4IteamC ;//= 0;
+
+
+    //test
+    static String purchaseBasketItems [];
+    static Drawable purchaseBasketItemsImages [];
+    static int purchaseBasketCounter;
+    //end test
 
     public static Activity UserMainPage;
     @Override
@@ -51,7 +56,7 @@ public class UserMainPage extends AppCompatActivity {
         UserMainPage=this;
         background = (EditText) findViewById(R.id.userBackground);
 
-        //test
+
         itemsBar1 = new String[15];
         itemsBar2 = new String[15];
         itemsBar3 = new String[15];
@@ -60,7 +65,18 @@ public class UserMainPage extends AppCompatActivity {
         imgItemsBar2 = new Drawable[5];
         imgItemsBar3 = new Drawable[5];
         imgItemsBar4 = new Drawable[5];
-//end test
+
+        B1IteamC = 0;
+        B2IteamC = 0;
+        B3IteamC = 0;
+        B4IteamC = 0;
+
+
+        //test
+        purchaseBasketItems = new String[9];
+        purchaseBasketItemsImages = new Drawable[3];
+        purchaseBasketCounter = 0;
+        //end test
 
 
         Toast.makeText(UserMainPage.this, "Start ump" , Toast.LENGTH_SHORT).show();
@@ -126,5 +142,27 @@ public class UserMainPage extends AppCompatActivity {
         if(requestCode==500){
             finish();
         }
+    }
+
+    //add item from bar1, bar2, bar3 or bar4  to Purchase Basket
+    public static void addItemToPurchaseBasket (String itemName , String itemDescription , String itemPrice , Drawable itemImage){
+
+        if(purchaseBasketCounter >= 9) {
+            Toast.makeText(UserMainPage, "YOU HAVE REACH THE MAXIMUM NUMBER OF ITEMS", Toast.LENGTH_SHORT).show();
+            return ;
+        }
+//        for (int i = purchaseBasketCounter ; i < purchaseBasketItems.length ; i++){
+//            if (purchaseBasketItems[i] != null )
+//        }
+
+        try {
+            purchaseBasketItems[purchaseBasketCounter++] = itemName;
+            purchaseBasketItems[purchaseBasketCounter++] = itemDescription;
+            purchaseBasketItems[purchaseBasketCounter++] = itemPrice;
+            purchaseBasketItemsImages[(purchaseBasketCounter - 1) / 3] = itemImage;
+        }catch (Exception e){
+            Toast.makeText(UserMainPage, e.getMessage(), Toast.LENGTH_LONG).show();
+        }
+        return ;
     }
 }

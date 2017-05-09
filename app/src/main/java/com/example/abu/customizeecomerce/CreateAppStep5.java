@@ -178,10 +178,11 @@ public class CreateAppStep5 extends AppCompatActivity {
         boolean empty = true;
         if (count >= 15)
             return false;
-        for (int i = count ; i < bar.length ; i++){
-            if (bar[i]!= null)
-                empty = false;
-        }
+//        for (int i = count+1 ; i < bar.length ; i++){
+//            if (bar[i]!= null)
+//                empty = fa
+// lse;
+//        }
         return empty;
     }
 

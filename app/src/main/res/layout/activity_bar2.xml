@@ -36,6 +36,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom"
                 android:layout_marginLeft="175dp"
+                android:onClick="addToPurchaseBasketItem21"
                 android:text="@string/Basket" />
 
             <EditText
@@ -54,7 +55,7 @@
 
             <TextView
                 android:id="@+id/itemPriceBarItem21"
-                android:layout_width="wrap_content"
+                android:layout_width="71dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="275dp"
                 android:layout_marginTop="10dp"
@@ -69,6 +70,13 @@
                 android:text="TextView"
                 android:textColor="@color/common_google_signin_btn_text_dark_focused"
                 android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/itemDescBarItem21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:visibility="gone" />
 
 
         </android.support.v7.widget.CardView>
@@ -94,6 +102,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom"
                 android:layout_marginLeft="175dp"
+                android:onClick="addToPurchaseBasketItem22"
                 android:text="@string/Basket" />
 
             <EditText
@@ -128,6 +137,13 @@
                 android:textColor="@color/common_google_signin_btn_text_dark_focused"
                 android:textSize="18sp" />
 
+            <TextView
+                android:id="@+id/itemDescBarItem22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:visibility="gone" />
+
 
         </android.support.v7.widget.CardView>
 
@@ -152,6 +168,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom"
                 android:layout_marginLeft="175dp"
+                android:onClick="addToPurchaseBasketItem23"
                 android:text="@string/Basket" />
 
             <EditText
@@ -186,6 +203,13 @@
                 android:textColor="@color/common_google_signin_btn_text_dark_focused"
                 android:textSize="18sp" />
 
+            <TextView
+                android:id="@+id/itemDescBarItem23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:visibility="gone" />
+
 
         </android.support.v7.widget.CardView>
 
@@ -210,6 +234,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom"
                 android:layout_marginLeft="175dp"
+                android:onClick="addToPurchaseBasketItem24"
                 android:text="@string/Basket" />
 
             <EditText
@@ -244,6 +269,13 @@
                 android:textColor="@color/common_google_signin_btn_text_dark_focused"
                 android:textSize="18sp" />
 
+            <TextView
+                android:id="@+id/itemDescBarItem24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:visibility="gone" />
+
 
         </android.support.v7.widget.CardView>
 
@@ -268,7 +300,8 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom"
                 android:layout_marginLeft="175dp"
-                android:text="Basket" />
+                android:onClick="addToPurchaseBasketItem25"
+                android:text="@string/Basket" />
 
             <EditText
                 android:id="@+id/editTextBarItem25"
@@ -301,6 +334,13 @@
                 android:text="TextView"
                 android:textColor="@color/common_google_signin_btn_text_dark_focused"
                 android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/itemDescBarItem25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:visibility="gone" />
 
 
         </android.support.v7.widget.CardView>

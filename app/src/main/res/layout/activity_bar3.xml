@@ -72,22 +72,11 @@
                 android:textSize="18sp" />
 
             <TextView
-                android:id="@+id/textView55BarItem31"
+                android:id="@+id/itemDescBarItem31"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="280dp"
-                android:layout_marginTop="35dp"
-                android:text="TextView" />
-
-            <EditText
-                android:id="@+id/editText4BarItem31"
-                android:layout_width="65dp"
-                android:layout_height="35dp"
-                android:layout_marginLeft="190dp"
-                android:layout_marginTop="30dp"
-                android:ems="10"
-                android:inputType="number"
-                android:text="Name" />
+                android:text="TextView"
+                android:visibility="gone" />
 
 
         </android.support.v7.widget.CardView>
@@ -147,22 +136,11 @@
                 android:textSize="18sp" />
 
             <TextView
-                android:id="@+id/textView55BarItem32"
+                android:id="@+id/itemDescBarItem32"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="280dp"
-                android:layout_marginTop="35dp"
-                android:text="TextView" />
-
-            <EditText
-                android:id="@+id/editText4BarItem32"
-                android:layout_width="65dp"
-                android:layout_height="35dp"
-                android:layout_marginLeft="190dp"
-                android:layout_marginTop="30dp"
-                android:ems="10"
-                android:inputType="number"
-                android:text="Name" />
+                android:text="TextView"
+                android:visibility="gone" />
 
 
         </android.support.v7.widget.CardView>
@@ -222,22 +200,11 @@
                 android:textSize="18sp" />
 
             <TextView
-                android:id="@+id/textView55BarItem33"
+                android:id="@+id/itemDescBarItem33"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="280dp"
-                android:layout_marginTop="35dp"
-                android:text="TextView" />
-
-            <EditText
-                android:id="@+id/editText4BarItem33"
-                android:layout_width="65dp"
-                android:layout_height="35dp"
-                android:layout_marginLeft="190dp"
-                android:layout_marginTop="30dp"
-                android:ems="10"
-                android:inputType="number"
-                android:text="Name" />
+                android:text="TextView"
+                android:visibility="gone" />
 
 
         </android.support.v7.widget.CardView>
@@ -297,22 +264,11 @@
                 android:textSize="18sp" />
 
             <TextView
-                android:id="@+id/textView55BarItem34"
+                android:id="@+id/itemDescBarItem34"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="280dp"
-                android:layout_marginTop="35dp"
-                android:text="TextView" />
-
-            <EditText
-                android:id="@+id/editText4BarItem34"
-                android:layout_width="65dp"
-                android:layout_height="35dp"
-                android:layout_marginLeft="190dp"
-                android:layout_marginTop="30dp"
-                android:ems="10"
-                android:inputType="number"
-                android:text="Name" />
+                android:text="TextView"
+                android:visibility="gone" />
 
 
         </android.support.v7.widget.CardView>
@@ -330,7 +286,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom"
                 android:layout_marginLeft="265dp"
-                android:text="Buy" />
+                android:text="@string/Buy" />
 
             <Button
                 android:id="@+id/addToBasketButtonBarItem35"
@@ -338,7 +294,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom"
                 android:layout_marginLeft="175dp"
-                android:text="Basket" />
+                android:text="@string/Basket" />
 
             <EditText
                 android:id="@+id/editTextBarItem35"
@@ -373,22 +329,11 @@
                 android:textSize="18sp" />
 
             <TextView
-                android:id="@+id/textView55BarItem35"
+                android:id="@+id/itemDescBarItem35"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="280dp"
-                android:layout_marginTop="35dp"
-                android:text="TextView" />
-
-            <EditText
-                android:id="@+id/editText4BarItem35"
-                android:layout_width="65dp"
-                android:layout_height="35dp"
-                android:layout_marginLeft="190dp"
-                android:layout_marginTop="30dp"
-                android:ems="10"
-                android:inputType="number"
-                android:text="Name" />
+                android:text="TextView"
+                android:visibility="gone" />
 
 
         </android.support.v7.widget.CardView>
