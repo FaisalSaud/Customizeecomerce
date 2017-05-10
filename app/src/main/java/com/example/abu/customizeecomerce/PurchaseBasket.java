@@ -43,6 +43,8 @@ public class PurchaseBasket extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_purchase_basket);
 
+        getSupportActionBar().setBackgroundDrawable(UserMainPage.background);
+
         cardView1 = (CardView) findViewById(R.id.viewCard11PB);
         cardView2 = (CardView) findViewById(R.id.viewCard12PB);
         cardView3 = (CardView) findViewById(R.id.viewCard13PB);

@@ -14,7 +14,7 @@ import android.widget.Toast;
 
 public class CreateAppStep4 extends AppCompatActivity {
     CheckBox PromoSlides;
-    CheckBox ShopingCart;
+    static CheckBox ShopingCart;
     CheckBox Mada;
     CheckBox Cash;
     CheckBox InStore;
@@ -55,10 +55,10 @@ public class CreateAppStep4 extends AppCompatActivity {
         else
             UserMainPage.promoSlide.setVisibility(View.INVISIBLE);
 
-        if(ShopingCart.isChecked())
-            UserMainPage.ShoppingCart.setVisibility(View.VISIBLE);
-        else
-            UserMainPage.ShoppingCart.setVisibility(View.INVISIBLE);
+//        if(ShopingCart.isChecked())
+//            UserMainPage.ShoppingCart.setVisibility(View.VISIBLE);
+//        else
+//            UserMainPage.ShoppingCart.setVisibility(View.INVISIBLE);
         if(Cash.isChecked() && Mada.isChecked()){
             UserMainPage.Payment = 2;
         }

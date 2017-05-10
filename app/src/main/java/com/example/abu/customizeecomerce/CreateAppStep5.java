@@ -105,7 +105,7 @@ public class CreateAppStep5 extends AppCompatActivity {
                     startActivity(i);
                 }
                 else{
-                    UserMainPage.isCom=true;
+                    UserMainPage.isCom = true;
                     CreateAppStep1.step1.finish();
                     CreateAppStep2.step2.finish();
                     CreateAppStep3.step3.finish();

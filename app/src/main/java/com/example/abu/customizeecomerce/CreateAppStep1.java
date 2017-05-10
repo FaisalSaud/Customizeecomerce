@@ -46,6 +46,7 @@ public class CreateAppStep1 extends AppCompatActivity {
             img = (EditText) findViewById(R.id.storeIcon);
 
 
+
             //////////////////////////////////////////////////////////////////////////////////////
 
 

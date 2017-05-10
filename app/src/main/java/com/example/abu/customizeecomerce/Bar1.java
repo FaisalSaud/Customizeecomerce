@@ -46,7 +46,7 @@ public class Bar1 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bar1);
-
+        getSupportActionBar().setBackgroundDrawable(UserMainPage.background);
         item1NameBar1 = (TextView) findViewById(R.id.itemNameTextBarItem11);
         item2NameBar1 = (TextView) findViewById(R.id.itemNameTextBarItem12);
         item3NameBar1 = (TextView) findViewById(R.id.itemNameTextBarItem13);

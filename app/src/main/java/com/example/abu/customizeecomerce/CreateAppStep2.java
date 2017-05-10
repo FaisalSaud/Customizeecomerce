@@ -31,11 +31,8 @@ public class CreateAppStep2 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_app_step2);
-
-
         step2 = this;
         backColor = ""; //test
-
         backgroundImg = (EditText) findViewById(R.id.backgroundImage);
         Button next = (Button) findViewById(R.id.nextButton);
         //img = (EditText) findViewById(R.id.editText4);
@@ -124,8 +121,8 @@ public class CreateAppStep2 extends AppCompatActivity {
 //                    UserMainPage.promoSlide.setBackgroundResource(R.color.orange);
 //            }
 
-            UserMainPage.background.setBackground(backgroundImg.getBackground());
-
+            //UserMainPage.background.setBackground(backgroundImg.getBackground());
+            UserMainPage.setUMPBackground(backgroundImg.getBackground());
             //UserMainPage.Background.setBackgroundDrawable(backgroundImg.getBackground());
 
         }catch (Exception e){

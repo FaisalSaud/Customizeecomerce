@@ -27,6 +27,7 @@ public class PaymentAndDelaviry extends AppCompatActivity {
         itemDescription = (TextView) findViewById(R.id.itemDescription);
         itemPrice = (TextView) findViewById(R.id.itemPrice);
         itemQuantity = (EditText) findViewById(R.id.numberOfItem);
+        getSupportActionBar().setBackgroundDrawable(UserMainPage.background);
 
         try{
             Spinner Payment =(Spinner) findViewById(R.id.Paymentspinner);

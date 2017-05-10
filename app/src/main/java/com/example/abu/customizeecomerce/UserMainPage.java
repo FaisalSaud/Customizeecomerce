@@ -3,8 +3,11 @@ package com.example.abu.customizeecomerce;
 import android.app.Activity;
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -17,7 +20,7 @@ public class UserMainPage extends AppCompatActivity {
     public static Button Bar2;
     public static Button Bar3;
     public static Button Bar4;
-    public static EditText background;
+    public static Drawable background;
     public static TextView promoSlide;
     public static ImageButton ShoppingCart;
     public static Boolean isCom=false;
@@ -34,7 +37,7 @@ public class UserMainPage extends AppCompatActivity {
     static Drawable [] imgItemsBar2;
     static Drawable [] imgItemsBar3;
     static Drawable [] imgItemsBar4;
-
+public static ActionBar actionBar;
     static int B1IteamC ;//= 0; //item count for bar1
     static int B2IteamC ;//= 0;               //bar2
     static int B3IteamC ;//= 0;               //bar3
@@ -54,7 +57,7 @@ public class UserMainPage extends AppCompatActivity {
         setContentView(R.layout.activity_user_main_page);
 
         UserMainPage=this;
-        background = (EditText) findViewById(R.id.userBackground);
+        //background = (EditText) findViewById(R.id.userBackground);
 
 
         itemsBar1 = new String[15];
@@ -91,6 +94,7 @@ public class UserMainPage extends AppCompatActivity {
         Bar3 = (Button) findViewById(R.id.Bar3Button);
         Bar4 = (Button) findViewById(R.id.Bar4Button);
 
+        actionBar = getSupportActionBar();
         ShoppingCart = (ImageButton) findViewById(R.id.imageButton);
         promoSlide = (TextView) findViewById(R.id.textView42);
         Bar1.setOnClickListener(new View.OnClickListener(){
@@ -121,18 +125,18 @@ public class UserMainPage extends AppCompatActivity {
                 startActivity(i);
             }
         });
-        ShoppingCart.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(UserMainPage.this, PurchaseBasket.class);
-
-//                Bundle b = new Bundle();
-//                String storeName = b.getString("storeName");
-//                b.getParcelable("storeIcon");
-
-                startActivity(i);
-            }
-        });
+//        ShoppingCart.setOnClickListener(new View.OnClickListener(){
+//            @Override
+//            public void onClick(View v) {
+//                Intent i = new Intent(UserMainPage.this, PurchaseBasket.class);
+//
+////                Bundle b = new Bundle();
+////                String storeName = b.getString("storeName");
+////                b.getParcelable("storeIcon");
+//
+//                startActivity(i);
+//            }
+//        });
     }
 
     @Override
@@ -164,5 +168,34 @@ public class UserMainPage extends AppCompatActivity {
             Toast.makeText(UserMainPage, e.getMessage(), Toast.LENGTH_LONG).show();
         }
         return ;
+    }
+
+    public static void setUMPBackground(Drawable d){
+        background = d;
+        actionBar.setBackgroundDrawable(d);
+        //background.setVisibility(View.INVISIBLE);
+    }
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.menu_main_page, menu);
+        return true;
+    }
+    //and this to handle actions
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle action bar item clicks here. The action bar will
+        // automatically handle clicks on the Home/Up button, so long
+        // as you specify a parent activity in AndroidManifest.xml.
+        int id = item.getItemId();
+        if (id == R.id.imageButton && CreateAppStep4.ShopingCart.isChecked()) {
+            Intent i = new Intent(UserMainPage.this, PurchaseBasket.class);
+            startActivity(i);
+            return true;
+        }
+        else{
+            Toast.makeText(UserMainPage.this,"Shopping cart not activated",Toast.LENGTH_SHORT).show();
+        }
+        return super.onOptionsItemSelected(item);
     }
 }
