@@ -1,6 +1,7 @@
 package com.example.abu.customizeecomerce;
 
 import android.content.Intent;
+import android.hardware.usb.UsbRequest;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.CardView;
@@ -142,5 +143,64 @@ public class PurchaseBasket extends AppCompatActivity {
             default:
                 Toast.makeText(this, "This is impossible to display 'PurchaseBasket'", Toast.LENGTH_SHORT).show();
         }
+    }
+
+    public void removeFirstItem (View view){
+
+
+        try {
+            UserMainPage.purchaseBasketItems[0] = UserMainPage.purchaseBasketItems[3];
+            UserMainPage.purchaseBasketItems[1] = UserMainPage.purchaseBasketItems[4];
+            UserMainPage.purchaseBasketItems[2] = UserMainPage.purchaseBasketItems[5];
+            UserMainPage.purchaseBasketItemsImages[0] = UserMainPage.purchaseBasketItemsImages[1];
+
+            UserMainPage.purchaseBasketItems[3] = UserMainPage.purchaseBasketItems[6];
+            UserMainPage.purchaseBasketItems[4] = UserMainPage.purchaseBasketItems[7];
+            UserMainPage.purchaseBasketItems[5] = UserMainPage.purchaseBasketItems[8];
+            UserMainPage.purchaseBasketItemsImages[1] = UserMainPage.purchaseBasketItemsImages[2];
+
+            UserMainPage.purchaseBasketItems[6] = null;
+            UserMainPage.purchaseBasketItems[7] = null;
+            UserMainPage.purchaseBasketItems[8] = null;
+            UserMainPage.purchaseBasketItemsImages[2] = null;
+        }catch (Exception e){
+            Toast.makeText(this, e.getMessage(), Toast.LENGTH_LONG).show();
+        }
+
+        UserMainPage.purchaseBasketCounter = UserMainPage.purchaseBasketCounter - 3;
+        createThisPage();
+    }
+
+    public void removeSecondItem (View view){
+
+        try{
+            UserMainPage.purchaseBasketItems[3] = UserMainPage.purchaseBasketItems[6];
+            UserMainPage.purchaseBasketItems[4] = UserMainPage.purchaseBasketItems[7];
+            UserMainPage.purchaseBasketItems[5] = UserMainPage.purchaseBasketItems[8];
+            UserMainPage.purchaseBasketItemsImages[1] = UserMainPage.purchaseBasketItemsImages[2];
+
+            UserMainPage.purchaseBasketItems[6] = null;
+            UserMainPage.purchaseBasketItems[7] = null;
+            UserMainPage.purchaseBasketItems[8] = null;
+            UserMainPage.purchaseBasketItemsImages[2] = null;
+        }catch (Exception e){
+            Toast.makeText(this, e.getMessage(), Toast.LENGTH_LONG).show();
+        }
+        UserMainPage.purchaseBasketCounter = UserMainPage.purchaseBasketCounter - 3;
+        createThisPage();
+    }
+
+    public void removeThirdItem(View view){
+
+        try {
+            UserMainPage.purchaseBasketItems[6] = null;
+            UserMainPage.purchaseBasketItems[7] = null;
+            UserMainPage.purchaseBasketItems[8] = null;
+            UserMainPage.purchaseBasketItemsImages[2] = null;
+        }catch (Exception e){
+            Toast.makeText(this, e.getMessage(), Toast.LENGTH_LONG).show();
+        }
+        UserMainPage.purchaseBasketCounter = UserMainPage.purchaseBasketCounter - 3;
+        createThisPage();
     }
 }
