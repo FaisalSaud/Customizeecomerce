@@ -21,6 +21,8 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import java.util.Locale;
+
 public class CreateAppStep1 extends AppCompatActivity {
 
     //to add image
@@ -89,9 +91,15 @@ public class CreateAppStep1 extends AppCompatActivity {
         storeNameS = storeName.getText().toString();
 
         if (storeNameS.isEmpty()){
+            if(Locale.getDefault().getLanguage().equals("ar"))
+                Toast.makeText(this, "إسم المتجر فارغ", Toast.LENGTH_LONG).show();
+            else
             Toast.makeText(CreateAppStep1.this, "the Store Name is empty please" , Toast.LENGTH_SHORT).show();
             return;
         }else if (storeNameS.length()>29) {
+            if(Locale.getDefault().getLanguage().equals("ar"))
+                Toast.makeText(this, "إسم المتجر طويل", Toast.LENGTH_LONG).show();
+            else
             Toast.makeText(CreateAppStep1.this, "the Store Name is too long", Toast.LENGTH_SHORT).show();
             return;
         }else{

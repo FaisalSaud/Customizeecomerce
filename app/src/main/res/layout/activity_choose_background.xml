@@ -49,12 +49,12 @@
         android:id="@+id/textView31"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Choose Background"
-        tools:layout_editor_absoluteX="130dp"
-        tools:layout_editor_absoluteY="16dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="22dp" />
+        android:layout_marginTop="22dp"
+        android:text="@string/ChooseBackground"
+        tools:layout_editor_absoluteX="130dp"
+        tools:layout_editor_absoluteY="16dp" />
 
     <ImageView
         android:id="@+id/Background3Green"

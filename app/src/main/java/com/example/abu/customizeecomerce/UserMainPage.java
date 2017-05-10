@@ -15,6 +15,8 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.util.Locale;
+
 public class UserMainPage extends AppCompatActivity {
     public static Button Bar1;
     public static Button Bar2;
@@ -152,6 +154,9 @@ public static ActionBar actionBar;
     public static void addItemToPurchaseBasket (String itemName , String itemDescription , String itemPrice , Drawable itemImage){
 
         if(purchaseBasketCounter >= 9) {
+            if(Locale.getDefault().getLanguage().equals("ar"))
+                Toast.makeText(UserMainPage, "لقد بلغت الحد الأقصى في إضافة المنتجات", Toast.LENGTH_SHORT).show();
+            else
             Toast.makeText(UserMainPage, "YOU HAVE REACH THE MAXIMUM NUMBER OF ITEMS", Toast.LENGTH_SHORT).show();
             return ;
         }
@@ -194,6 +199,9 @@ public static ActionBar actionBar;
             return true;
         }
         else{
+            if(Locale.getDefault().getLanguage().equals("ar"))
+                Toast.makeText(UserMainPage.this,"سلة التسوق غير مفعلة",Toast.LENGTH_SHORT).show();
+            else
             Toast.makeText(UserMainPage.this,"Shopping cart not activated",Toast.LENGTH_SHORT).show();
         }
         return super.onOptionsItemSelected(item);

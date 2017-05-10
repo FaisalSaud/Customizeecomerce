@@ -14,6 +14,8 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
+import java.util.Locale;
+
 public class Login extends AppCompatActivity {
 
 
@@ -42,8 +44,12 @@ public class Login extends AppCompatActivity {
                         email.setText("");
                         pass.setText("");
                         startActivity(i);
-                    } else
+                    } else{
+                        if(Locale.getDefault().getLanguage().equals("ar"))
+                            Toast.makeText(Login.this, "البريد الإلكتروني خاطئ أو كلمة المرور خاطئة", Toast.LENGTH_LONG).show();
+                        else
                         Toast.makeText(Login.this, "Wrong email/password", Toast.LENGTH_LONG).show();
+                    }
                 }
             });
 
@@ -51,6 +57,9 @@ public class Login extends AppCompatActivity {
 
 
        catch (Exception e){
+           if(Locale.getDefault().getLanguage().equals("ar"))
+               Toast.makeText(this, "البريد الإلكتروني فارغ أو كلمة المرور فارغة", Toast.LENGTH_LONG).show();
+           else
         Toast.makeText(this," missing field(s) ",Toast.LENGTH_LONG).show();
         }
 

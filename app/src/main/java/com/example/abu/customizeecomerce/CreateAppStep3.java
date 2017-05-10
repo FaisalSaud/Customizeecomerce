@@ -11,6 +11,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import java.util.Locale;
+
 public class CreateAppStep3 extends AppCompatActivity {
     public static int cont ;
     public static EditText bar1;
@@ -61,6 +63,9 @@ public class CreateAppStep3 extends AppCompatActivity {
         }
         else if (cont==3) {
             bar4.setVisibility(View.VISIBLE);
+            if(Locale.getDefault().getLanguage().equals("ar"))
+                Toast.makeText(this, "لقد وصلت للحد الأعلى", Toast.LENGTH_LONG).show();
+            else
             Toast.makeText(this, "you have reached the bar limit", Toast.LENGTH_LONG).show();
             Button addBarButton = (Button) findViewById(R.id.addBarButton);
             addBarButton.setVisibility(View.INVISIBLE);
