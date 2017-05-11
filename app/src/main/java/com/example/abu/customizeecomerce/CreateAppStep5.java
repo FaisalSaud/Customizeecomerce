@@ -1,5 +1,8 @@
 package com.example.abu.customizeecomerce;
 
+import android.app.DownloadManager;
+import android.content.BroadcastReceiver;
+import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
 import android.graphics.Bitmap;
@@ -25,7 +28,7 @@ public class CreateAppStep5 extends AppCompatActivity {
     private static final int SELECTED_PICTURE = 1;
     Button bulid ;
     EditText img;
-
+public static int acssess;
     EditText itemNameStep5;
     EditText itemDescriptionStep5;
     EditText itemPriceStep5;
@@ -102,8 +105,10 @@ public class CreateAppStep5 extends AppCompatActivity {
             public void onClick(View view) {
                 if(CM.isChecked()){
                     Intent i = new Intent(CreateAppStep5.this , CreateAppStepFinal.class);
-                    startActivity(i);
+              startActivity(i);
                 }
+
+
                 else{
                     UserMainPage.isCom=true;
                     CreateAppStep1.step1.finish();

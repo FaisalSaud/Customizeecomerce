@@ -184,7 +184,7 @@
         android:id="@+id/backgroundImage"
         style="@android:style/Widget.DeviceDefault.AutoCompleteTextView"
         android:layout_width="wrap_content"
-        android:layout_height="200px"
+        android:layout_height="300px"
         android:layout_alignParentEnd="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
@@ -196,5 +196,24 @@
         android:ems="10"
         android:inputType="none"
         tools:editable="false" />
+
+    <EditText
+        android:id="@+id/AppTitle"
+        android:layout_width="400px"
+        android:layout_height="50px"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/textView33"
+        android:layout_toRightOf="@+id/textView33"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textView45"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/AppTitle"
+        android:layout_toLeftOf="@+id/textView33"
+        android:layout_toStartOf="@+id/textView33"
+        android:text="Your App Title :" />
 
 </RelativeLayout>

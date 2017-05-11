@@ -1,9 +1,11 @@
 package com.example.abu.customizeecomerce;
 
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.os.Environment;
 import android.support.v7.app.AppCompatActivity;
-import android.widget.TextView;
+import android.view.View;
+import android.widget.Toast;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -13,27 +15,32 @@ import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
-import SupportClasses.ApkMakingInterface;
-import SupportClasses.IOUtils;
-import SupportClasses.MakingThread;
 import SupportClasses.ManifestModifier;
-
-import static android.R.id.input;
 
 public class CreateAppStepFinal extends AppCompatActivity implements ApkMakingInterface {
     boolean cancel = false;
+    String Appname;
+    Drawable Appicon;
+
     MakingThread MK;
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+    protected void onCreate(Bundle paramBundle) {
+        super.onCreate(paramBundle);
+        getWindow().requestFeature(1);
         setContentView(R.layout.activity_create_app_step_final);
         try {
-            TextView TVtest = (TextView) findViewById(R.id.textView43);
-            String Stest = new StringBuilder(String.valueOf(Environment.getExternalStorageDirectory().getAbsolutePath())).append("/").append("CreatedFromMyStore").append("/").append(CreateAppStep1.storeName.getText().toString()).toString();
-            TVtest.setText(Stest);
-            MK = new MakingThread(this,this);
+            //TextView TVtest = (TextView) findViewById(R.id.textView43);
+            //String Stest = new StringBuilder(String.valueOf(Environment.getExternalStorageDirectory().getAbsolutePath())).append("/").append("CreatedFromMyStore").append("/").append(CreateAppStep1.storeName.getText().toString()).toString();
+            //TVtest.setText(Stest);
         } catch (Exception e) {
             e.printStackTrace();
+        }
+    }
+    public void onClick(View v) {
+        int id = v.getId();
+        if (id == R.id.buildButtonStep5) {
+            getAppname();
+            createUserApk();
         }
     }
     public String getSourceAssetFile() {
@@ -52,6 +59,11 @@ public class CreateAppStepFinal extends AppCompatActivity implements ApkMakingIn
         return workingDirPath;
     }
 
+    private void getAppname(){
+        Appicon = CreateAppStep1.img.getBackground();
+        Appname = CreateAppStep1.storeNameS;
+    }
+
     public Map<String, String> generateReplaces() {
         String filePath;
         Map<String, String> replaces = new HashMap<>();
@@ -61,8 +73,6 @@ public class CreateAppStepFinal extends AppCompatActivity implements ApkMakingIn
             FileOutputStream fos = new FileOutputStream(resFilePath);
             InputStream input = getAssets().open("resources.3");
             LinkedHashMap<Integer, String> offsetStrings = new LinkedHashMap();
-//            offsetStrings.put(Integer.valueOf(559), "A");
-//            offsetStrings.put(Integer.valueOf(626), "B");
             offsetStrings.put(Integer.valueOf(693), CreateAppStep1.storeNameS);
             this.prepareResourceFile(input, fos, offsetStrings);
             replaces.put("resources.arsc", resFilePath);
@@ -77,7 +87,7 @@ public class CreateAppStepFinal extends AppCompatActivity implements ApkMakingIn
 //            IOUtils.copy(input, fos);
 //            input.close();
             fos.close();
-            replaces.put("res/drawable-hdpi/ic_launcher.png", filePath);
+           // replaces.put("res/drawable-hdpi/ic_launcher.png", filePath);
         } catch (Exception e2) {
             e2.printStackTrace();
         }
@@ -95,6 +105,7 @@ public class CreateAppStepFinal extends AppCompatActivity implements ApkMakingIn
     public Map<String, String> generateAssetFiles() {
         return null;
     }
+
     protected static void prepareResourceFile(InputStream input, FileOutputStream fos, LinkedHashMap<Integer, String> offsetStrings) throws IOException {
         byte[] buffer;
         int position = 0;
@@ -129,10 +140,10 @@ public class CreateAppStepFinal extends AppCompatActivity implements ApkMakingIn
             fos.write(buffer, 0, read);
         }
     }
-    private void createWallpaperApk() {
+    private void createUserApk() {
         MakingThread thread = new MakingThread(this, this);
         thread.start();
-        //\new MakingDialog(this, thread, this.adManager).show();
+        Toast.makeText(CreateAppStepFinal.this,"app made",Toast.LENGTH_LONG).show();
     }
     public void onFinish(boolean result) {
     }

@@ -1,17 +1,17 @@
-package SupportClasses;
+package com.example.abu.customizeecomerce;
 import android.content.Context;
 import android.content.res.AssetManager;
 import android.os.Environment;
 import android.widget.Toast;
-import com.example.abu.customizeecomerce.CreateAppStep1;
 
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
-import java.util.HashMap;
 import java.util.Map;
+
+import SupportClasses.RandUtil;
 
 public class MakingThread extends Thread {
     private Context context;
