@@ -8,6 +8,8 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.util.Locale;
+
 public class Bar4 extends AppCompatActivity {
     TextView item1NameBar4;
     TextView item2NameBar4;
@@ -43,7 +45,7 @@ public class Bar4 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bar4);
-
+        getSupportActionBar().setBackgroundDrawable(UserMainPage.background);
         item1NameBar4 = (TextView) findViewById(R.id.itemNameTextBarItem41);
         item2NameBar4 = (TextView) findViewById(R.id.itemNameTextBarItem42);
         item3NameBar4 = (TextView) findViewById(R.id.itemNameTextBarItem43);
@@ -218,6 +220,9 @@ public class Bar4 extends AppCompatActivity {
 
                     break;
                 default:
+                    if(Locale.getDefault().getLanguage().equals("ar"))
+                        Toast.makeText(this,"غير ممكن في صفحة العنوان الفرعي 4 ",Toast.LENGTH_LONG).show();
+                    else
                     Toast.makeText(this, "this is not possible Bar4 page", Toast.LENGTH_LONG).show();
                     break;
             }
@@ -229,35 +234,45 @@ public class Bar4 extends AppCompatActivity {
 
         UserMainPage.addItemToPurchaseBasket(item1NameBar4.getText().toString(),item1DescBar4.getText().toString(),
                 item1PriceBar4.getText().toString(), item1ImageBar4.getBackground());
-
+        if(Locale.getDefault().getLanguage().equals("ar"))
+            Toast.makeText(this,"أدخلت منتجا جديدا في سلة التسوق",Toast.LENGTH_SHORT).show();
+        else
         Toast.makeText(this, "you enter a new item to Shopping Cart", Toast.LENGTH_SHORT).show();
     }
     public void addToPurchaseBasketItem42 (View view){
 
         UserMainPage.addItemToPurchaseBasket(item2NameBar4.getText().toString(),item2DescBar4.getText().toString(),
                 item2PriceBar4.getText().toString(), item2ImageBar4.getBackground());
-
+        if(Locale.getDefault().getLanguage().equals("ar"))
+            Toast.makeText(this,"أدخلت منتجا جديدا في سلة التسوق",Toast.LENGTH_SHORT).show();
+        else
         Toast.makeText(this, "you enter a new item to Shopping Cart", Toast.LENGTH_SHORT).show();
     }
     public void addToPurchaseBasketItem43 (View view){
 
         UserMainPage.addItemToPurchaseBasket(item3NameBar4.getText().toString(),item3DescBar4.getText().toString(),
                 item3PriceBar4.getText().toString(), item3ImageBar4.getBackground());
-
+        if(Locale.getDefault().getLanguage().equals("ar"))
+            Toast.makeText(this,"أدخلت منتجا جديدا في سلة التسوق",Toast.LENGTH_SHORT).show();
+        else
         Toast.makeText(this, "you enter a new item to Shopping Cart", Toast.LENGTH_SHORT).show();
     }
     public void addToPurchaseBasketItem44 (View view){
 
         UserMainPage.addItemToPurchaseBasket(item4NameBar4.getText().toString(),item4DescBar4.getText().toString(),
                 item4PriceBar4.getText().toString(), item4ImageBar4.getBackground());
-
+        if(Locale.getDefault().getLanguage().equals("ar"))
+            Toast.makeText(this,"أدخلت منتجا جديدا في سلة التسوق",Toast.LENGTH_SHORT).show();
+        else
         Toast.makeText(this, "you enter a new item to Shopping Cart", Toast.LENGTH_SHORT).show();
     }
     public void addToPurchaseBasketItem45 (View view){
 
         UserMainPage.addItemToPurchaseBasket(item5NameBar4.getText().toString(),item5DescBar4.getText().toString(),
                 item5PriceBar4.getText().toString(), item5ImageBar4.getBackground());
-
+        if(Locale.getDefault().getLanguage().equals("ar"))
+            Toast.makeText(this,"أدخلت منتجا جديدا في سلة التسوق",Toast.LENGTH_SHORT).show();
+        else
         Toast.makeText(this, "you enter a new item to Shopping Cart", Toast.LENGTH_SHORT).show();
     }
 }

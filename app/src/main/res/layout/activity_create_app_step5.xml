@@ -213,10 +213,10 @@
         android:id="@+id/textView45"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="*please enter your bar"
-        android:layout_marginTop="12dp"
         android:layout_below="@+id/itemPriceStep5"
-        android:layout_toStartOf="@+id/textView57" />
+        android:layout_marginTop="12dp"
+        android:layout_toStartOf="@+id/textView57"
+        android:text="@string/PlzEntrBar" />
 
     <TextView
         android:id="@+id/textView55"

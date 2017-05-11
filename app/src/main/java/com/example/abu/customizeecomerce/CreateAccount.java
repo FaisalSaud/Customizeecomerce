@@ -17,6 +17,8 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.storage.StorageReference;
 
+import java.util.Locale;
+
 public class CreateAccount extends AppCompatActivity {
 
     private FirebaseAuth mAuth;
@@ -55,12 +57,18 @@ public class CreateAccount extends AppCompatActivity {
 
             //check if user name empty
             if (usernameS.isEmpty()) {
+                if(Locale.getDefault().getLanguage().equals("ar"))
+                    Toast.makeText(this, "إسم المستخدم فارغ", Toast.LENGTH_LONG).show();
+                else
                 Toast.makeText(this, "user name is empty please fill it", Toast.LENGTH_LONG).show();
                 return;
             }
 
             //check if password empty
             if (passwordS.isEmpty()) {
+                if(Locale.getDefault().getLanguage().equals("ar"))
+                    Toast.makeText(this, "كلمة المرور فارغة", Toast.LENGTH_LONG).show();
+                else
                 Toast.makeText(this, "password is empty please fill it", Toast.LENGTH_LONG).show();
                 return;
             }
@@ -69,22 +77,37 @@ public class CreateAccount extends AppCompatActivity {
 
             //check if phone NO empty
             if (phoneNoS.isEmpty()) {
+                if(Locale.getDefault().getLanguage().equals("ar"))
+                    Toast.makeText(this, "رقم الهاتف فارغ", Toast.LENGTH_LONG).show();
+                else
                 Toast.makeText(this, "phone number is empty please fill it", Toast.LENGTH_LONG).show();
                 return;
             }
 
             //check if email empty
             if (eMailS.isEmpty()) {
+                if(Locale.getDefault().getLanguage().equals("ar"))
+                    Toast.makeText(this, "البريد الإلكتروني فارغ", Toast.LENGTH_LONG).show();
+                else
                 Toast.makeText(this, "e-mail is empty please fill it", Toast.LENGTH_LONG).show();
                 return;
             }
 
             if (((!passwordS.equals(rePasswordS)) || (passwordS.length() > 16) || (passwordS.length() < 6))) {
                 if (!(passwordS.equals(rePasswordS))) {
+                    if(Locale.getDefault().getLanguage().equals("ar"))
+                        Toast.makeText(this, "كلمتا المرور غير متطابقتان", Toast.LENGTH_LONG).show();
+                    else
                     Toast.makeText(this, " the passwords NOT match ", Toast.LENGTH_LONG).show();    //to show error message
                 } else if (passwordS.length() > 16) {
+                    if(Locale.getDefault().getLanguage().equals("ar"))
+                        Toast.makeText(this, "كلمة المرور طويلة", Toast.LENGTH_LONG).show();
+                    else
                     Toast.makeText(this, " the password is too long ", Toast.LENGTH_LONG).show();   //to show error message
                 } else {
+                    if(Locale.getDefault().getLanguage().equals("ar"))
+                        Toast.makeText(this, "كلمة المرور قصيرة", Toast.LENGTH_LONG).show();
+                    else
                     Toast.makeText(this, " the password is too short ", Toast.LENGTH_LONG).show();  //to show error message
                 }
                 return;
@@ -98,9 +121,15 @@ public class CreateAccount extends AppCompatActivity {
                             Intent i = new Intent(CreateAccount.this, StartPage.class);
                             this.clearFileds();
                             startActivity(i);
-                            Toast.makeText(CreateAccount.this, " success", Toast.LENGTH_LONG).show();
+                            if(Locale.getDefault().getLanguage().equals("ar"))
+                                Toast.makeText(CreateAccount.this, "مقبول", Toast.LENGTH_LONG).show();
+                            else
+                                Toast.makeText(CreateAccount.this, " success", Toast.LENGTH_LONG).show();
                         } else {
                             Toast.makeText(CreateAccount.this, eMailS + " " + passwordS, Toast.LENGTH_LONG).show();
+                            if(Locale.getDefault().getLanguage().equals("ar"))
+                                Toast.makeText(CreateAccount.this, "لا يوجد إتصال", Toast.LENGTH_LONG).show();
+                            else
                             Toast.makeText(CreateAccount.this, " no connection", Toast.LENGTH_LONG).show();
                         }
                     }
@@ -113,6 +142,9 @@ public class CreateAccount extends AppCompatActivity {
                             phoneNo.setText("");
                             eMail.setText("");
                         }catch (Exception e){
+                            if(Locale.getDefault().getLanguage().equals("ar"))
+                                Toast.makeText(CreateAccount.this, "حدثت مشكلة أثناء إفراغ الخانات", Toast.LENGTH_LONG).show();
+                            else
                             Toast.makeText(CreateAccount.this, "error in clearing the filed",Toast.LENGTH_SHORT).show();
                         }
                     }
@@ -121,6 +153,9 @@ public class CreateAccount extends AppCompatActivity {
             }
 
         } catch (Exception e) {
+            if(Locale.getDefault().getLanguage().equals("ar"))
+                Toast.makeText(CreateAccount.this, "يوجد خانات فارغة", Toast.LENGTH_LONG).show();
+            else
             Toast.makeText(this, " missing field(s) ", Toast.LENGTH_LONG).show();
         }
 

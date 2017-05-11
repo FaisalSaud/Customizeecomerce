@@ -51,4 +51,7 @@
     <string name="Buy">شراء</string>
     <string name="PasswordInfo">*كلمة المرور يجب أن تحتوي على  6إلى 16 حرف أو رقم</string>
     <string name="Purchase">خيارات الدفع</string>
+    <string name="ItemDescription">وصف المنتج</string>
+    <string name="PlzEntrBar">فضلا إختر عنوان فرعي</string>
+    <string name="Remove">إزالة</string>
 </resources>

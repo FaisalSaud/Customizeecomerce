@@ -12,9 +12,11 @@ import android.widget.CompoundButton;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import java.util.Locale;
+
 public class CreateAppStep4 extends AppCompatActivity {
     CheckBox PromoSlides;
-    CheckBox ShopingCart;
+    static CheckBox ShopingCart;
     CheckBox Mada;
     CheckBox Cash;
     CheckBox InStore;
@@ -55,10 +57,10 @@ public class CreateAppStep4 extends AppCompatActivity {
         else
             UserMainPage.promoSlide.setVisibility(View.INVISIBLE);
 
-        if(ShopingCart.isChecked())
-            UserMainPage.ShoppingCart.setVisibility(View.VISIBLE);
-        else
-            UserMainPage.ShoppingCart.setVisibility(View.INVISIBLE);
+//        if(ShopingCart.isChecked())
+//            UserMainPage.ShoppingCart.setVisibility(View.VISIBLE);
+//        else
+//            UserMainPage.ShoppingCart.setVisibility(View.INVISIBLE);
         if(Cash.isChecked() && Mada.isChecked()){
             UserMainPage.Payment = 2;
         }
@@ -70,6 +72,9 @@ public class CreateAppStep4 extends AppCompatActivity {
         }
         else{
             UserMainPage.Payment = -1;
+            if(Locale.getDefault().getLanguage().equals("ar"))
+                Toast.makeText(this, "فضلا إختر طريقة دفع", Toast.LENGTH_SHORT).show();
+            else
             Toast.makeText(CreateAppStep4.this ,"Please Select a payment method" , Toast.LENGTH_SHORT).show();
         }
         if(InStore.isChecked() && byHand.isChecked()){
@@ -83,7 +88,10 @@ public class CreateAppStep4 extends AppCompatActivity {
         }
         else{
             UserMainPage.Delivery = -1;
-            Toast.makeText(CreateAppStep4.this ,"Please Select a delaviry method" , Toast.LENGTH_SHORT).show();}
+            if(Locale.getDefault().getLanguage().equals("ar"))
+                Toast.makeText(this, "فضلا إختر طريقة توصيل", Toast.LENGTH_SHORT).show();
+            else
+            Toast.makeText(CreateAppStep4.this ,"Please Select a delivery method" , Toast.LENGTH_SHORT).show();}
     }
 
     }

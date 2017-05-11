@@ -62,6 +62,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom"
                 android:layout_marginLeft="5dp"
+                android:onClick="removeFirstItem"
                 android:text="@string/Remove" />
 
             <TextView
@@ -93,6 +94,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom"
                 android:layout_marginLeft="5dp"
+                android:onClick="removeSecondItem"
                 android:text="@string/Remove" />
 
             <EditText
@@ -148,6 +150,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom"
                 android:layout_marginLeft="5dp"
+                android:onClick="removeThirdItem"
                 android:text="@string/Remove" />
 
             <EditText

@@ -23,6 +23,7 @@ import android.widget.Spinner;
 import android.widget.Toast;
 
 import java.io.IOException;
+import java.util.Locale;
 
 public class CreateAppStep5 extends AppCompatActivity {
     private static final int SELECTED_PICTURE = 1;
@@ -110,7 +111,7 @@ public static int acssess;
 
 
                 else{
-                    UserMainPage.isCom=true;
+                    UserMainPage.isCom = true;
                     CreateAppStep1.step1.finish();
                     CreateAppStep2.step2.finish();
                     CreateAppStep3.step3.finish();
@@ -200,6 +201,9 @@ public static int acssess;
 
                 try {
                     if (!iEmpty(UserMainPage.itemsBar1 , UserMainPage.B1IteamC)){
+                        if(Locale.getDefault().getLanguage().equals("ar"))
+                            Toast.makeText(this, "لقد وصلت للحد الأعلى", Toast.LENGTH_LONG).show();
+                        else
                         Toast.makeText(CreateAppStep5.this, "you have reach the item limit", Toast.LENGTH_LONG).show();
                         return;
                     } else {
@@ -220,6 +224,9 @@ public static int acssess;
 
                 try {
                     if (!iEmpty(UserMainPage.itemsBar2,UserMainPage.B2IteamC)) {
+                        if(Locale.getDefault().getLanguage().equals("ar"))
+                            Toast.makeText(this, "لقد وصلت للحد الأعلى", Toast.LENGTH_LONG).show();
+                        else
                         Toast.makeText(CreateAppStep5.this, "you have reach the item limit", Toast.LENGTH_LONG).show();
                         return;
                     } else {
@@ -236,6 +243,9 @@ public static int acssess;
 
                 try {
                     if (!iEmpty(UserMainPage.itemsBar3,UserMainPage.B3IteamC)) {
+                        if(Locale.getDefault().getLanguage().equals("ar"))
+                            Toast.makeText(this, "لقد وصلت للحد الأعلى", Toast.LENGTH_LONG).show();
+                        else
                         Toast.makeText(CreateAppStep5.this, "you have reach the item limit", Toast.LENGTH_LONG).show();
                         return;
                     } else {
@@ -251,6 +261,9 @@ public static int acssess;
 
                 try {
                     if (!iEmpty(UserMainPage.itemsBar4,UserMainPage.B4IteamC)) {
+                        if(Locale.getDefault().getLanguage().equals("ar"))
+                            Toast.makeText(this, "لقد وصلت للحد الأعلى", Toast.LENGTH_LONG).show();
+                        else
                         Toast.makeText(CreateAppStep5.this, "you have reach the item limit", Toast.LENGTH_LONG).show();
                         return;
                     } else {
