@@ -48,8 +48,9 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                // MainActivity.this.openFolder();
-                Intent i = new Intent(MainActivity.this, Main2Activity.class);
-              startActivity(i);            }
+                //Intent i = new Intent(MainActivity.this, Main2Activity.class);
+            //  startActivity(i);
+            }
 
         });
         ST.setOnClickListener(new View.OnClickListener() {

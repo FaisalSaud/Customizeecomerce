@@ -13,6 +13,7 @@
         <activity android:name=".StartPage">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -36,16 +37,18 @@
         <activity android:name=".FileExploreActivity" />
         <activity android:name=".MyApp" />
         <activity android:name=".Main2Activity" />
-        <activity android:name=".AboutUs"/>
-
-        <activity android:name=".UserMainPage"
-            android:label="Userapp"
-            android:icon="@drawable/car_icon">
+        <activity android:name=".AboutUs" />
+        <activity
+            android:name=".UserMainPage"
+            android:icon="@drawable/car_icon"
+            android:label="Userapp">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".SaveData"></activity>
     </application>
 
 </manifest>

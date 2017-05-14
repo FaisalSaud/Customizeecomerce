@@ -104,14 +104,17 @@ public static int acssess;
         bulid.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                SaveData s =new SaveData();
+                s.turnOn=1;
+                s.SaveData();
+                UserMainPage.isCom = true;
                 if(CM.isChecked()){
                     Intent i = new Intent(CreateAppStep5.this , CreateAppStepFinal.class);
               startActivity(i);
                 }
 
-
                 else{
-                    UserMainPage.isCom = true;
+
                     CreateAppStep1.step1.finish();
                     CreateAppStep2.step2.finish();
                     CreateAppStep3.step3.finish();
