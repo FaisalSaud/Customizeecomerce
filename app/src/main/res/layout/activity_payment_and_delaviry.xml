@@ -5,116 +5,409 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.abu.customizeecomerce.PaymentAndDelaviry">
-    <TextView
-        android:id="@+id/textView23PD"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/PaymentMethod"
-        android:textColor="@android:color/background_dark"
-        tools:layout_editor_absoluteX="40dp"
-        tools:layout_editor_absoluteY="270dp"
-        android:layout_marginBottom="41dp"
-        android:layout_alignBottom="@+id/Paymentspinner"
-        android:layout_alignParentStart="true" />
 
-    <TextView
-        android:id="@+id/textView56PD"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/DeliveryMethod"
-        android:textColor="@android:color/background_dark"
-        android:layout_marginBottom="14dp"
-        android:layout_above="@+id/Deliveryspinner"
-        android:layout_alignParentStart="true" />
-
-    <Button
-        android:id="@+id/button10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="OK"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true" />
-
-    <Spinner
-        android:id="@+id/Paymentspinner"
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView1PAD"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/textView56PD"
+        android:layout_height="match_parent"
         android:layout_alignParentStart="true"
-        android:layout_marginBottom="39dp"
-        android:text="[Select a Method...]" />
-
-    <Spinner
-        android:id="@+id/Deliveryspinner"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/button10"
-        android:layout_alignParentStart="true"
-        android:text="[Select a Method...]"
-        android:layout_marginBottom="25dp" />
-
-    <TextView
-        android:id="@+id/itemName"
-        android:layout_width="370dp"
-        android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="31dp"
-        android:text="item"
-        android:textAlignment="center" />
+        android:visibility="visible">
 
-    <TextView
-        android:id="@+id/textView54"
-        android:layout_width="110dp"
-        android:layout_height="20dp"
-        android:layout_alignStart="@+id/itemName"
-        android:layout_below="@+id/itemName"
-        android:layout_marginStart="13dp"
-        android:layout_marginTop="23dp"
-        android:text="@string/ItemDescription" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/Paymentspinner"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="335dp"
+            android:text="@string/PaymentMethod"
+            android:textColor="@android:color/background_dark"
+            tools:layout_editor_absoluteX="40dp"
+            tools:layout_editor_absoluteY="270dp" />
 
-    <TextView
-        android:id="@+id/itemDescription"
-        android:layout_width="380dp"
-        android:layout_height="120dp"
-        android:layout_below="@+id/textView54"
-        android:layout_marginStart="3dp"
-        android:layout_marginTop="17dp"
-        android:text="TextView" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/Deliveryspinner"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="400dp"
+            android:text="@string/DeliveryMethod"
+            android:textColor="@android:color/background_dark" />
 
-    <TextView
-        android:id="@+id/textView58"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="250dp"
-        android:text="Number of item" />
+        <TextView
+            android:id="@+id/textView61"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="245dp"
+            android:text="Number of item" />
 
-    <EditText
-        android:id="@+id/numberOfItem"
-        android:layout_width="80dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:ems="10"
-        android:inputType="number"
-        android:layout_below="@+id/textView58"
-        android:layout_alignEnd="@+id/textView54" />
+        <TextView
+            android:id="@+id/itemName1"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="51dp"
+            android:text="item"
+            android:textAlignment="center" />
 
-    <TextView
-        android:id="@+id/textView59"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/textView58"
-        android:layout_marginStart="280dp"
-        android:text="Item Price" />
+        <Button
+            android:id="@+id/button101"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="280dp"
+            android:layout_marginTop="455dp"
+            android:text="OK" />
 
-    <TextView
-        android:id="@+id/itemPrice"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TextView"
-        android:layout_alignBaseline="@+id/numberOfItem"
-        android:layout_alignBottom="@+id/numberOfItem"
-        android:layout_alignStart="@+id/textView59" />
+        <Spinner
+            android:id="@+id/PaymentSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView56PD"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="360dp"
+            android:text="[Select a Method...]" />
+
+        <Spinner
+            android:id="@+id/DeliverySpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/button10"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="425dp"
+            android:text="[Select a Method...]" />
+
+        <EditText
+            android:id="@+id/numberOfItem1"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/textView54"
+            android:layout_below="@+id/textView58"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="275dp"
+            android:ems="10"
+            android:inputType="number"
+            android:text="1"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/textView60"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView58"
+            android:layout_marginStart="280dp"
+            android:layout_marginTop="245dp"
+            android:text="Item Price" />
+
+        <TextView
+            android:id="@+id/itemPrice1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/numberOfItem"
+            android:layout_alignBottom="@+id/numberOfItem"
+            android:layout_alignStart="@+id/textView59"
+            android:layout_marginLeft="283dp"
+            android:layout_marginTop="290dp"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/itemDescription1"
+            android:layout_width="380dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/textView54"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="140dp"
+            android:text="TextView" />
+
+        <TextView
+            android:layout_width="110dp"
+            android:layout_height="20dp"
+            android:layout_alignStart="@+id/itemName1"
+            android:layout_below="@+id/itemName1"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="110dp"
+            android:text="@string/ItemDescription" />
+
+        <EditText
+            android:id="@+id/itemImage1"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_marginLeft="240dp"
+            android:layout_marginTop="15dp"
+            android:ems="10"
+            android:inputType="none" />
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView2PAD"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/Paymentspinner"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="360dp"
+            android:text="@string/PaymentMethod"
+            android:textColor="@android:color/background_dark"
+            tools:layout_editor_absoluteX="40dp"
+            tools:layout_editor_absoluteY="270dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/Deliveryspinner"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="440dp"
+            android:text="@string/DeliveryMethod"
+            android:textColor="@android:color/background_dark" />
+
+        <Button
+            android:id="@+id/button102"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="280dp"
+            android:layout_marginTop="510dp"
+            android:text="OK" />
+
+        <Spinner
+            android:id="@+id/PaymentSpinner2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView56PD"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="390dp"
+            android:text="[Select a Method...]" />
+
+        <Spinner
+            android:id="@+id/DeliverySpinner2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/button10"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="470dp"
+            android:text="[Select a Method...]" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="270dp"
+            android:text="Number of item" />
+
+        <EditText
+            android:id="@+id/numberOfItem2"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/textView54"
+            android:layout_below="@+id/textView58"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="300dp"
+            android:ems="10"
+            android:inputType="number" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView58"
+            android:layout_marginStart="280dp"
+            android:layout_marginTop="270dp"
+            android:text="Item Price" />
+
+        <TextView
+            android:id="@+id/itemPrice2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/numberOfItem"
+            android:layout_alignBottom="@+id/numberOfItem"
+            android:layout_alignStart="@+id/textView59"
+            android:layout_marginLeft="283dp"
+            android:layout_marginTop="315dp"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/itemDescription2"
+            android:layout_width="380dp"
+            android:layout_height="120dp"
+            android:layout_below="@+id/textView54"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="140dp"
+            android:text="TextView" />
+
+        <TextView
+            android:layout_width="110dp"
+            android:layout_height="20dp"
+            android:layout_alignStart="@+id/itemName1"
+            android:layout_below="@+id/itemName1"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="110dp"
+            android:text="Item Description:" />
+
+        <TextView
+            android:id="@+id/itemName2"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="51dp"
+            android:text="item"
+            android:textAlignment="center" />
+
+        <EditText
+            android:id="@+id/itemImage2"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_marginLeft="240dp"
+            android:layout_marginTop="15dp"
+            android:editable="false"
+            android:ems="10"
+            android:inputType="none" />
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView3PAD"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/textView23PD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/Paymentspinner"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="360dp"
+            android:text="@string/PaymentMethod"
+            android:textColor="@android:color/background_dark"
+            tools:layout_editor_absoluteX="40dp"
+            tools:layout_editor_absoluteY="270dp" />
+
+        <TextView
+            android:id="@+id/textView56PD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/Deliveryspinner"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="440dp"
+            android:text="@string/DeliveryMethod"
+            android:textColor="@android:color/background_dark" />
+
+        <Button
+            android:id="@+id/button103"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="280dp"
+            android:layout_marginTop="510dp"
+            android:text="OK" />
+
+        <Spinner
+            android:id="@+id/PaymentSpinner3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView56PD"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="390dp"
+            android:text="[Select a Method...]" />
+
+        <Spinner
+            android:id="@+id/DeliverySpinner3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/button10"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="470dp"
+            android:text="[Select a Method...]" />
+
+        <TextView
+            android:id="@+id/itemName3"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="51dp"
+            android:text="item"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/textView58"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="270dp"
+            android:text="Number of item" />
+
+        <EditText
+            android:id="@+id/numberOfItem3"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/textView54"
+            android:layout_below="@+id/textView58"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="300dp"
+            android:ems="10"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/textView59"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView58"
+            android:layout_marginStart="280dp"
+            android:layout_marginTop="270dp"
+            android:text="Item Price" />
+
+        <TextView
+            android:id="@+id/itemPrice3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/numberOfItem"
+            android:layout_alignBottom="@+id/numberOfItem"
+            android:layout_alignStart="@+id/textView59"
+            android:layout_marginLeft="283dp"
+            android:layout_marginTop="315dp"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/itemDescription3"
+            android:layout_width="380dp"
+            android:layout_height="120dp"
+            android:layout_below="@+id/textView54"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="140dp"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/textView54"
+            android:layout_width="110dp"
+            android:layout_height="20dp"
+            android:layout_alignStart="@+id/itemName1"
+            android:layout_below="@+id/itemName1"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="110dp"
+            android:text="Item Description:" />
+
+        <EditText
+            android:id="@+id/itemImage3"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_marginLeft="240dp"
+            android:layout_marginTop="15dp"
+            android:ems="10"
+            android:inputType="none" />
+    </android.support.v7.widget.CardView>
 
 </RelativeLayout>

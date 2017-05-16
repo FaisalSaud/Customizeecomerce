@@ -76,6 +76,7 @@ public class PurchaseBasket extends AppCompatActivity {
 
         try {
             Intent i = new Intent(PurchaseBasket.this, PaymentAndDelaviry.class);
+            UserMainPage.fromPurchaseB = true;
             startActivity(i);
         } catch (Exception e) {
             Toast.makeText(PurchaseBasket.this, e.getMessage(), Toast.LENGTH_LONG).show();

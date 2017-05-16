@@ -28,6 +28,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom"
                 android:layout_marginLeft="265dp"
+                android:onClick="buyItem1"
                 android:text="@string/Buy" />
 
             <Button
@@ -94,6 +95,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom"
                 android:layout_marginLeft="265dp"
+                android:onClick="buyItem2"
                 android:text="@string/Buy" />
 
             <Button
@@ -160,6 +162,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom"
                 android:layout_marginLeft="265dp"
+                android:onClick="buyItem3"
                 android:text="@string/Buy" />
 
             <Button
@@ -226,6 +229,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom"
                 android:layout_marginLeft="265dp"
+                android:onClick="buyItem4"
                 android:text="@string/Buy" />
 
             <Button
@@ -292,6 +296,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom"
                 android:layout_marginLeft="265dp"
+                android:onClick="buyItem5"
                 android:text="Buy" />
 
             <Button

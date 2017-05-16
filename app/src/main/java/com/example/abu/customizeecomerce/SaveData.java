@@ -1,10 +1,9 @@
 package com.example.abu.customizeecomerce;
 
-import android.graphics.drawable.Drawable;
 import android.net.Uri;
+import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -27,7 +26,7 @@ public class SaveData extends AppCompatActivity {
                     @Override
                     public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
                         // Get a URL to the uploaded content
-                        Uri downloadUrl = taskSnapshot.getDownloadUrl();
+                      //  Uri downloadUrl = taskSnapshot.getDownloadUrl();
                     }
                 })
                 .addOnFailureListener(new OnFailureListener() {

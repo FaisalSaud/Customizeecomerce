@@ -25,10 +25,20 @@ public class UserMainPage extends AppCompatActivity {
     public static Drawable background;
     public static TextView promoSlide;
     public static ImageButton ShoppingCart;
-    public static Boolean isCom = true;
+    public static Boolean isCom=false;
     public static int Payment;
     public static int Delivery;
-    Drawable f;
+
+    //test
+    static boolean fromPurchaseB;  //if the activity start from 'bar' or 'Purchase Basket'
+
+    static String itemNameFromBars;
+    static String itemDescriptionFromBars;
+    static String itemPriceFromBars;
+    static Drawable itemImageFromBars;
+    //end test
+
+
     static String [] bars;
     static String [] itemsBar1;
     static String [] itemsBar2;
@@ -38,12 +48,11 @@ public class UserMainPage extends AppCompatActivity {
     static Drawable [] imgItemsBar2;
     static Drawable [] imgItemsBar3;
     static Drawable [] imgItemsBar4;
-    static ActionBar actionBar;
+public static ActionBar actionBar;
     static int B1IteamC ;//= 0; //item count for bar1
     static int B2IteamC ;//= 0;               //bar2
     static int B3IteamC ;//= 0;               //bar3
     static int B4IteamC ;//= 0;
-     int turnoff=1;
 
 
     //test
@@ -57,9 +66,9 @@ public class UserMainPage extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_main_page);
+
         UserMainPage=this;
         //background = (EditText) findViewById(R.id.userBackground);
-
 
 
         itemsBar1 = new String[15];
@@ -75,7 +84,6 @@ public class UserMainPage extends AppCompatActivity {
         B2IteamC = 0;
         B3IteamC = 0;
         B4IteamC = 0;
-
 
 
         //test
@@ -178,7 +186,7 @@ public class UserMainPage extends AppCompatActivity {
 
     public static void setUMPBackground(Drawable d){
         background = d;
-        actionBar.setBackgroundDrawable(background);
+        actionBar.setBackgroundDrawable(d);
         //background.setVisibility(View.INVISIBLE);
     }
     @Override
@@ -207,5 +215,4 @@ public class UserMainPage extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
-
 }

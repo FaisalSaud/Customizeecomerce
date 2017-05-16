@@ -1,5 +1,6 @@
 package com.example.abu.customizeecomerce;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.CardView;
@@ -274,5 +275,61 @@ public class Bar3 extends AppCompatActivity {
             Toast.makeText(this,"أدخلت منتجا جديدا في سلة التسوق",Toast.LENGTH_SHORT).show();
         else
         Toast.makeText(this, "you enter a new item to Shopping Cart", Toast.LENGTH_SHORT).show();
+    }
+
+    public void buyItem1 (View view){
+        Intent i = new Intent(this,PaymentAndDelaviry.class);
+
+        UserMainPage.itemNameFromBars = item1NameBar3.getText().toString();
+        UserMainPage.itemDescriptionFromBars = item1DescBar3.getText().toString();
+        UserMainPage.itemPriceFromBars = item1PriceBar3.getText().toString();
+        UserMainPage.itemImageFromBars = item1ImageBar3.getBackground();
+
+        UserMainPage.fromPurchaseB = false;
+        startActivity(i);
+    }
+    public void buyItem2 (View view){
+        Intent i = new Intent(this,PaymentAndDelaviry.class);
+
+        UserMainPage.itemNameFromBars = item2NameBar3.getText().toString();
+        UserMainPage.itemDescriptionFromBars = item2DescBar3.getText().toString();
+        UserMainPage.itemPriceFromBars = item2PriceBar3.getText().toString();
+        UserMainPage.itemImageFromBars = item2ImageBar3.getBackground();
+
+        UserMainPage.fromPurchaseB = false;
+        startActivity(i);
+    }
+    public void buyItem3 (View view){
+        Intent i = new Intent(this,PaymentAndDelaviry.class);
+
+        UserMainPage.itemNameFromBars = item3NameBar3.getText().toString();
+        UserMainPage.itemDescriptionFromBars = item3DescBar3.getText().toString();
+        UserMainPage.itemPriceFromBars = item3PriceBar3.getText().toString();
+        UserMainPage.itemImageFromBars = item3ImageBar3.getBackground();
+
+        UserMainPage.fromPurchaseB = false;
+        startActivity(i);
+    }
+    public void buyItem4 (View view){
+        Intent i = new Intent(this,PaymentAndDelaviry.class);
+
+        UserMainPage.itemNameFromBars = item4NameBar3.getText().toString();
+        UserMainPage.itemDescriptionFromBars = item4DescBar3.getText().toString();
+        UserMainPage.itemPriceFromBars = item4PriceBar3.getText().toString();
+        UserMainPage.itemImageFromBars = item4ImageBar3.getBackground();
+
+        UserMainPage.fromPurchaseB = false;
+        startActivity(i);
+    }
+    public void buyItem5 (View view){
+        Intent i = new Intent(this,PaymentAndDelaviry.class);
+
+        UserMainPage.itemNameFromBars = item5NameBar3.getText().toString();
+        UserMainPage.itemDescriptionFromBars = item5DescBar3.getText().toString();
+        UserMainPage.itemPriceFromBars = item5PriceBar3.getText().toString();
+        UserMainPage.itemImageFromBars = item5ImageBar3.getBackground();
+
+        UserMainPage.fromPurchaseB = false;
+        startActivity(i);
     }
 }
