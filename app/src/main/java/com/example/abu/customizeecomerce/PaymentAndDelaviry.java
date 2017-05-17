@@ -1,8 +1,8 @@
 package com.example.abu.customizeecomerce;
 
-import android.hardware.usb.UsbRequest;
-import android.support.v7.app.AppCompatActivity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.CardView;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -235,12 +235,6 @@ public class PaymentAndDelaviry extends AppCompatActivity {
             cardView2.setVisibility(View.GONE);
             cardView3.setVisibility(View.GONE);
 
-            itembutton1.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Toast.makeText(PaymentAndDelaviry.this, "should send message her", Toast.LENGTH_SHORT).show();
-                }
-            });
             itemQuantity1.addTextChangedListener(new TextWatcher() {
                 @Override
                 public void beforeTextChanged(CharSequence s, int start, int count, int after) {
@@ -266,6 +260,19 @@ public class PaymentAndDelaviry extends AppCompatActivity {
                     }catch (Exception e){}
                 }
             });
+            itembutton1.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Toast.makeText(PaymentAndDelaviry.this, "should send message her", Toast.LENGTH_SHORT).show();
+                    try {
+                        UserMainPage.itemPriceWithQuantityFromBars = (Double.parseDouble(UserMainPage.itemPriceFromBars.trim())) * (Double.parseDouble(itemQuantity1.getText().toString().trim()));
+                    }catch (Exception e){
+                        Toast.makeText(PaymentAndDelaviry.this,e.getMessage(),Toast.LENGTH_LONG).show();
+                    }
+                    Intent i = new Intent(PaymentAndDelaviry.this, SendShoppingBill.class);
+                    startActivity(i);
+                }
+            });
 
         }else {
             switch (UserMainPage.purchaseBasketCounter) {
@@ -287,6 +294,13 @@ public class PaymentAndDelaviry extends AppCompatActivity {
                         @Override
                         public void onClick(View v) {
                             Toast.makeText(PaymentAndDelaviry.this, "should send message her", Toast.LENGTH_SHORT).show();
+                            try {
+                                UserMainPage.itemPriceWithQuantity[0] = Double.parseDouble(itemQuantity1.getText().toString().trim()) * (Double.parseDouble(UserMainPage.purchaseBasketItems[2]));
+                            }catch (Exception e){
+                                Toast.makeText(PaymentAndDelaviry.this,e.getMessage(),Toast.LENGTH_LONG).show();
+                            }
+                            Intent i = new Intent(PaymentAndDelaviry.this, SendShoppingBill.class);
+                            startActivity(i);
                         }
                     });
                     break;
@@ -319,6 +333,14 @@ public class PaymentAndDelaviry extends AppCompatActivity {
                         @Override
                         public void onClick(View v) {
                             Toast.makeText(PaymentAndDelaviry.this, "should send message her", Toast.LENGTH_SHORT).show();
+                            try {
+                                UserMainPage.itemPriceWithQuantity[0] = Double.parseDouble(itemQuantity1.getText().toString().trim()) * (Double.parseDouble(UserMainPage.purchaseBasketItems[2]));
+                                UserMainPage.itemPriceWithQuantity[1] = Double.parseDouble(itemQuantity2.getText().toString().trim()) * (Double.parseDouble(UserMainPage.purchaseBasketItems[5]));
+                            }catch (Exception e){
+                                Toast.makeText(PaymentAndDelaviry.this,e.getMessage(),Toast.LENGTH_LONG).show();
+                            }
+                            Intent i = new Intent(PaymentAndDelaviry.this, SendShoppingBill.class);
+                            startActivity(i);
                         }
                     });
                     break;
@@ -365,6 +387,15 @@ public class PaymentAndDelaviry extends AppCompatActivity {
                         @Override
                         public void onClick(View v) {
                             Toast.makeText(PaymentAndDelaviry.this, "should send message her", Toast.LENGTH_SHORT).show();
+                            try {
+                                UserMainPage.itemPriceWithQuantity[0] = Double.parseDouble(itemQuantity1.getText().toString().trim()) * (Double.parseDouble(UserMainPage.purchaseBasketItems[2]));
+                                UserMainPage.itemPriceWithQuantity[1] = Double.parseDouble(itemQuantity2.getText().toString().trim()) * (Double.parseDouble(UserMainPage.purchaseBasketItems[5]));
+                                UserMainPage.itemPriceWithQuantity[2] = Double.parseDouble(itemQuantity3.getText().toString().trim()) * (Double.parseDouble(UserMainPage.purchaseBasketItems[8]));
+                            }catch (Exception e){
+                                Toast.makeText(PaymentAndDelaviry.this,e.getMessage(),Toast.LENGTH_LONG).show();
+                            }
+                            Intent i = new Intent(PaymentAndDelaviry.this, SendShoppingBill.class);
+                            startActivity(i);
                         }
                     });
                     break;

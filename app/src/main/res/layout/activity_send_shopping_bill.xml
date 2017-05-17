@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.abu.customizeecomerce.SendShoppingBill">
+
+    <TextView
+        android:id="@+id/textView62"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="71dp"
+        android:text="Full Name:"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/editTextCustomerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_below="@+id/textView62"
+        android:layout_alignStart="@+id/textView62" />
+
+    <TextView
+        android:id="@+id/textView66"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editTextCustomerName"
+        android:layout_below="@+id/editTextCustomerName"
+        android:layout_marginTop="40dp"
+        android:text="E-Mail:" />
+
+    <EditText
+        android:id="@+id/editTextCustomerEMail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/editTextCustomerName"
+        android:layout_below="@+id/textView66"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:inputType="textEmailAddress" />
+
+    <TextView
+        android:id="@+id/textView67"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editTextCustomerEMail"
+        android:layout_below="@+id/editTextCustomerEMail"
+        android:layout_marginTop="37dp"
+        android:text="Phone Number:" />
+
+    <EditText
+        android:id="@+id/editTextCustomerPhoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView67"
+        android:layout_below="@+id/textView67"
+        android:layout_marginTop="27dp"
+        android:ems="10"
+        android:inputType="phone" />
+
+    <Button
+        android:id="@+id/buttonOkSendEMail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="18dp"
+        android:layout_toEndOf="@+id/editTextCustomerPhoneNumber"
+        android:text="OK" />
+</RelativeLayout>

@@ -34,8 +34,8 @@
         <activity android:name=".PaymentAndDelaviry" />
         <activity android:name=".PurchaseBasket" />
         <activity android:name=".Bar4" />
-        <activity android:name=".FileExploreActivity" />
-        <activity android:name=".MyApp" />
+        <!--<activity android:name=".FileExploreActivity" />-->
+        <!--<activity android:name=".MyApp" />-->
         <activity android:name=".Main2Activity" />
         <activity android:name=".AboutUs" />
         <activity
@@ -48,7 +48,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SaveData"></activity>
+        <activity android:name=".SaveData" />
+        <activity android:name=".SendShoppingBill"></activity>
     </application>
 
 </manifest>

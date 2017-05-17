@@ -3,14 +3,13 @@ package com.example.abu.customizeecomerce;
 import android.app.Activity;
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
+import android.os.Bundle;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -36,6 +35,7 @@ public class UserMainPage extends AppCompatActivity {
     static String itemDescriptionFromBars;
     static String itemPriceFromBars;
     static Drawable itemImageFromBars;
+    static double itemPriceWithQuantityFromBars;
     //end test
 
 
@@ -59,6 +59,7 @@ public static ActionBar actionBar;
     static String purchaseBasketItems [];
     static Drawable purchaseBasketItemsImages [];
     static int purchaseBasketCounter;
+    static double itemPriceWithQuantity[];
     //end test
 
     public static Activity UserMainPage;
@@ -90,6 +91,7 @@ public static ActionBar actionBar;
         purchaseBasketItems = new String[9];
         purchaseBasketItemsImages = new Drawable[3];
         purchaseBasketCounter = 0;
+        itemPriceWithQuantity = new double[3];
         //end test
 
 

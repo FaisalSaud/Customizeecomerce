@@ -1,8 +1,5 @@
 package com.example.abu.customizeecomerce;
 
-import android.app.DownloadManager;
-import android.content.BroadcastReceiver;
-import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
 import android.graphics.Bitmap;
@@ -10,19 +7,17 @@ import android.graphics.BitmapFactory;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.net.Uri;
+import android.os.Bundle;
 import android.provider.MediaStore;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
-import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.Toast;
 
-import java.io.IOException;
 import java.util.Locale;
 
 public class CreateAppStep5 extends AppCompatActivity {
@@ -105,8 +100,8 @@ public static int acssess;
             @Override
             public void onClick(View view) {
                 SaveData s =new SaveData();
-                s.turnOn=1;
-                s.SaveData();
+               // s.turnOn=1;
+              //  s.SaveData();
                 UserMainPage.isCom = true;
                 if(CM.isChecked()){
                     Intent i = new Intent(CreateAppStep5.this , CreateAppStepFinal.class);
