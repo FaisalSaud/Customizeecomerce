@@ -1,10 +1,12 @@
 package com.example.abu.customizeecomerce;
 
 import android.app.Activity;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.v7.app.ActionBar;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -87,12 +89,12 @@ public static ActionBar actionBar;
         B4IteamC = 0;
 
 
-        //test
+        //no need to save it in local Database
         purchaseBasketItems = new String[9];
         purchaseBasketItemsImages = new Drawable[3];
         purchaseBasketCounter = 0;
         itemPriceWithQuantity = new double[3];
-        //end test
+        //
 
 
         Toast.makeText(UserMainPage.this, "Start ump" , Toast.LENGTH_SHORT).show();
@@ -216,5 +218,21 @@ public static ActionBar actionBar;
             Toast.makeText(UserMainPage.this,"Shopping cart not activated",Toast.LENGTH_SHORT).show();
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public void onBackPressed() {
+        new AlertDialog.Builder(this)
+                .setIcon(android.R.drawable.ic_dialog_alert)
+                .setTitle("Exit the application")
+                .setMessage("are you sure you want to exit the app? \nit will delet your sopping cart!!")
+                .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        android.os.Process.killProcess(android.os.Process.myPid());
+                    }
+                })
+                .setNegativeButton("No", null)
+                .show();
     }
 }

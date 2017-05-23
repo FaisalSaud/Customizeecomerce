@@ -1,5 +1,6 @@
 package com.example.abu.customizeecomerce;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -30,6 +31,9 @@ public class SendShoppingBill extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 sendEmail();
+
+                Intent i = new Intent(SendShoppingBill.this, UserMainPage.class);
+                startActivity(i);
             }
         });
 

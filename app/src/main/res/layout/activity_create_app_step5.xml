@@ -8,22 +8,19 @@
 
     <Button
         android:id="@+id/saveItemButtonStep5"
-        android:layout_width="130dp"
-        android:layout_height="wrap_content"
-        android:layout_marginRight="17dp"
-        android:layout_marginStart="240dp"
-        android:layout_marginTop="430dp"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
         android:onClick="saveItem"
         android:text="@string/SaveItem"
-        tools:layout_editor_absoluteX="40dp"
-        tools:layout_editor_absoluteY="288dp"
-        android:layout_above="@+id/textView46" />
+        android:layout_marginEnd="17dp"
+        android:layout_above="@+id/buildButtonStep5"
+        android:layout_alignParentEnd="true" />
 
     <Button
         android:id="@+id/buildButtonStep5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="19dp"
+        android:layout_marginEnd="6dp"
         android:layout_marginRight="44dp"
         android:background="@color/black_overlay"
         android:text="@string/Build"
@@ -70,8 +67,6 @@
         android:id="@+id/ItemImageStep5"
         android:layout_width="130dp"
         android:layout_height="130dp"
-        android:layout_alignEnd="@+id/ItemNameStep5"
-        android:layout_alignTop="@+id/button2"
         android:editable="false"
         android:ems="10"
         android:inputType="none"
@@ -79,7 +74,9 @@
         tools:editable="false"
         tools:inputType="none"
         tools:layout_editor_absoluteX="172dp"
-        tools:layout_editor_absoluteY="142dp" />
+        tools:layout_editor_absoluteY="142dp"
+        android:layout_alignTop="@+id/button2"
+        android:layout_alignEnd="@+id/ItemNameStep5" />
 
     <EditText
         android:id="@+id/ItemNameStep5"
@@ -91,7 +88,8 @@
         tools:layout_editor_absoluteY="58dp"
         android:layout_alignBaseline="@+id/textView17"
         android:layout_alignBottom="@+id/textView17"
-        android:layout_alignEnd="@+id/barsSpinnerStep5" />
+        android:layout_alignEnd="@+id/barsSpinnerStep5"
+        android:layout_toEndOf="@+id/button2" />
 
     <TextView
         android:id="@+id/textView17"
@@ -186,7 +184,8 @@
         android:layout_height="wrap_content"
         android:text="@string/ItemDescription"
         android:layout_alignBottom="@+id/ItemImageStep5"
-        android:layout_alignStart="@+id/textView25" />
+        android:layout_alignStart="@+id/textView25"
+        android:layout_marginBottom="8dp" />
 
     <EditText
         android:id="@+id/ItemDescriptionStep5"
@@ -198,7 +197,8 @@
         android:layout_marginTop="13dp"
         android:layout_toStartOf="@+id/buildButtonStep5"
         android:ems="10"
-        android:inputType="textLongMessage" />
+        android:inputType="textMultiLine|textLongMessage"
+        android:singleLine="false" />
 
     <Spinner
         android:id="@+id/barsSpinnerStep5"
@@ -213,10 +213,9 @@
         android:id="@+id/textView45"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/itemPriceStep5"
-        android:layout_marginTop="12dp"
-        android:layout_toStartOf="@+id/textView57"
-        android:text="@string/PlzEntrBar" />
+        android:text="@string/PlzEntrBar"
+        android:layout_alignBottom="@+id/itemPriceStep5"
+        android:layout_toEndOf="@+id/checkMode" />
 
     <TextView
         android:id="@+id/textView55"
@@ -253,14 +252,5 @@
         android:text="Check Mode"
         android:layout_below="@+id/textView27"
         android:layout_toStartOf="@+id/ItemImageStep5" />
-
-    <ImageView
-        android:id="@+id/ItemImageStep5test"
-        android:layout_width="75dp"
-        android:layout_height="75dp"
-        android:layout_alignTop="@+id/ItemImageStep5"
-        android:layout_marginTop="20dp"
-        android:layout_toEndOf="@+id/button2"
-        app:srcCompat="@drawable/food_icon" />
 
 </RelativeLayout>
