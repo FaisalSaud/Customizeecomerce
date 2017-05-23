@@ -13,7 +13,6 @@
         <activity android:name=".StartPage">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -36,7 +35,7 @@
         <activity android:name=".Bar4" />
         <!--<activity android:name=".FileExploreActivity" />-->
         <!--<activity android:name=".MyApp" />-->
-        <activity android:name=".Main2Activity" />
+        <!--<activity android:name=".Main2Activity" />-->
         <activity android:name=".AboutUs" />
         <activity
             android:name=".UserMainPage"
@@ -44,7 +43,6 @@
             android:label="Userapp">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
