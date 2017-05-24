@@ -15,6 +15,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -39,6 +40,8 @@ public class UserMainPage extends AppCompatActivity {
     public static Boolean isCom=false;
     public static int Payment;
     public static int Delivery;
+
+    static EditText slideShowPicture;   //to show the slide show :D
 
     //test
     static boolean fromPurchaseB;  //if the activity start from 'bar' or 'Purchase Basket'

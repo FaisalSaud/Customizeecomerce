@@ -203,10 +203,9 @@
         tools:layout_constraintTop_creator="1"
         tools:layout_editor_absoluteX="40dp"
         tools:layout_editor_absoluteY="123dp"
-        android:layout_alignBaseline="@+id/checkBox4"
-        android:layout_alignBottom="@+id/checkBox4"
-        android:layout_alignLeft="@+id/checkBox5"
-        android:layout_alignStart="@+id/checkBox5" />
+        android:layout_above="@+id/textView23"
+        android:layout_alignStart="@+id/checkBox5"
+        android:layout_marginStart="13dp" />
 
     <CheckBox
         android:id="@+id/checkBox4"
@@ -274,9 +273,9 @@
         android:textColor="@android:color/background_dark"
         tools:layout_editor_absoluteX="41dp"
         tools:layout_editor_absoluteY="203dp"
-        android:layout_marginTop="22dp"
         android:layout_below="@+id/checkBox7"
-        android:layout_alignStart="@+id/checkBox6" />
+        android:layout_alignStart="@+id/textView23"
+        android:layout_marginTop="13dp" />
 
     <CheckBox
         android:id="@+id/checkBox5"
@@ -301,6 +300,17 @@
         android:text="@string/InStore"
         tools:layout_editor_absoluteX="153dp"
         tools:layout_editor_absoluteY="227dp" />
+
+    <Button
+        android:id="@+id/slideShowButton"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignBaseline="@+id/checkBox4"
+        android:layout_alignBottom="@+id/checkBox4"
+        android:layout_alignStart="@+id/checkBox5"
+        android:onClick="uploadImg"
+        android:text="choose Your Slide"
+        android:visibility="gone" />
 
 
 </RelativeLayout>

@@ -201,20 +201,20 @@
     <EditText
         android:id="@+id/AppTitle"
         android:layout_width="400px"
-        android:layout_height="50px"
-        android:layout_centerVertical="true"
-        android:layout_toEndOf="@+id/textView33"
-        android:layout_toRightOf="@+id/textView33"
+        android:layout_height="50dp"
         android:ems="10"
-        android:inputType="textPersonName" />
+        android:inputType="textPersonName"
+        android:layout_below="@+id/backgroundImage"
+        android:layout_toEndOf="@+id/textView33"
+        android:layout_marginTop="18dp" />
 
     <TextView
         android:id="@+id/textView45"
-        android:layout_width="wrap_content"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/AppTitle"
-        android:layout_toLeftOf="@+id/textView33"
-        android:layout_toStartOf="@+id/textView33"
-        android:text="Your App Title :" />
+        android:text="Your App Title :"
+        android:layout_alignBaseline="@+id/AppTitle"
+        android:layout_alignBottom="@+id/AppTitle"
+        android:layout_alignStart="@+id/textView30" />
 
 </RelativeLayout>
