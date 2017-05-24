@@ -117,7 +117,7 @@ public class SendShoppingBill extends AppCompatActivity {
 
         try {
             SendMail smCustomer = new SendMail(this, customerEmail, "Bill information", customerMsg);
-//            SendMail smCompany = new SendMail(this, , "New Customer Order", companyMsg);
+//            SendMail smCompany = new SendMail(this, email , "New Customer Order", companyMsg);
 
             smCustomer.execute();
 //            smCompany.execute();

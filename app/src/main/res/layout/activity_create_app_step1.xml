@@ -116,6 +116,7 @@
         android:textAlignment="center"
         android:textSize="16sp"
         android:textStyle="bold"
+        android:visibility="invisible"
         app:layout_constraintBaseline_toBaselineOf="@+id/textView47"
         app:layout_constraintLeft_toLeftOf="@+id/textView47"
         app:layout_constraintRight_toRightOf="parent"
@@ -139,14 +140,25 @@
         android:capitalize="none"
         android:editable="false"
         android:ems="10"
+        android:inputType="none"
         android:password="false"
         android:textColor="?attr/colorControlNormal"
         android:textSize="@dimen/activity_horizontal_margin"
         tools:editable="false"
-        android:inputType="none"
         tools:ignore="Deprecated,MissingConstraints,UnknownIdInLayout"
         tools:layout_editor_absoluteX="114dp"
         tools:layout_editor_absoluteY="176dp" />
+
+    <EditText
+        android:id="@+id/storeName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView16"
+        android:layout_marginTop="42dp"
+        android:layout_toEndOf="@+id/chooseIconButton"
+        android:layout_toRightOf="@+id/chooseIconButton"
+        android:ems="10"
+        android:inputType="textPersonName" />
 
     <TextView
         android:id="@+id/textView11"
@@ -233,16 +245,7 @@
         android:text="@string/Step1"
         android:textSize="24sp" />
 
-    <EditText
-        android:id="@+id/storeName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="42dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:layout_below="@+id/textView16"
-        android:layout_toRightOf="@+id/chooseIconButton"
-        android:layout_toEndOf="@+id/chooseIconButton" />
+
 
     <ImageView
         android:id="@+id/imageView"

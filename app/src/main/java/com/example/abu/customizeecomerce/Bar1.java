@@ -1,12 +1,11 @@
 package com.example.abu.customizeecomerce;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.CardView;
 import android.view.View;
 import android.widget.EditText;
-import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -14,35 +13,35 @@ import java.util.Locale;
 
 public class Bar1 extends AppCompatActivity {
 
-    TextView item1NameBar1;
-    TextView item2NameBar1;
-    TextView item3NameBar1;
-    TextView item4NameBar1;
-    TextView item5NameBar1;
+    static TextView item1NameBar1;
+    static TextView item2NameBar1;
+    static TextView item3NameBar1;
+    static  TextView item4NameBar1;
+    static TextView item5NameBar1;
 
-    TextView item1DescBar1;
-    TextView item2DescBar1;
-    TextView item3DescBar1;
-    TextView item4DescBar1;
-    TextView item5DescBar1;
+    static  TextView item1DescBar1;
+    static  TextView item2DescBar1;
+    static TextView item3DescBar1;
+    static TextView item4DescBar1;
+    static TextView item5DescBar1;
 
-    TextView item1PriceBar1;
-    TextView item2PriceBar1;
-    TextView item3PriceBar1;
-    TextView item4PriceBar1;
-    TextView item5PriceBar1;
+    static TextView item1PriceBar1;
+    static TextView item2PriceBar1;
+    static TextView item3PriceBar1;
+    static TextView item4PriceBar1;
+    static TextView item5PriceBar1;
 
-    EditText item1ImageBar1;
-    EditText item2ImageBar1;
-    EditText item3ImageBar1;
-    EditText item4ImageBar1;
-    EditText item5ImageBar1;
+    static EditText item1ImageBar1;
+    static EditText item2ImageBar1;
+    static EditText item3ImageBar1;
+    static EditText item4ImageBar1;
+    static EditText item5ImageBar1;
 
-    CardView cardView1;
-    CardView cardView2;
-    CardView cardView3;
-    CardView cardView4;
-    CardView cardView5;
+    static CardView cardView1;
+    static CardView cardView2;
+    static CardView cardView3;
+    static CardView cardView4;
+    static CardView cardView5;
 
 
     @Override

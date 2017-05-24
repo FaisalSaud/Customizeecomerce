@@ -107,22 +107,23 @@
         android:id="@+id/textView53"
         android:layout_width="40dp"
         android:layout_height="20dp"
+        android:layout_above="@+id/nextButton"
+        android:layout_alignEnd="@+id/bar4Text"
+        android:layout_alignRight="@+id/bar4Text"
+        android:layout_marginBottom="46dp"
         android:background="@android:color/holo_red_light"
         android:text="6"
         android:textAlignment="center"
         android:textSize="16sp"
         android:textStyle="bold"
+        android:visibility="invisible"
         app:layout_constraintBaseline_toBaselineOf="@+id/textView47"
         app:layout_constraintLeft_toLeftOf="@+id/textView47"
         app:layout_constraintRight_toRightOf="parent"
         tools:background="@android:color/holo_red_light"
         tools:layout_constraintBaseline_creator="1"
         tools:layout_constraintLeft_creator="1"
-        tools:layout_constraintRight_creator="1"
-        android:layout_above="@+id/nextButton"
-        android:layout_alignRight="@+id/bar4Text"
-        android:layout_alignEnd="@+id/bar4Text"
-        android:layout_marginBottom="46dp" />
+        tools:layout_constraintRight_creator="1" />
 
     <EditText
         android:id="@+id/bar4Text"

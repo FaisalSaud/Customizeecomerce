@@ -1,9 +1,12 @@
 package com.example.abu.customizeecomerce;
 
+import android.content.Context;
+import android.content.ContextWrapper;
 import android.content.Intent;
 import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.Canvas;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.net.Uri;
@@ -18,6 +21,10 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
 import java.util.Locale;
 
 public class CreateAppStep5 extends AppCompatActivity {
@@ -29,7 +36,7 @@ public static int acssess;
     EditText itemDescriptionStep5;
     EditText itemPriceStep5;
     Spinner barsListStep5;
-
+public static String f;
 //    String [] bars;
 //
 ////    String []
@@ -38,7 +45,7 @@ public static int acssess;
 //    String [] itemsBar3;
 //    String [] itemsBar4;
 
-
+    public static int count;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -56,7 +63,7 @@ public static int acssess;
         itemPriceStep5 = (EditText) findViewById(R.id.itemPriceStep5);
         barsListStep5 = (Spinner) findViewById(R.id.barsSpinnerStep5);
         img = (EditText) findViewById(R.id.ItemImageStep5);
-
+       // f=saveToInternalStorage();
 
         try {
             switch (CreateAppStep3.cont) {
@@ -99,9 +106,13 @@ public static int acssess;
         bulid.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                SaveData s =new SaveData();
-               // s.turnOn=1;
-              //  s.SaveData();
+
+                savebars();
+                saveitembar1();
+//                saveitembar(UserMainPage.itemsBar2 , "save itembar2");
+//                saveitembar(UserMainPage.itemsBar3 , "save itembar3");
+//                saveitembar(UserMainPage.itemsBar4 , "save itembar4");
+                saveToInternalStorage(drawableToBitmap(CreateAppStep2.backgroundImg.getBackground()));
                 UserMainPage.isCom = true;
                 if(CM.isChecked()){
                     Intent i = new Intent(CreateAppStep5.this , CreateAppStepFinal.class);
@@ -197,6 +208,7 @@ public static int acssess;
         try {
             if (barsListStep5.getSelectedItemPosition() == 0) { //bar1
 
+
                 try {
                     if (!iEmpty(UserMainPage.itemsBar1 , UserMainPage.B1IteamC)){
                         if(Locale.getDefault().getLanguage().equals("ar"))
@@ -212,7 +224,7 @@ public static int acssess;
                         UserMainPage.itemsBar1[UserMainPage.B1IteamC ++] = itemDescriptionStep5.getText().toString();    //description
                         UserMainPage.itemsBar1[UserMainPage.B1IteamC ++] = itemPriceStep5.getText().toString();          //price
                         UserMainPage.imgItemsBar1[(UserMainPage.B1IteamC-1) / 3] = img.getBackground();     //image
-
+                        count=UserMainPage.B1IteamC;
                     }
                 }catch (Exception e){
                     Toast.makeText(CreateAppStep5.this, "error in 1 ---   "+ e.getMessage()  , Toast.LENGTH_LONG).show();
@@ -281,7 +293,95 @@ public static int acssess;
             Toast.makeText(CreateAppStep5.this, e.getMessage() ,Toast.LENGTH_LONG).show();
         }
     }
+    public void savebars(){
+        String file ="save bar1";
+        String bar1 = CreateAppStep3.bar1.getText().toString();
+        String bar2 = CreateAppStep3.bar2.getText().toString();
+        String bar3 = CreateAppStep3.bar3.getText().toString();
+        String bar4 = CreateAppStep3.bar4.getText().toString();
 
+        try {
+            FileOutputStream fileOutputStream =openFileOutput(file,MODE_PRIVATE);
+            fileOutputStream.write((bar1+","+bar2+","+bar3+","+bar4).getBytes());
+            fileOutputStream.close();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+    }
+    public void saveitembar1(){
+
+        try {
+            FileOutputStream fileOutputStream =openFileOutput("save itembar1",MODE_PRIVATE);
+                fileOutputStream.write((UserMainPage.itemsBar1[0]+","+UserMainPage.itemsBar1[1]+","+UserMainPage.itemsBar1[2]+","+UserMainPage.itemsBar1[3]
+                        + "," + UserMainPage.itemsBar1[4] + "," + UserMainPage.itemsBar1[5] + "," + UserMainPage.itemsBar1[6]
+                        + "," + UserMainPage.itemsBar1[7] + "," + UserMainPage.itemsBar1[8] + "," + UserMainPage.itemsBar1[9]
+                        + "," + UserMainPage.itemsBar1[10] + "," + UserMainPage.itemsBar1[11] + "," + UserMainPage.itemsBar1[12]
+                        + "," + UserMainPage.itemsBar1[13] + "," + UserMainPage.itemsBar1[14]).getBytes());
+
+            fileOutputStream.close();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+    }
+
+    public void saveimg(){
+        String file ="save img";
+
+        try {
+            FileOutputStream fileOutputStream =openFileOutput(file,MODE_PRIVATE);
+            fileOutputStream.write((CreateAppStep2.backgroundImg.getBackground().toString()).getBytes());
+            fileOutputStream.close();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+    }
+    public static Bitmap drawableToBitmap (Drawable drawable) {
+        if (drawable instanceof BitmapDrawable) {
+            return ((BitmapDrawable)drawable).getBitmap();
+        }
+
+        int width = drawable.getIntrinsicWidth();
+        width = width > 0 ? width : 1;
+        int height = drawable.getIntrinsicHeight();
+        height = height > 0 ? height : 1;
+
+        Bitmap bitmap = Bitmap.createBitmap(width, height, Bitmap.Config.ARGB_8888);
+        Canvas canvas = new Canvas(bitmap);
+        drawable.setBounds(0, 0, canvas.getWidth(), canvas.getHeight());
+        drawable.draw(canvas);
+
+        return bitmap;
+    }
+    private String saveToInternalStorage(Bitmap bitmapImage){
+        ContextWrapper cw = new ContextWrapper(getApplicationContext());
+        File directory = cw.getDir("imageDir", Context.MODE_PRIVATE);
+        File mypath=new File(directory,"profile.jpg");
+
+        FileOutputStream fos = null;
+        try {
+            fos = new FileOutputStream(mypath);
+            // Use the compress method on the BitMap object to write image to the OutputStream
+            bitmapImage.compress(Bitmap.CompressFormat.PNG, 100, fos);
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                fos.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+        return directory.getAbsolutePath();
+    }
 
     }
 

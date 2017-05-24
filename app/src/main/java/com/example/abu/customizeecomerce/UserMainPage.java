@@ -1,12 +1,15 @@
 package com.example.abu.customizeecomerce;
 
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.v7.app.ActionBar;
-import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -16,6 +19,13 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.Locale;
 
 public class UserMainPage extends AppCompatActivity {
@@ -89,12 +99,12 @@ public static ActionBar actionBar;
         B4IteamC = 0;
 
 
-        //no need to save it in local Database
+        //test
         purchaseBasketItems = new String[9];
         purchaseBasketItemsImages = new Drawable[3];
         purchaseBasketCounter = 0;
         itemPriceWithQuantity = new double[3];
-        //
+        //end test
 
 
         Toast.makeText(UserMainPage.this, "Start ump" , Toast.LENGTH_SHORT).show();
@@ -218,6 +228,249 @@ public static ActionBar actionBar;
             Toast.makeText(UserMainPage.this,"Shopping cart not activated",Toast.LENGTH_SHORT).show();
         }
         return super.onOptionsItemSelected(item);
+    }
+    public  void getbars() {
+        try {
+            String Message;
+            FileInputStream fileInputStream = openFileInput("save bar1");
+            InputStreamReader inputStreamReader = new InputStreamReader(fileInputStream);
+            BufferedReader bufferedReader =new BufferedReader(inputStreamReader);
+            StringBuffer stringBuffer =new StringBuffer();
+            while ((Message=bufferedReader.readLine())!=null){
+                stringBuffer.append(Message +"");
+
+            }
+            String[] bars=stringBuffer.toString().split(",");
+            if(bars.length==4){
+                Bar1.setText(bars[0]);
+                Bar2.setText(bars[1]);
+                Bar3.setText(bars[2]);
+                Bar4.setText(bars[3]);}
+            else if (bars.length==3) {
+                Bar1.setText(bars[0]);
+                Bar2.setText(bars[1]);
+                Bar3.setText(bars[2]);
+                Bar4.setVisibility(View.INVISIBLE);
+            } else if (bars.length==2){
+                Bar1.setText(bars[0]);
+                Bar2.setText(bars[1]);
+                Bar3.setVisibility(View.INVISIBLE);
+                Bar4.setVisibility(View.INVISIBLE);
+            } else{
+                Bar1.setText(bars[0]);
+                Bar2.setVisibility(View.INVISIBLE);
+                Bar3.setVisibility(View.INVISIBLE);
+                Bar4.setVisibility(View.INVISIBLE);
+            }
+
+        }
+        catch (Exception e){
+            Toast.makeText(UserMainPage.this,e.getMessage(),Toast.LENGTH_LONG).show();
+        }
+
+    }
+//    public void getitembar1() {
+//        try {
+//            String Message;
+//            FileInputStream fileInputStream = openFileInput("save itembar1");
+//            InputStreamReader inputStreamReader = new InputStreamReader(fileInputStream);
+//            BufferedReader bufferedReader =new BufferedReader(inputStreamReader);
+//            StringBuffer stringBuffer =new StringBuffer();
+//            while ((Message=bufferedReader.readLine())!=null){
+//                stringBuffer.append(Message +"");
+//
+//            }
+//            String[] bars=stringBuffer.toString().split(",");
+//
+//            switch (UserMainPage.B1IteamC) {
+//                case 3 : //item1     0 -> item name       1 -> item description        3 -> item price
+//                    item1NameBar1.setText(UserMainPage.itemsBar1[0]);
+//                    item1DescBar1.setText(UserMainPage.itemsBar1[1]);
+//                    item1PriceBar1.setText(UserMainPage.itemsBar1[2]);
+//                    item1ImageBar1.setBackground(UserMainPage.imgItemsBar1[0]);
+//
+//
+//
+//                    cardView1.setVisibility(View.VISIBLE);
+//                    cardView2.setVisibility(View.INVISIBLE);
+//                    cardView3.setVisibility(View.INVISIBLE);
+//                    cardView4.setVisibility(View.INVISIBLE);
+//                    cardView5.setVisibility(View.INVISIBLE);
+//
+//                    break;
+//                case 6: //item2
+//
+//                    //first item
+//                    item1NameBar1.setText(UserMainPage.itemsBar1[0]);
+//                    item1DescBar1.setText(UserMainPage.itemsBar1[1]);
+//                    item1PriceBar1.setText(UserMainPage.itemsBar1[2]);
+//                    item1ImageBar1.setBackground(UserMainPage.imgItemsBar1[0]);
+//
+//
+//                    //second item
+//                    item2NameBar1.setText(UserMainPage.itemsBar1[3]);
+//                    item2DescBar1.setText(UserMainPage.itemsBar1[4]);
+//                    item2PriceBar1.setText(UserMainPage.itemsBar1[5]);
+//                    item2ImageBar1.setBackground(UserMainPage.imgItemsBar1[1]);
+//
+//
+//
+//                    cardView1.setVisibility(View.VISIBLE);
+//                    cardView2.setVisibility(View.VISIBLE);
+//                    cardView3.setVisibility(View.INVISIBLE);
+//                    cardView4.setVisibility(View.INVISIBLE);
+//                    cardView5.setVisibility(View.INVISIBLE);
+//
+//                    break;
+//                case 9: //item3
+//
+//                    //first item
+//                    item1NameBar1.setText(UserMainPage.itemsBar1[0]);
+//                    item1DescBar1.setText(UserMainPage.itemsBar1[1]);
+//                    item1PriceBar1.setText(UserMainPage.itemsBar1[2]);
+//                    item1ImageBar1.setBackground(UserMainPage.imgItemsBar1[0]);
+//
+//                    //second item
+//                    item2NameBar1.setText(UserMainPage.itemsBar1[3]);
+//                    item2DescBar1.setText(UserMainPage.itemsBar1[2]);
+//                    item2PriceBar1.setText(UserMainPage.itemsBar1[5]);
+//                    item2ImageBar1.setBackground(UserMainPage.imgItemsBar1[1]);
+//
+//                    //third item
+//                    item3NameBar1.setText(UserMainPage.itemsBar1[6]);
+//                    item3DescBar1.setText(UserMainPage.itemsBar1[7]);
+//                    item3PriceBar1.setText(UserMainPage.itemsBar1[8]);
+//                    item3ImageBar1.setBackground(UserMainPage.imgItemsBar1[2]);
+//
+//                    cardView1.setVisibility(View.VISIBLE);
+//                    cardView2.setVisibility(View.VISIBLE);
+//                    cardView3.setVisibility(View.VISIBLE);
+//                    cardView4.setVisibility(View.INVISIBLE);
+//                    cardView5.setVisibility(View.INVISIBLE);
+//
+//                    break;
+//                case 12: //item4
+//
+//                    //first item
+//                    item1NameBar1.setText(UserMainPage.itemsBar1[0]);
+//                    item1DescBar1.setText(UserMainPage.itemsBar1[1]);
+//                    item1PriceBar1.setText(UserMainPage.itemsBar1[2]);
+//                    item1ImageBar1.setBackground(UserMainPage.imgItemsBar1[0]);
+//
+//                    //second item
+//                    item2NameBar1.setText(UserMainPage.itemsBar1[3]);
+//                    item2DescBar1.setText(UserMainPage.itemsBar1[4]);
+//                    item2PriceBar1.setText(UserMainPage.itemsBar1[5]);
+//                    item2ImageBar1.setBackground(UserMainPage.imgItemsBar1[1]);
+//
+//                    //third item
+//                    item3NameBar1.setText(UserMainPage.itemsBar1[6]);
+//                    item3DescBar1.setText(UserMainPage.itemsBar1[7]);
+//                    item3PriceBar1.setText(UserMainPage.itemsBar1[8]);
+//                    item3ImageBar1.setBackground(UserMainPage.imgItemsBar1[2]);
+//
+//                    //forth item
+//                    item4NameBar1.setText(UserMainPage.itemsBar1[9]);
+//                    item4DescBar1.setText(UserMainPage.itemsBar1[10]);
+//                    item4PriceBar1.setText(UserMainPage.itemsBar1[11]);
+//                    item4ImageBar1.setBackground(UserMainPage.imgItemsBar1[3]);
+//
+//                    cardView1.setVisibility(View.VISIBLE);
+//                    cardView2.setVisibility(View.VISIBLE);
+//                    cardView3.setVisibility(View.VISIBLE);
+//                    cardView4.setVisibility(View.VISIBLE);
+//                    cardView5.setVisibility(View.INVISIBLE);
+//
+//                    break;
+//                case 15: //item5
+//
+//
+//                    //first item
+//                    Bar1.item1NameBar1.setText(bars[0]);
+//                    Bar1.item1DescBar1.setText(bars[1]);
+//                    Bar1.item1PriceBar1.setText(bars[2]);
+//                    //Bar1.item1ImageBar1.setBackground(UserMainPage.imgItemsBar1[0]);
+//
+//                    //second item
+//                    Bar1.item2NameBar1.setText(bars[3]);
+//                    Bar1.item2DescBar1.setText(bars[4]);
+//                    Bar1.item2PriceBar1.setText(bars[5]);
+//                    //Bar1.item2ImageBar1.setBackground(imgItemsBar1[1]);
+//
+//                    //third item
+//                    Bar1.item3NameBar1.setText(bars[6]);
+//                    Bar1.item3DescBar1.setText(bars[7]);
+//                    Bar1.item3PriceBar1.setText(bars[8]);
+//                   // Bar1.item3ImageBar1.setBackground(UserMainPage.imgItemsBar1[2]);
+//
+//                    //forth item
+//                    Bar1.item4NameBar1.setText(bars[9]);
+//                    Bar1.item4DescBar1.setText(bars[10]);
+//                    Bar1.item4PriceBar1.setText(bars[11]);
+//                   // Bar1.item4ImageBar1.setBackground(UserMainPage.imgItemsBar1[3]);
+//
+//                    //fifth item
+//                    Bar1.item5NameBar1.setText(bars[12]);
+//                    Bar1.item5DescBar1.setText(bars[13]);
+//                    Bar1.item5PriceBar1.setText(bars[14]);
+//                    //Bar1.item5ImageBar1.setBackground(UserMainPage.imgItemsBar1[4]);
+//
+//                    Bar1.cardView1.setVisibility(View.VISIBLE);
+//                    Bar1.cardView2.setVisibility(View.VISIBLE);
+//                    Bar1.cardView3.setVisibility(View.VISIBLE);
+//                    Bar1.cardView4.setVisibility(View.VISIBLE);
+//                    Bar1.cardView5.setVisibility(View.VISIBLE);
+//
+//                    break;
+//                default:
+//                    if(Locale.getDefault().getLanguage().equals("ar"))
+//                        Toast.makeText(this,"غير ممكن في صفحة العنوان الفرعي 1 ",Toast.LENGTH_LONG).show();
+//                    else
+//                        Toast.makeText(this, "this is not possible Bar1 page", Toast.LENGTH_LONG).show();
+//                    break;
+//            }
+//        }catch (Exception e){
+//            Toast.makeText(this, e.getMessage(), Toast.LENGTH_LONG).show();
+//        }
+//
+//
+//    }
+//        catch (Exception e){
+//            Toast.makeText(UserMainPage.this,e.getMessage(),Toast.LENGTH_LONG).show();
+//        }
+////return bars;
+//    }
+    private void loadImageFromStorage(String path)
+    {
+
+        try {
+            File f=new File(path, "profile.jpg");
+            Bitmap b = BitmapFactory.decodeStream(new FileInputStream(f));
+            setUMPBackground(new BitmapDrawable(getResources(),b));
+        }
+        catch (FileNotFoundException e)
+        {
+            e.printStackTrace();
+        }
+
+    }
+
+    public void intoFile (){
+
+        String a = null;
+        try {
+            FileOutputStream fileOutputStream =openFileOutput("save purchaseBasketItem",MODE_PRIVATE);
+
+            for (int i=0 ; i< purchaseBasketItems.length ; i++){
+                if(purchaseBasketItems[i] != null)
+                a += purchaseBasketItems[i]+",";
+            }
+            fileOutputStream.write(a.getBytes());
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     @Override

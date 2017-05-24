@@ -10,13 +10,11 @@
         android:id="@+id/checkBox7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
         android:text="@string/Mada"
         tools:layout_editor_absoluteX="145dp"
         tools:layout_editor_absoluteY="290dp"
-        android:layout_below="@+id/textView23"
-        android:layout_alignLeft="@+id/textView56"
-        android:layout_alignStart="@+id/textView56" />
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/textView23" />
 
     <TextView
         android:id="@+id/textView49"
@@ -177,22 +175,23 @@
         android:id="@+id/textView48"
         android:layout_width="40dp"
         android:layout_height="20dp"
+        android:layout_alignBaseline="@+id/textView46"
+        android:layout_alignBottom="@+id/textView46"
+        android:layout_toEndOf="@+id/textView46"
+        android:layout_toRightOf="@+id/textView46"
         android:background="@android:color/holo_red_light"
         android:text="6"
         android:textAlignment="center"
         android:textSize="16sp"
         android:textStyle="bold"
+        android:visibility="invisible"
         app:layout_constraintBaseline_toBaselineOf="@+id/textView47"
         app:layout_constraintLeft_toLeftOf="@+id/textView47"
         app:layout_constraintRight_toRightOf="parent"
         tools:background="@android:color/holo_red_light"
         tools:layout_constraintBaseline_creator="1"
         tools:layout_constraintLeft_creator="1"
-        tools:layout_constraintRight_creator="1"
-        android:layout_alignBaseline="@+id/textView46"
-        android:layout_alignBottom="@+id/textView46"
-        android:layout_toRightOf="@+id/textView46"
-        android:layout_toEndOf="@+id/textView46" />
+        tools:layout_constraintRight_creator="1" />
 
     <CheckBox
         android:id="@+id/checkBox"
@@ -275,9 +274,9 @@
         android:textColor="@android:color/background_dark"
         tools:layout_editor_absoluteX="41dp"
         tools:layout_editor_absoluteY="203dp"
+        android:layout_marginTop="22dp"
         android:layout_below="@+id/checkBox7"
-        android:layout_alignLeft="@+id/textView23"
-        android:layout_alignStart="@+id/textView23" />
+        android:layout_alignStart="@+id/checkBox6" />
 
     <CheckBox
         android:id="@+id/checkBox5"

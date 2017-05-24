@@ -48,7 +48,11 @@
         android:id="@+id/textView35"
         android:layout_width="40dp"
         android:layout_height="20dp"
-        android:background="@android:color/holo_red_dark"
+        android:layout_alignBaseline="@+id/textView36"
+        android:layout_alignBottom="@+id/textView36"
+        android:layout_toLeftOf="@+id/textView36"
+        android:layout_toStartOf="@+id/textView36"
+        android:background="@android:color/holo_red_light"
         android:text="3"
         android:textAlignment="center"
         android:textSize="16sp"
@@ -58,11 +62,7 @@
         app:layout_constraintRight_toRightOf="@+id/textView28"
         tools:layout_constraintBaseline_creator="1"
         tools:layout_constraintLeft_creator="1"
-        tools:layout_constraintRight_creator="1"
-        android:layout_alignBaseline="@+id/textView36"
-        android:layout_alignBottom="@+id/textView36"
-        android:layout_toLeftOf="@+id/textView36"
-        android:layout_toStartOf="@+id/textView36" />
+        tools:layout_constraintRight_creator="1" />
 
     <TextView
         android:id="@+id/textView36"
@@ -72,7 +72,7 @@
         android:layout_alignBottom="@+id/textView37"
         android:layout_toLeftOf="@+id/textView37"
         android:layout_toStartOf="@+id/textView37"
-        android:background="@android:color/holo_red_dark"
+        android:background="@android:color/holo_red_light"
         android:text="  4"
         android:textAlignment="center"
         android:textSize="16sp"
@@ -86,6 +86,10 @@
         android:id="@+id/textView37"
         android:layout_width="40dp"
         android:layout_height="20dp"
+        android:layout_alignBaseline="@+id/textView38"
+        android:layout_alignBottom="@+id/textView38"
+        android:layout_toLeftOf="@+id/textView38"
+        android:layout_toStartOf="@+id/textView38"
         android:background="@android:color/holo_red_light"
         android:text="  5"
         android:textAlignment="center"
@@ -97,32 +101,29 @@
         tools:background="@android:color/holo_red_light"
         tools:layout_constraintBaseline_creator="1"
         tools:layout_constraintLeft_creator="1"
-        tools:layout_constraintRight_creator="1"
-        android:layout_alignBaseline="@+id/textView38"
-        android:layout_alignBottom="@+id/textView38"
-        android:layout_toLeftOf="@+id/textView38"
-        android:layout_toStartOf="@+id/textView38" />
+        tools:layout_constraintRight_creator="1" />
 
     <TextView
         android:id="@+id/textView38"
         android:layout_width="40dp"
         android:layout_height="20dp"
+        android:layout_above="@+id/nextButton"
+        android:layout_alignEnd="@+id/nextButton"
+        android:layout_alignRight="@+id/nextButton"
+        android:layout_marginBottom="19dp"
         android:background="@android:color/holo_red_light"
         android:text="6"
         android:textAlignment="center"
         android:textSize="16sp"
         android:textStyle="bold"
+        android:visibility="invisible"
         app:layout_constraintBaseline_toBaselineOf="@+id/textView47"
         app:layout_constraintLeft_toLeftOf="@+id/textView47"
         app:layout_constraintRight_toRightOf="parent"
         tools:background="@android:color/holo_red_light"
         tools:layout_constraintBaseline_creator="1"
         tools:layout_constraintLeft_creator="1"
-        tools:layout_constraintRight_creator="1"
-        android:layout_above="@+id/nextButton"
-        android:layout_alignRight="@+id/nextButton"
-        android:layout_alignEnd="@+id/nextButton"
-        android:layout_marginBottom="19dp" />
+        tools:layout_constraintRight_creator="1" />
 
     <Button
         android:id="@+id/button6"
