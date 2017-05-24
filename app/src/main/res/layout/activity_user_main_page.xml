@@ -7,47 +7,18 @@
     tools:context="com.example.abu.customizeecomerce.UserMainPage">
 
     <TextView
-        android:id="@+id/textView41"
-        android:layout_width="132dp"
-        android:layout_height="66dp"
-        android:text="item 1"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="250dp"
-        android:layout_marginLeft="27dp"
-        android:layout_marginStart="27dp"
-        android:visibility="visible"
-        android:layout_alignTop="@+id/textView42"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="161dp" />
-
-    <TextView
-        android:id="@+id/textView44"
-        android:layout_width="132dp"
-        android:layout_height="67dp"
-        android:text="item 2"
-        tools:layout_editor_absoluteX="158dp"
-        tools:layout_editor_absoluteY="250dp"
-        android:visibility="visible"
-        android:layout_marginRight="15dp"
-        android:layout_alignBaseline="@+id/textView41"
-        android:layout_alignBottom="@+id/textView41"
-        android:layout_toEndOf="@+id/textView41"
-        android:layout_marginStart="34dp" />
-
-    <TextView
         android:id="@+id/textView42"
         android:layout_width="274dp"
-        android:layout_height="108dp"
-        android:text="Slide Show"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="112dp"
-        android:visibility="visible"
+        android:layout_height="25dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
         android:layout_marginTop="45dp"
         android:layout_toLeftOf="@+id/imageButton"
         android:layout_toStartOf="@+id/imageButton"
-        android:layout_marginRight="15dp"
-        android:layout_marginEnd="15dp" />
+        android:text="Slide Show"
+        android:visibility="visible"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="112dp" />
 
     <Button
         android:id="@+id/bar1Button"
@@ -86,5 +57,17 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:text="bar4" />
+
+    <EditText
+        android:id="@+id/slideShowEditText"
+        android:layout_width="350dp"
+        android:layout_height="200dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView42"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="13dp"
+        android:editable="false"
+        android:ems="10"
+        android:inputType="textPersonName" />
 
 </RelativeLayout>

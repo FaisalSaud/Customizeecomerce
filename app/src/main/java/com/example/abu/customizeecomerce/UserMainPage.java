@@ -63,7 +63,7 @@ public class UserMainPage extends AppCompatActivity {
     static Drawable [] imgItemsBar2;
     static Drawable [] imgItemsBar3;
     static Drawable [] imgItemsBar4;
-public static ActionBar actionBar;
+    public static ActionBar actionBar;
     static int B1IteamC ;//= 0; //item count for bar1
     static int B2IteamC ;//= 0;               //bar2
     static int B3IteamC ;//= 0;               //bar3
@@ -85,6 +85,7 @@ public static ActionBar actionBar;
 
         UserMainPage=this;
         //background = (EditText) findViewById(R.id.userBackground);
+        slideShowPicture = (EditText) findViewById(R.id.slideShowEditText);
 
 
         itemsBar1 = new String[15];
