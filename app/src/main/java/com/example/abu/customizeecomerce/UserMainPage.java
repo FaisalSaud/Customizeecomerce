@@ -89,6 +89,7 @@ public class UserMainPage extends AppCompatActivity {
         slideShowPicture = (EditText) findViewById(R.id.slideShowEditText);
 
 
+
         itemsBar1 = new String[15];
         itemsBar2 = new String[15];
         itemsBar3 = new String[15];
