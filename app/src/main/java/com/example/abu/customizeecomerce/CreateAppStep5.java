@@ -109,10 +109,10 @@ public static String f;
 
                 savebars();
                 saveitembar1();
-//                saveitembar(UserMainPage.itemsBar2 , "save itembar2");
-//                saveitembar(UserMainPage.itemsBar3 , "save itembar3");
-//                saveitembar(UserMainPage.itemsBar4 , "save itembar4");
-                saveToInternalStorage(drawableToBitmap(CreateAppStep2.backgroundImg.getBackground()));
+                saveitembar2();
+                saveitembar3();
+                saveitembar4();
+            //saveToInternalStorage(drawableToBitmap(CreateAppStep2.backgroundImg.getBackground()));
                 UserMainPage.isCom = true;
                 if(CM.isChecked()){
                     Intent i = new Intent(CreateAppStep5.this , CreateAppStepFinal.class);
@@ -316,9 +316,9 @@ public static String f;
         try {
             FileOutputStream fileOutputStream =openFileOutput("save itembar1",MODE_PRIVATE);
                 fileOutputStream.write((UserMainPage.itemsBar1[0]+","+UserMainPage.itemsBar1[1]+","+UserMainPage.itemsBar1[2]+","+UserMainPage.itemsBar1[3]
-                        + "," + UserMainPage.itemsBar1[4] + "," + UserMainPage.itemsBar1[5] + "," + UserMainPage.itemsBar1[6]
-                        + "," + UserMainPage.itemsBar1[7] + "," + UserMainPage.itemsBar1[8] + "," + UserMainPage.itemsBar1[9]
-                        + "," + UserMainPage.itemsBar1[10] + "," + UserMainPage.itemsBar1[11] + "," + UserMainPage.itemsBar1[12]
+                        + "," + UserMainPage.itemsBar1[4] + "," +  UserMainPage.itemsBar1[5] + "," + UserMainPage.itemsBar1[6]
+                        + "," + UserMainPage.itemsBar1[7] + "," +  UserMainPage.itemsBar1[8] + "," + UserMainPage.itemsBar1[9]
+                        + "," + UserMainPage.itemsBar1[10] + "," + UserMainPage.itemsBar1[11] + "," +UserMainPage.itemsBar1[12]
                         + "," + UserMainPage.itemsBar1[13] + "," + UserMainPage.itemsBar1[14]).getBytes());
 
             fileOutputStream.close();
@@ -329,13 +329,16 @@ public static String f;
         }
 
     }
-
-    public void saveimg(){
-        String file ="save img";
+    public void saveitembar2(){
 
         try {
-            FileOutputStream fileOutputStream =openFileOutput(file,MODE_PRIVATE);
-            fileOutputStream.write((CreateAppStep2.backgroundImg.getBackground().toString()).getBytes());
+            FileOutputStream fileOutputStream =openFileOutput("save itembar2",MODE_PRIVATE);
+            fileOutputStream.write((UserMainPage.itemsBar2[0]+","+UserMainPage.itemsBar2[1]+","+UserMainPage.itemsBar2[2]+","+UserMainPage.itemsBar2[3]
+                    + "," + UserMainPage.itemsBar2[4] + "," +  UserMainPage.itemsBar2[5] + "," + UserMainPage.itemsBar2[6]
+                    + "," + UserMainPage.itemsBar2[7] + "," +  UserMainPage.itemsBar2[8] + "," + UserMainPage.itemsBar2[9]
+                    + "," + UserMainPage.itemsBar2[10] + "," + UserMainPage.itemsBar2[11] + "," +UserMainPage.itemsBar2[12]
+                    + "," + UserMainPage.itemsBar2[13] + "," + UserMainPage.itemsBar2[14]).getBytes());
+
             fileOutputStream.close();
         } catch (FileNotFoundException e) {
             e.printStackTrace();
@@ -344,44 +347,95 @@ public static String f;
         }
 
     }
-    public static Bitmap drawableToBitmap (Drawable drawable) {
-        if (drawable instanceof BitmapDrawable) {
-            return ((BitmapDrawable)drawable).getBitmap();
-        }
+    public void saveitembar3(){
 
-        int width = drawable.getIntrinsicWidth();
-        width = width > 0 ? width : 1;
-        int height = drawable.getIntrinsicHeight();
-        height = height > 0 ? height : 1;
-
-        Bitmap bitmap = Bitmap.createBitmap(width, height, Bitmap.Config.ARGB_8888);
-        Canvas canvas = new Canvas(bitmap);
-        drawable.setBounds(0, 0, canvas.getWidth(), canvas.getHeight());
-        drawable.draw(canvas);
-
-        return bitmap;
-    }
-    private String saveToInternalStorage(Bitmap bitmapImage){
-        ContextWrapper cw = new ContextWrapper(getApplicationContext());
-        File directory = cw.getDir("imageDir", Context.MODE_PRIVATE);
-        File mypath=new File(directory,"profile.jpg");
-
-        FileOutputStream fos = null;
         try {
-            fos = new FileOutputStream(mypath);
-            // Use the compress method on the BitMap object to write image to the OutputStream
-            bitmapImage.compress(Bitmap.CompressFormat.PNG, 100, fos);
-        } catch (Exception e) {
+            FileOutputStream fileOutputStream =openFileOutput("save itembar3",MODE_PRIVATE);
+            fileOutputStream.write((UserMainPage.itemsBar3[0]+","+UserMainPage.itemsBar3[1]+","+UserMainPage.itemsBar3[2]+","+UserMainPage.itemsBar3[3]
+                    + "," + UserMainPage.itemsBar3[4] + "," +  UserMainPage.itemsBar3[5] + "," + UserMainPage.itemsBar3[6]
+                    + "," + UserMainPage.itemsBar3[7] + "," +  UserMainPage.itemsBar3[8] + "," + UserMainPage.itemsBar3[9]
+                    + "," + UserMainPage.itemsBar3[10] + "," + UserMainPage.itemsBar3[11] + "," +UserMainPage.itemsBar3[12]
+                    + "," + UserMainPage.itemsBar3[13] + "," + UserMainPage.itemsBar3[14]).getBytes());
+
+            fileOutputStream.close();
+        } catch (FileNotFoundException e) {
             e.printStackTrace();
-        } finally {
-            try {
-                fos.close();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
+        } catch (IOException e) {
+            e.printStackTrace();
         }
-        return directory.getAbsolutePath();
+
     }
+    public void saveitembar4(){
+
+        try {
+            FileOutputStream fileOutputStream =openFileOutput("save itembar4",MODE_PRIVATE);
+            fileOutputStream.write((UserMainPage.itemsBar4[0]+","+UserMainPage.itemsBar4[1]+","+UserMainPage.itemsBar4[2]+","+UserMainPage.itemsBar4[3]
+                    + "," + UserMainPage.itemsBar4[4] + "," +  UserMainPage.itemsBar4[5] + "," + UserMainPage.itemsBar4[6]
+                    + "," + UserMainPage.itemsBar4[7] + "," +  UserMainPage.itemsBar4[8] + "," + UserMainPage.itemsBar4[9]
+                    + "," + UserMainPage.itemsBar4[10] + "," + UserMainPage.itemsBar4[11] + "," +UserMainPage.itemsBar4[12]
+                    + "," + UserMainPage.itemsBar4[13] + "," + UserMainPage.itemsBar4[14]).getBytes());
+
+            fileOutputStream.close();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+    }
+
+//    public void saveimg(){
+//        String file ="save img";
+//
+//        try {
+//            FileOutputStream fileOutputStream =openFileOutput(file,MODE_PRIVATE);
+//            fileOutputStream.write((CreateAppStep2.backgroundImg.getBackground().toString()).getBytes());
+//            fileOutputStream.close();
+//        } catch (FileNotFoundException e) {
+//            e.printStackTrace();
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
+//
+//    }
+//    public static Bitmap drawableToBitmap (Drawable drawable) {
+//        if (drawable instanceof BitmapDrawable) {
+//            return ((BitmapDrawable)drawable).getBitmap();
+//        }
+//
+//        int width = drawable.getIntrinsicWidth();
+//        width = width > 0 ? width : 1;
+//        int height = drawable.getIntrinsicHeight();
+//        height = height > 0 ? height : 1;
+//
+//        Bitmap bitmap = Bitmap.createBitmap(width, height, Bitmap.Config.ARGB_8888);
+//        Canvas canvas = new Canvas(bitmap);
+//        drawable.setBounds(0, 0, canvas.getWidth(), canvas.getHeight());
+//        drawable.draw(canvas);
+//
+//        return bitmap;
+//    }
+//    private String saveToInternalStorage(Bitmap bitmapImage){
+//        ContextWrapper cw = new ContextWrapper(getApplicationContext());
+//        File directory = cw.getDir("imageDir", Context.MODE_PRIVATE);
+//        File mypath=new File(directory,"profile.jpg");
+//
+//        FileOutputStream fos = null;
+//        try {
+//            fos = new FileOutputStream(mypath);
+//            // Use the compress method on the BitMap object to write image to the OutputStream
+//            bitmapImage.compress(Bitmap.CompressFormat.PNG, 100, fos);
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        } finally {
+//            try {
+//                fos.close();
+//            } catch (IOException e) {
+//                e.printStackTrace();
+//            }
+//        }
+//        return directory.getAbsolutePath();
+//    }
 
     }
 
